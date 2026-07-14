@@ -188,8 +188,12 @@ const articles = [
     title: "E4M+ Launcher 1.0",
     tags: ["E4M+", "launcher", "map converter", "expanded maps", "EM4Resource", "download"],
     body: `
-      <p><strong>E4M+ Launcher 1.0</strong> is an EM4Resource release built for creators who want to push Emergency 4 map projects beyond the normal workspace.</p>
-      <p>The launcher provides a clean way to prepare and open supported Emergency 4 / 911: First Responders installations for E4M+ projects while keeping the workflow organized in one place.</p>
+      <div class="e4mplus-release-header">
+        <span>E4M+ Launcher 1.0</span>
+        <h3>Expanded map workflow for Emergency 4 creators</h3>
+        <p>E4M+ is an EM4Resource launcher and map-project tool for supported Emergency 4 / 911: First Responders installations. It is built for creators who want larger map projects, higher-resolution terrain workflows, and a cleaner way to prepare E4M+ editor and game sessions.</p>
+        <a href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer">Download E4M+ Launcher 1.0</a>
+      </div>
 
       <div class="e4mplus-spec-grid">
         <div>
@@ -206,41 +210,52 @@ const articles = [
         </div>
       </div>
 
-      <div class="e4mplus-feature-panel">
-        <div>
-          <span>01</span>
-          <h3>Expanded map projects</h3>
-          <p>Build with significantly more playable area for large county, highway, rural, and regional layouts.</p>
-        </div>
-        <div>
-          <span>02</span>
-          <h3>Larger terrain workflow</h3>
-          <p>Designed around higher-resolution ground texture projects for bigger map designs.</p>
-        </div>
-        <div>
-          <span>03</span>
-          <h3>Standard map converter</h3>
-          <p>Convert an existing standard map into an E4M+ project so creators can continue from work they already started.</p>
-        </div>
-        <div>
-          <span>04</span>
-          <h3>Dedicated launch options</h3>
-          <p>Open the E4M+ editor or game mode directly from one compact launcher interface.</p>
-        </div>
+      <div class="e4mplus-info-layout">
+        <section>
+          <h3>What is included</h3>
+          <ul class="e4mplus-clean-list">
+            <li><code>E4MPlusLauncher.exe</code></li>
+            <li>EM4Resource launcher assets.</li>
+            <li>Minimal E4M+ editor/map overlay files.</li>
+            <li>An empty folder used to generate local files from the user's own installation.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What E4M+ does</h3>
+          <ul class="e4mplus-clean-list">
+            <li>Patches the user's local copy of Emergency 4 / 911: First Responders into the E4M+ folder.</li>
+            <li>Expands map/world support for E4M+ maps.</li>
+            <li>Enables 16384 x 16384 floor textures.</li>
+            <li>Raises the object ceiling for E4M+ use.</li>
+            <li>Provides a standard map converter for converting existing <code>.e4m</code> maps into the expanded E4M+ format.</li>
+          </ul>
+        </section>
       </div>
 
-      <h3>What is included</h3>
-      <ul>
-        <li>E4M+ Launcher 1.0.</li>
-        <li>E4M+ editor launch option for supported installs.</li>
-        <li>E4M+ game launch option for supported installs.</li>
-        <li>Standard map converter for existing <code>.e4m</code> map projects.</li>
-        <li>Game-location selection so users can point the launcher to their own installation.</li>
-      </ul>
+      <div class="e4mplus-important">
+        <h3>Important</h3>
+        <ul>
+          <li>The EM4 Memory Patcher is required. E4M+ will not work without it.</li>
+          <li>E4M+ does not replace the user's original installation files.</li>
+          <li>Disc versions and illegitimate copies are not supported.</li>
+          <li>Keep the E4M+ folder together when distributing.</li>
+        </ul>
+      </div>
 
-      <p class="e4mplus-note"><strong>Important:</strong> A full, legitimate copy of Emergency 4 / 911: First Responders is required. Disc versions and illegitimate copies are not supported. The EM4 Memory Patcher is also recommended for modern large-scale projects.</p>
+      <h3>Map Conversion Walkthrough</h3>
+      <ol class="e4mplus-walkthrough">
+        <li>Open the E4M+ Launcher and click <strong>Convert Map</strong>.</li>
+        <li>Select the standard <code>.e4m</code> map you want to convert, such as your current <code>freeplay.e4m</code>.</li>
+        <li>E4M+ will create a new expanded map using the original file name, for example: <code>freeplay_e4mplus.e4m</code> and <code>freeplay_e4mplus.eft</code>.</li>
+        <li><strong>EFTExplorer does not currently support the E4M+ EFT file size.</strong> Use Photopea, Adobe Photoshop, or another image editing program to increase your current TGA floor texture to <code>16384 x 16384</code>, keeping your previous map centered if applicable. Then import it through the E4M+ Editor terrain tab while the map is loaded.</li>
+        <li>Open the E4M+ Editor from the launcher.</li>
+        <li>Load the new converted map, for example: <code>freeplay_e4mplus.e4m</code>.</li>
+        <li>Once the map loads correctly, save it under the final map name you want the game to use, such as <code>freeplay.e4m</code>, <code>multiplayer.e4m</code>, or another map name used by your mod.</li>
+        <li>After saving, you can remove the temporary <code>_e4mplus</code> files if you no longer need them.</li>
+      </ol>
 
-      <p><a class="resource-link direct-download e4mplus-download-link" href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer"><strong>Download E4M+ Launcher 1.0</strong><span>Official EM4Resource release hosted on MEGA.</span></a></p>
+      <p class="e4mplus-final-note">Your mod will then use the normal map name while keeping the expanded E4M+ map size.</p>
     `
   },
   {
