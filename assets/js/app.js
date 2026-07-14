@@ -54,12 +54,20 @@ const articles = [
     body: `
       <p>Official EM4Resource modification and resource downloads are listed below. These releases are provided for the Emergency 4 community and are maintained separately from the base game.</p>
       <div class="download-grid">
+        <article class="download-card e4mplus-release">
+          <div class="download-kicker">New Tool Release</div>
+          <h3>E4M+ Launcher 1.0</h3>
+          <p>Official EM4Resource launcher and map project tool for supported Emergency 4 / 911: First Responders installations. Includes dedicated E4M+ editor and game launch options plus a standard map converter for expanded map projects.</p>
+          <div class="download-meta">Released 14 Jul 2026</div>
+          <a href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer">Download E4M+ Launcher</a>
+        </article>
+
         <article class="download-card featured">
           <div class="download-kicker">Featured Release</div>
           <h3>Beaverhead County Modification Version 1.5</h3>
           <p>Official Beaverhead County Modification public release by EM4Resource. Read the included player guide before playing; the EM4 Memory Patcher is required for this release.</p>
           <div class="download-meta">Released 25 Jun 2026</div>
-          <a href="https://mega.nz/file/iiZGgapL#Z8E07ERsV9cP9Xc7zpOOQIfIC3ndYaTsLE_TaTK7Qe0" target="_blank" rel="noreferrer">Download</a>
+          <a href="https://mega.nz/file/T6oT1RBb#Vm4pRolz5vvqMCRUCn4dI9Z79c2vnU8HXcf2W7rqbyc" target="_blank" rel="noreferrer">Download</a>
         </article>
 
         <article class="download-card archived">
@@ -173,6 +181,66 @@ const articles = [
           <a href="https://mega.nz/file/2j4HSLDZ#w4s3OmcuzSKcIXcn0UqQBK4FW37gXV9K6-lUJids-WA" target="_blank" rel="noreferrer">Download</a>
         </article>
       </div>
+    `
+  },
+  {
+    category: "E4M+ Launcher",
+    title: "E4M+ Launcher 1.0",
+    tags: ["E4M+", "launcher", "map converter", "expanded maps", "EM4Resource", "download"],
+    body: `
+      <p><strong>E4M+ Launcher 1.0</strong> is an EM4Resource release built for creators who want to push Emergency 4 map projects beyond the normal workspace.</p>
+      <p>The launcher provides a clean way to prepare and open supported Emergency 4 / 911: First Responders installations for E4M+ projects while keeping the workflow organized in one place.</p>
+
+      <div class="e4mplus-spec-grid">
+        <div>
+          <strong>4x map area</strong>
+          <span>Expanded projects provide four times the total playable map area compared with a standard full-size map.</span>
+        </div>
+        <div>
+          <strong>16384 x 16384 terrain texture</strong>
+          <span>Designed for larger ground texture projects, increased from the standard 8192 x 8192 workflow.</span>
+        </div>
+        <div>
+          <strong>32,767 object limit</strong>
+          <span>Increased from the standard 16,384 scene-node ceiling for larger, more detailed map builds.</span>
+        </div>
+      </div>
+
+      <div class="e4mplus-feature-panel">
+        <div>
+          <span>01</span>
+          <h3>Expanded map projects</h3>
+          <p>Build with significantly more playable area for large county, highway, rural, and regional layouts.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Larger terrain workflow</h3>
+          <p>Designed around higher-resolution ground texture projects for bigger map designs.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Standard map converter</h3>
+          <p>Convert an existing standard map into an E4M+ project so creators can continue from work they already started.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <h3>Dedicated launch options</h3>
+          <p>Open the E4M+ editor or game mode directly from one compact launcher interface.</p>
+        </div>
+      </div>
+
+      <h3>What is included</h3>
+      <ul>
+        <li>E4M+ Launcher 1.0.</li>
+        <li>E4M+ editor launch option for supported installs.</li>
+        <li>E4M+ game launch option for supported installs.</li>
+        <li>Standard map converter for existing <code>.e4m</code> map projects.</li>
+        <li>Game-location selection so users can point the launcher to their own installation.</li>
+      </ul>
+
+      <p class="e4mplus-note"><strong>Important:</strong> A full, legitimate copy of Emergency 4 / 911: First Responders is required. Disc versions and illegitimate copies are not supported. The EM4 Memory Patcher is also recommended for modern large-scale projects.</p>
+
+      <p><a class="resource-link direct-download e4mplus-download-link" href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer"><strong>Download E4M+ Launcher 1.0</strong><span>Official EM4Resource release hosted on MEGA.</span></a></p>
     `
   },
   {
@@ -4169,7 +4237,7 @@ let activeCategory = "Start Here";
 const categoryGroups = [
   {
     title: "Welcome",
-    categories: ["Start Here", "Getting Started", "Installing Mods", "EM4Resource Downloads", "EM4 History", "EM4 Memory Patcher", "Discord Rules"]
+    categories: ["Start Here", "Getting Started", "Installing Mods", "EM4Resource Downloads", "E4M+ Launcher", "EM4 History", "EM4 Memory Patcher", "Discord Rules"]
   },
   {
     title: "Common Issues",
