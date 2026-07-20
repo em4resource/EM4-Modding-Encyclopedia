@@ -23,11 +23,11 @@ const articles = [
         <tbody>
           <tr><td>Founder and Development Team Lead</td><td>Harlem</td></tr>
           <tr><td>Administrator and Development Team Co-Lead</td><td>Slamming</td></tr>
-          <tr><td>Systems Operations Administrator</td><td>MedicZ</td></tr>
+          <tr><td>Systems Operations Administrator</td><td>Harp</td></tr>
           <tr><td>Public Relations Administrator</td><td>Lucas001</td></tr>
           <tr><td>Moderator</td><td>ThomasB_403</td></tr>
           <tr><td>Moderator</td><td>Josh the Mango</td></tr>
-          <tr><td>Moderator</td><td>Harp</td></tr>
+          <tr><td>Moderator</td><td>MedicZ</td></tr>
           <tr><td>Moderator</td><td>59Fire</td></tr>
         </tbody>
       </table>
@@ -43,6 +43,8 @@ const articles = [
           <tr><td>Development Team Member</td><td>59Fire</td></tr>
           <tr><td>Development Team Member</td><td>SlateDragon</td></tr>
           <tr><td>Development Team Member</td><td>V_0</td></tr>
+          <tr><td>Development Team Member</td><td>Timber</td></tr>
+          <tr><td>Development Team Member</td><td>guj</td></tr>
         </tbody>
       </table>
     `
@@ -195,6 +197,11 @@ const articles = [
         <a href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer">Download E4M+ Launcher 1.0</a>
       </div>
 
+      <div class="e4mplus-compatibility-note">
+        <strong>Compatibility notice</strong>
+        <span>E4M+ currently supports verified Steam / digital installations only. Disc versions are not compatible at this time.</span>
+      </div>
+
       <div class="e4mplus-spec-grid">
         <div>
           <strong>4x map area</strong>
@@ -238,7 +245,7 @@ const articles = [
         <ul>
           <li>The EM4 Memory Patcher is required. E4M+ will not work without it.</li>
           <li>E4M+ does not replace the user's original installation files.</li>
-          <li>Disc versions and illegitimate copies are not supported.</li>
+          <li>Disc versions are not compatible at this time, and illegitimate copies are not supported.</li>
           <li>Keep the E4M+ folder together when distributing.</li>
         </ul>
       </div>
