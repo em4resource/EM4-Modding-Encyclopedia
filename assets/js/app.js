@@ -66,132 +66,180 @@ const articles = [
     body: `
       <p>Official EM4Resource modification and resource downloads are listed below. These releases are provided for the Emergency 4 community and are maintained separately from the base game.</p>
       <div class="download-grid">
-        <article class="download-card e4mplus-release">
-          <div class="download-kicker">New Tool Release</div>
-          <h3>E4M+ Launcher 1.0</h3>
-          <p>Official EM4Resource launcher and map project tool for supported Emergency 4 / 911: First Responders installations. Includes dedicated E4M+ editor and game launch options plus a standard map converter for expanded map projects.</p>
-          <div class="download-meta">Released 14 Jul 2026</div>
-          <a href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer">Download E4M+ Launcher</a>
-        </article>
+        <section class="download-section download-section-featured">
+          <div class="download-section-header">
+            <div>
+              <span>Featured</span>
+              <h3>Current EM4Resource releases</h3>
+            </div>
+            <p>Start here for the newest launcher and primary public modification release.</p>
+          </div>
 
-        <article class="download-card featured">
-          <div class="download-kicker">Featured Release</div>
-          <h3>Beaverhead County Modification Version 1.5</h3>
-          <p>Official Beaverhead County Modification public release by EM4Resource. Read the included player guide before playing; the EM4 Memory Patcher is required for this release.</p>
-          <div class="download-meta">Released 25 Jun 2026</div>
-          <a href="https://mega.nz/file/T6oT1RBb#Vm4pRolz5vvqMCRUCn4dI9Z79c2vnU8HXcf2W7rqbyc" target="_blank" rel="noreferrer">Download</a>
-        </article>
+          <div class="download-list download-list-featured">
+            <article class="download-card e4mplus-release">
+              <div class="download-kicker">New Tool Release</div>
+              <h3>E4M+ Launcher 1.0</h3>
+              <p>Official EM4Resource launcher and map project tool for supported Emergency 4 / 911: First Responders installations. Includes dedicated E4M+ editor and game launch options plus a standard map converter for expanded map projects.</p>
+              <div class="download-meta">Released 14 Jul 2026</div>
+              <a href="https://mega.nz/file/jrhjQK7S#TCf-I5O3jvFOtDN43PJQkBDWW4y6E36ujrH1QosCWvc" target="_blank" rel="noreferrer">Download E4M+ Launcher</a>
+            </article>
 
-        <article class="download-card archived">
-          <div class="download-kicker">Previous Release</div>
-          <h3>Beaverhead County Modification V1</h3>
-          <p>Original Beaverhead County Modification V1 release, preserved for users who need the older build.</p>
-          <div class="download-meta">Released 5 Feb 2026</div>
-          <a href="https://mega.nz/file/ev5EzTSY#TBro-a3t3o8jnnduSZ5Q0NKZOgDJpivCu2w1ffuppzg" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card featured">
+              <div class="download-kicker">Featured Release</div>
+              <h3>Beaverhead County Modification Version 1.5</h3>
+              <p>Official Beaverhead County Modification public release by EM4Resource. Read the included player guide before playing; the EM4 Memory Patcher is required for this release.</p>
+              <div class="download-meta">Released 25 Jun 2026</div>
+              <a href="https://mega.nz/file/T6oT1RBb#Vm4pRolz5vvqMCRUCn4dI9Z79c2vnU8HXcf2W7rqbyc" target="_blank" rel="noreferrer">Download Beaverhead V1.5</a>
+            </article>
+          </div>
+        </section>
 
-        <article class="download-card">
-          <div class="download-kicker">Latest Update</div>
-          <h3>Elisa City Modification Update</h3>
-          <p>Latest Elisa City modification update released by EM4Resource.</p>
-          <div class="download-meta">Released 25 May 2026</div>
-          <a href="https://mega.nz/file/Wj5nRa5A#-EnHb3uzf9vrKRFdmpPzpLIzeSibddV6KqhfVil26_M" target="_blank" rel="noreferrer">Download</a>
-        </article>
+        <section class="download-section">
+          <div class="download-section-header">
+            <div>
+              <span>A-Z Catalog</span>
+              <h3>Modifications</h3>
+            </div>
+            <p>Browse current and community-hosted modification downloads in alphabetical order.</p>
+          </div>
 
-        <article class="download-card">
-          <div class="download-kicker">Community Release</div>
-          <h3>Fairbanks Alaska Mod Beta V.5</h3>
-          <p>Alaska-focused EM4Resource modification beta release.</p>
-          <a href="https://mega.nz/file/nqhygZSb#4m2GNreqUoGbT6eVVB9kjSQfU5mXA937XzxQfDCecCE" target="_blank" rel="noreferrer">Download</a>
-        </article>
+          <div class="download-list">
+            <article class="download-card third-party">
+              <div class="download-kicker">Modification</div>
+              <h3>999 OTF Mod</h3>
+              <p>Community-created 999 OTF modification, listed here for community access.</p>
+              <div class="download-meta">Released 3 Feb 2024</div>
+              <p class="download-credit">Credits are included in the original <code>CREDITS.pdf</code> packaged with the mod.</p>
+              <a href="https://mega.nz/file/JDMGnAyY#U8bPWmW2mjKn96mbAWQJ08Xe3LbD7LZvFb4Co37o2pY" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Community Release</div>
-          <h3>Upstate NY Mod Beta V6</h3>
-          <p>Upstate New York-focused EM4Resource modification beta release.</p>
-          <a href="https://mega.nz/file/erQHhCiR#CoMNAeOaUbrKdbz4IGVp0wBU-0iS-WOd5xOZSPM3VUs" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Latest Update</div>
+              <h3>Elisa City Modification Update</h3>
+              <p>Latest Elisa City modification update released by EM4Resource.</p>
+              <div class="download-meta">Released 25 May 2026</div>
+              <a href="https://mega.nz/file/Wj5nRa5A#-EnHb3uzf9vrKRFdmpPzpLIzeSibddV6KqhfVil26_M" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Modification</div>
-          <h3>NY Mass Border Mod V1</h3>
-          <p>New York / Massachusetts border-area modification release.</p>
-          <a href="https://mega.nz/file/qq4VgQIJ#sYJ8EyKl--41XrzyPJz2sNYDwE-yk4LRUkz8Lt9uZic" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Community Release</div>
+              <h3>Fairbanks Alaska Mod Beta V.5</h3>
+              <p>Alaska-focused EM4Resource modification beta release.</p>
+              <a href="https://mega.nz/file/nqhygZSb#4m2GNreqUoGbT6eVVB9kjSQfU5mXA937XzxQfDCecCE" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Modification</div>
-          <h3>Montana Wilderness Mod</h3>
-          <p>Wilderness-focused Montana modification release.</p>
-          <div class="download-meta">Released 2 Dec 2023</div>
-          <a href="https://mega.nz/file/GnIwiJ5Z#WbuSykBR_5qFa3R1kaT4BQyzzQCCFi94yMsmXd_UbWw" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Modification</div>
+              <h3>Monida Pass Mod</h3>
+              <p>Monida Pass modification release.</p>
+              <div class="download-meta">Released 30 Jun 2024</div>
+              <a href="https://mega.nz/file/f3g01ASZ#Arwi_td7SyVTFhuQgbYj-cNfV1gp6tlM8HSCnTfzt38" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Map</div>
-          <h3>Harlem's Test Map</h3>
-          <p>Test map release. Requires West Falls V1.5 Mod.</p>
-          <div class="download-meta">Released 2 Dec 2023</div>
-          <a href="https://mega.nz/file/qrhEwYbA#5_qNKScX5UyEOE3YbCbCJocdZ4qsJfDNyoY3zNiiN70" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Modification</div>
+              <h3>Montana Wilderness Mod</h3>
+              <p>Wilderness-focused Montana modification release.</p>
+              <div class="download-meta">Released 2 Dec 2023</div>
+              <a href="https://mega.nz/file/GnIwiJ5Z#WbuSykBR_5qFa3R1kaT4BQyzzQCCFi94yMsmXd_UbWw" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card third-party">
-          <div class="download-kicker">Modification</div>
-          <h3>West Falls V1.5 Mod</h3>
-          <p>Community-created West Falls Township modification, listed here for community access.</p>
-          <div class="download-meta">Released 8 Dec 2023</div>
-          <p class="download-credit">Credits: Itchboy, THVFD, Bama, Goog, E4Lm, NYCERU Mod Team, Hoppah (LA Mod Team), Jamnj88, EmC-Unit, EOC Mod Team, MikeyPI, SlateDragon.</p>
-          <a href="https://mega.nz/file/bHBzXSCB#taLupk_jGCQoIrtn4aL5E_1tLXMddXM8tcjrNBKt9ys" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Modification</div>
+              <h3>NY Mass Border Mod V1</h3>
+              <p>New York / Massachusetts border-area modification release.</p>
+              <a href="https://mega.nz/file/qq4VgQIJ#sYJ8EyKl--41XrzyPJz2sNYDwE-yk4LRUkz8Lt9uZic" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card third-party">
-          <div class="download-kicker">Modification</div>
-          <h3>999 OTF Mod</h3>
-          <p>Community-created 999 OTF modification, listed here for community access.</p>
-          <div class="download-meta">Released 3 Feb 2024</div>
-          <p class="download-credit">Credits are included in the original <code>CREDITS.pdf</code> packaged with the mod.</p>
-          <a href="https://mega.nz/file/JDMGnAyY#U8bPWmW2mjKn96mbAWQJ08Xe3LbD7LZvFb4Co37o2pY" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Modification</div>
+              <h3>South Central LA Mod Version 1</h3>
+              <p>South Central Los Angeles modification version 1.</p>
+              <div class="download-meta">Released 4 Jul 2025</div>
+              <a href="https://mega.nz/file/2j4HSLDZ#w4s3OmcuzSKcIXcn0UqQBK4FW37gXV9K6-lUJids-WA" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Modification</div>
-          <h3>Monida Pass Mod</h3>
-          <p>Monida Pass modification release.</p>
-          <div class="download-meta">Released 30 Jun 2024</div>
-          <a href="https://mega.nz/file/f3g01ASZ#Arwi_td7SyVTFhuQgbYj-cNfV1gp6tlM8HSCnTfzt38" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card">
+              <div class="download-kicker">Community Release</div>
+              <h3>Upstate NY Mod Beta V6</h3>
+              <p>Upstate New York-focused EM4Resource modification beta release.</p>
+              <a href="https://mega.nz/file/erQHhCiR#CoMNAeOaUbrKdbz4IGVp0wBU-0iS-WOd5xOZSPM3VUs" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card compact">
-          <div class="download-kicker">Audio</div>
-          <h3>Realistic Pistol Sound</h3>
-          <p>Small audio release for more realistic pistol sound effects.</p>
-          <div class="download-meta">Released 7 Jul 2024</div>
-          <a href="https://mega.nz/file/O3hHyRaQ#Ahn3S3ZAMkX2PSN2k8mxMhsBxkisQPMyOEDCpFjjyLI" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card third-party">
+              <div class="download-kicker">Modification</div>
+              <h3>West Falls V1.5 Mod</h3>
+              <p>Community-created West Falls Township modification, listed here for community access.</p>
+              <div class="download-meta">Released 8 Dec 2023</div>
+              <p class="download-credit">Credits: Itchboy, THVFD, Bama, Goog, E4Lm, NYCERU Mod Team, Hoppah (LA Mod Team), Jamnj88, EmC-Unit, EOC Mod Team, MikeyPI, SlateDragon.</p>
+              <a href="https://mega.nz/file/bHBzXSCB#taLupk_jGCQoIrtn4aL5E_1tLXMddXM8tcjrNBKt9ys" target="_blank" rel="noreferrer">Download</a>
+            </article>
+          </div>
+        </section>
 
-        <article class="download-card archived">
-          <div class="download-kicker">Archived Alpha</div>
-          <h3>Fairbanks Alaska Mod Alpha V.4</h3>
-          <p>Outdated alpha version preserved for historical reference.</p>
-          <div class="download-meta">Released 24 Jul 2024</div>
-          <a href="https://mega.nz/file/DmBjiTgZ#ibnu95LPoid3etSmyMoYNK09RnXingWPQ8PR4WvjjhI" target="_blank" rel="noreferrer">Download</a>
-        </article>
+        <section class="download-section">
+          <div class="download-section-header">
+            <div>
+              <span>Resources</span>
+              <h3>Maps and audio</h3>
+            </div>
+            <p>Smaller downloads and add-on resources.</p>
+          </div>
 
-        <article class="download-card archived">
-          <div class="download-kicker">Archived Alpha</div>
-          <h3>Fairbanks Alaska Mod Alpha V.45</h3>
-          <p>Outdated alpha version preserved for historical reference.</p>
-          <div class="download-meta">Released 24 Jul 2024</div>
-          <a href="https://mega.nz/file/W64kxT5Q#JhVlBmfaADqaGadcrRqQ28uGe9y9lOIzWTQiZtDMS6E" target="_blank" rel="noreferrer">Download</a>
-        </article>
+          <div class="download-list download-list-small">
+            <article class="download-card">
+              <div class="download-kicker">Map</div>
+              <h3>Harlem's Test Map</h3>
+              <p>Test map release. Requires West Falls V1.5 Mod.</p>
+              <div class="download-meta">Released 2 Dec 2023</div>
+              <a href="https://mega.nz/file/qrhEwYbA#5_qNKScX5UyEOE3YbCbCJocdZ4qsJfDNyoY3zNiiN70" target="_blank" rel="noreferrer">Download</a>
+            </article>
 
-        <article class="download-card">
-          <div class="download-kicker">Modification</div>
-          <h3>South Central LA Mod Version 1</h3>
-          <p>South Central Los Angeles modification version 1.</p>
-          <div class="download-meta">Released 4 Jul 2025</div>
-          <a href="https://mega.nz/file/2j4HSLDZ#w4s3OmcuzSKcIXcn0UqQBK4FW37gXV9K6-lUJids-WA" target="_blank" rel="noreferrer">Download</a>
-        </article>
+            <article class="download-card compact">
+              <div class="download-kicker">Audio</div>
+              <h3>Realistic Pistol Sound</h3>
+              <p>Small audio release for more realistic pistol sound effects.</p>
+              <div class="download-meta">Released 7 Jul 2024</div>
+              <a href="https://mega.nz/file/O3hHyRaQ#Ahn3S3ZAMkX2PSN2k8mxMhsBxkisQPMyOEDCpFjjyLI" target="_blank" rel="noreferrer">Download</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="download-section download-section-archive">
+          <div class="download-section-header">
+            <div>
+              <span>Archive</span>
+              <h3>Older builds</h3>
+            </div>
+            <p>Legacy files kept available for users who need a specific older version.</p>
+          </div>
+
+          <div class="download-list download-list-small">
+            <article class="download-card archived">
+              <div class="download-kicker">Previous Release</div>
+              <h3>Beaverhead County Modification V1</h3>
+              <p>Original Beaverhead County Modification V1 release, preserved for users who need the older build.</p>
+              <div class="download-meta">Released 5 Feb 2026</div>
+              <a href="https://mega.nz/file/ev5EzTSY#TBro-a3t3o8jnnduSZ5Q0NKZOgDJpivCu2w1ffuppzg" target="_blank" rel="noreferrer">Download</a>
+            </article>
+
+            <article class="download-card archived">
+              <div class="download-kicker">Archived Alpha</div>
+              <h3>Fairbanks Alaska Mod Alpha V.4</h3>
+              <p>Outdated alpha version preserved for historical reference.</p>
+              <div class="download-meta">Released 24 Jul 2024</div>
+              <a href="https://mega.nz/file/DmBjiTgZ#ibnu95LPoid3etSmyMoYNK09RnXingWPQ8PR4WvjjhI" target="_blank" rel="noreferrer">Download</a>
+            </article>
+
+            <article class="download-card archived">
+              <div class="download-kicker">Archived Alpha</div>
+              <h3>Fairbanks Alaska Mod Alpha V.45</h3>
+              <p>Outdated alpha version preserved for historical reference.</p>
+              <div class="download-meta">Released 24 Jul 2024</div>
+              <a href="https://mega.nz/file/W64kxT5Q#JhVlBmfaADqaGadcrRqQ28uGe9y9lOIzWTQiZtDMS6E" target="_blank" rel="noreferrer">Download</a>
+            </article>
+          </div>
+        </section>
       </div>
     `
   },

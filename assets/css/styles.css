@@ -1142,38 +1142,102 @@ body {
 
 .download-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 12px;
+  gap: 18px;
   margin-top: 14px;
+}
+
+.download-section {
+  border: 1px solid rgba(148, 177, 205, 0.22);
+  border-radius: 14px;
+  padding: 15px;
+  background:
+    radial-gradient(circle at top right, rgba(42, 167, 223, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(10, 23, 38, 0.76) 0%, rgba(7, 18, 30, 0.82) 100%);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+}
+
+.download-section-featured {
+  border-color: rgba(125, 189, 255, 0.3);
+}
+
+.download-section-archive {
+  background:
+    linear-gradient(180deg, rgba(16, 24, 34, 0.78) 0%, rgba(8, 16, 26, 0.84) 100%);
+}
+
+.download-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 14px;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(148, 177, 205, 0.18);
+}
+
+.download-section-header span {
+  display: inline-flex;
+  margin-bottom: 5px;
+  color: #9ed6ff;
+  font-size: 0.67rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.download-section-header h3 {
+  margin: 0;
+  color: #edf6ff;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.download-section-header p {
+  max-width: 430px;
+  margin: 0;
+  color: #9eb0c2;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.download-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 12px;
+}
+
+.download-list-featured {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+.download-list-small {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .download-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 205px;
+  min-height: 210px;
   border: 1px solid rgba(148, 177, 205, 0.26);
-  border-radius: 8px;
-  padding: 14px;
+  border-left: 4px solid rgba(125, 189, 255, 0.42);
+  border-radius: 12px;
+  padding: 14px 14px 13px;
   background:
-    radial-gradient(circle at top right, rgba(42, 167, 223, 0.12), transparent 36%),
-    linear-gradient(180deg, rgba(15, 34, 54, 0.96), rgba(9, 22, 37, 0.96));
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+    linear-gradient(180deg, rgba(14, 31, 50, 0.96), rgba(8, 20, 34, 0.96));
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
 }
 
 .download-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 4px;
-  border-radius: 8px 8px 0 0;
-  background: linear-gradient(90deg, #1688c7, #23a455);
+  content: none;
 }
 
 .download-card.featured {
-  grid-column: 1 / -1;
-  min-height: 175px;
+  min-height: 205px;
   border-color: rgba(216, 79, 111, 0.4);
+  border-left-color: #d43535;
   background:
     radial-gradient(circle at top right, rgba(242, 184, 75, 0.16), transparent 34%),
     linear-gradient(180deg, rgba(54, 24, 39, 0.96), rgba(28, 18, 30, 0.96));
@@ -1181,8 +1245,7 @@ body {
 }
 
 .download-card.featured::before {
-  height: 5px;
-  background: linear-gradient(90deg, #b81f57, #f2b84b);
+  content: none;
 }
 
 .download-card.featured .download-kicker {
@@ -1199,9 +1262,9 @@ body {
 }
 
 .download-card.e4mplus-release {
-  grid-column: 1 / -1;
-  min-height: 175px;
+  min-height: 205px;
   border-color: rgba(125, 189, 255, 0.38);
+  border-left-color: #2aa7df;
   background:
     radial-gradient(circle at top left, rgba(31, 95, 191, 0.26), transparent 36%),
     radial-gradient(circle at top right, rgba(242, 184, 75, 0.12), transparent 34%),
@@ -1210,8 +1273,7 @@ body {
 }
 
 .download-card.e4mplus-release::before {
-  height: 5px;
-  background: linear-gradient(90deg, #1f5fbf, #26a269, #f2b84b);
+  content: none;
 }
 
 .download-card.e4mplus-release .download-kicker {
@@ -1228,17 +1290,19 @@ body {
 }
 
 .download-card.archived {
+  border-left-color: rgba(148, 177, 205, 0.42);
   background: linear-gradient(180deg, rgba(23, 32, 43, 0.96) 0%, rgba(13, 22, 32, 0.96) 100%);
 }
 
 .download-card.third-party {
+  border-left-color: rgba(255, 177, 105, 0.48);
   background:
     radial-gradient(circle at top right, rgba(154, 123, 35, 0.13), transparent 36%),
     linear-gradient(180deg, rgba(24, 34, 46, 0.96), rgba(13, 22, 32, 0.96));
 }
 
 .download-card.third-party::before {
-  background: linear-gradient(90deg, #5d6b7a, #9a7b23);
+  content: none;
 }
 
 .download-card.compact {
@@ -1246,36 +1310,46 @@ body {
 }
 
 .download-kicker {
+  align-self: flex-start;
+  min-height: 22px;
+  padding: 4px 8px;
+  border: 1px solid rgba(125, 189, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(125, 189, 255, 0.08);
   color: #9ed6ff;
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 900;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
 .download-card h3 {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   color: #edf6ff;
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 1.02rem;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
 }
 
 .download-card p {
-  margin: 8px 0 0;
-  color: #b7c6d6;
-  line-height: 1.45;
-  font-size: 0.9rem;
+  margin: 9px 0 0;
+  color: #bccbda;
+  line-height: 1.5;
+  font-size: 0.86rem;
 }
 
 .download-card .download-credit {
-  color: #d0dce8;
-  font-size: 0.84rem;
-  line-height: 1.4;
+  color: #9eb0c2;
+  font-size: 0.78rem;
+  line-height: 1.42;
 }
 
 .download-meta {
-  margin-top: 10px;
-  color: #9eb0c2;
-  font-size: 0.76rem;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(148, 177, 205, 0.16);
+  color: #d0dce8;
+  font-size: 0.74rem;
   font-weight: 800;
 }
 
@@ -1283,20 +1357,21 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
+  align-self: stretch;
   min-height: 32px;
   margin-top: auto;
   padding: 7px 11px;
-  border-radius: 6px;
-  background: #1688c7;
-  color: #fff;
+  border: 1px solid rgba(125, 189, 255, 0.26);
+  border-radius: 8px;
+  background: rgba(22, 136, 199, 0.88);
+  color: #ffffff;
   font-weight: 900;
   text-decoration: none;
-  box-shadow: 0 8px 18px rgba(22, 136, 199, 0.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 .download-card a:hover {
-  background: #0c6ea4;
+  background: #1e9ee3;
 }
 
 .article-body tr.em4resource-release td {
