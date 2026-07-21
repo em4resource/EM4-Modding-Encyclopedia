@@ -98,34 +98,25 @@ body {
 .creator-card {
   position: relative;
   overflow: hidden;
-  width: min(350px, 34vw);
-  border: 1px solid rgba(148, 177, 205, 0.3);
-  border-radius: 14px;
-  padding: 16px 18px 16px 20px;
+  width: min(330px, 32vw);
+  border: 1px solid rgba(148, 177, 205, 0.22);
+  border-radius: 10px;
+  padding: 13px 16px 13px 18px;
   background:
-    radial-gradient(circle at 88% 18%, rgba(42, 167, 223, 0.22), transparent 35%),
-    linear-gradient(135deg, rgba(12, 28, 45, 0.94) 0%, rgba(19, 42, 65, 0.92) 100%);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
+    linear-gradient(180deg, rgba(12, 27, 44, 0.92) 0%, rgba(8, 19, 32, 0.94) 100%);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
 .creator-card::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: 6px;
-  background: linear-gradient(180deg, #d43535, rgba(255, 255, 255, 0.75) 48%, #2aa7df);
+  width: 4px;
+  background: linear-gradient(180deg, #2aa7df, #d43535);
 }
 
 .creator-card::after {
-  content: "";
-  position: absolute;
-  right: 14px;
-  top: 13px;
-  width: 58px;
-  height: 18px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(212, 53, 53, 0.72), rgba(255, 255, 255, 0.86), rgba(42, 167, 223, 0.72));
-  opacity: 0.35;
+  content: none;
 }
 
 .creator-kicker,
@@ -138,19 +129,19 @@ body {
 
 .creator-kicker {
   color: #9ed6ff;
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   font-weight: 900;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .creator-card strong {
-  margin-top: 8px;
-  color: #ffffff;
-  font-size: 0.82rem;
+  margin-top: 5px;
+  color: #c5d4e3;
+  font-size: 0.66rem;
   line-height: 1.25;
-  font-weight: 900;
-  letter-spacing: 0.035em;
+  font-weight: 800;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
