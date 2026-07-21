@@ -112,7 +112,7 @@ body {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: linear-gradient(180deg, #2aa7df, #d43535);
+  background: rgba(125, 189, 255, 0.42);
 }
 
 .creator-card::after {
@@ -326,7 +326,7 @@ body {
   position: absolute;
   inset: auto 0 0;
   height: 3px;
-  background: linear-gradient(90deg, #d43535, #d9efff, #2aa7df);
+  background: #d43535;
 }
 
 .downloads-menu-button:hover {
@@ -494,11 +494,7 @@ body {
 }
 
 .site-notice::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 4px;
-  background: linear-gradient(90deg, #2ecc71, #d9efff, #25a2c7);
+  content: none;
 }
 
 .e4mplus-notice {
@@ -510,6 +506,10 @@ body {
 }
 
 .e4mplus-notice::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
   background: linear-gradient(90deg, #2aa7df, #d9efff, #d43535);
 }
 
@@ -618,7 +618,7 @@ body {
 }
 
 .downloads-notice::after {
-  background: linear-gradient(90deg, #9ab7df, #d9efff, #d43535);
+  content: none;
 }
 
 .downloads-notice-link {
