@@ -8,9 +8,16 @@
   <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260719-e4mplus-readability">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-video-bg-web">
 </head>
 <body>
+  <div class="site-video-backdrop" aria-hidden="true">
+    <video class="site-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/video/video_background_web.mp4" type="video/mp4">
+    </video>
+    <div class="site-bg-overlay"></div>
+  </div>
+
   <div class="shell">
     <header class="topbar">
       <div class="brand">
@@ -20,10 +27,10 @@
         </div>
         <p>Welcome to the EM4Resource Wiki. You will find documentation for Emergency 4 development, curated by EM4Resource developers and selected community members.</p>
       </div>
-      <div class="header-meta" aria-label="Site status">
-        <span>200+ articles</span>
-        <span>Editor + SDK</span>
-        <span>Case studies</span>
+      <div class="header-meta creator-card" aria-label="EM4Resource focus">
+        <span class="creator-kicker">Built for EM4 creators</span>
+        <strong>Mods, tools, guides, and support</strong>
+        <span class="creator-strip">Resources for building, fixing, and releasing Emergency 4 projects.</span>
       </div>
     </header>
 
@@ -67,7 +74,8 @@
         </section>
 
         <section class="site-notice memory-patcher-notice" aria-label="Important EM4 Memory Patcher notice">
-          <div>
+          <div class="notice-copy">
+            <span class="notice-badge memory-badge">Required Tool</span>
             <h2>EM4 Memory Patcher Recommended</h2>
             <p>Most modern Emergency 4 mods benefit from the EM4 Memory Patcher. It helps the game handle larger modern mod files and reduces memory-related crashes.</p>
           </div>
@@ -75,7 +83,8 @@
         </section>
 
         <section class="site-notice downloads-notice" aria-label="EM4Resource modification downloads notice">
-          <div>
+          <div class="notice-copy">
+            <span class="notice-badge downloads-badge">Downloads</span>
             <h2>Emergency 4 Modification Downloads</h2>
             <p>Find current EM4Resource releases, featured mods, archived builds, maps, and community files available through the EM4Resource download library.</p>
           </div>
@@ -103,6 +112,6 @@
   </template>
 
   <script src="assets/js/script-case-studies.js?v=20260521-em4resource-author-wording"></script>
-  <script src="assets/js/app.js?v=20260719-e4mplus-readability"></script>
+  <script src="assets/js/app.js?v=20260720-video-bg-web"></script>
 </body>
 </html>

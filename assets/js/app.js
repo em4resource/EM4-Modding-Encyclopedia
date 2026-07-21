@@ -5,6 +5,16 @@ const articles = [
     tags: ["game overview", "beginner", "encyclopedia"],
     body: `
       <p><code>Emergency 4: Global Fighters for Life</code>, released in North America as <code>911: First Responders</code>, is a real-time emergency management game about commanding fire, EMS, police, and technical rescue resources. The player coordinates units, vehicles, equipment, rescues, arrests, evacuation, treatment, transport, and incident resolution from an overhead command view.</p>
+      <div class="overview-image-grid">
+        <figure>
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/757210/header.jpg" alt="Emergency 4 Deluxe Steam artwork">
+          <figcaption><strong>Emergency 4 Deluxe</strong><span>European / Deluxe release branding used for the Emergency 4 version of the game.</span></figcaption>
+        </figure>
+        <figure>
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323610/header.jpg" alt="911: First Responders Steam artwork">
+          <figcaption><strong>911: First Responders</strong><span>North American release branding for the same core Emergency 4 game platform.</span></figcaption>
+        </figure>
+      </div>
       <p>The game remains active because its editor, prototype system, map tools, script system, UI files, audio folders, and mod structure allow players to build local departments, custom maps, new missions, gameplay systems, and full conversions.</p>
       <p>This encyclopedia documents installation, editor use, assets, maps, prototypes, scripting, SDK behavior, troubleshooting, and case studies from real Emergency 4 scripts.</p>
     `
@@ -4361,15 +4371,20 @@ function renderCategories() {
       const button = document.createElement("button");
       button.type = "button";
       button.className = `menu-button${category === activeCategory ? " active" : ""}`;
-      if (category === "Discord Rules") {
+      if (category === "Discord Rules" || category === "EM4Resource Downloads") {
         const icon = document.createElement("span");
-        icon.className = "menu-icon discord-menu-icon";
+        icon.className = category === "Discord Rules"
+          ? "menu-icon discord-menu-icon"
+          : "menu-icon downloads-menu-icon";
         icon.setAttribute("aria-hidden", "true");
-        icon.textContent = "D";
+        icon.textContent = category === "Discord Rules" ? "D" : "↓";
 
         const label = document.createElement("span");
         label.textContent = category;
 
+        if (category === "EM4Resource Downloads") {
+          button.classList.add("downloads-menu-button");
+        }
         button.appendChild(icon);
         button.appendChild(label);
       } else {
