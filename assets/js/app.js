@@ -96,14 +96,14 @@ const articles = [
             <article class="featured-download featured-download-blue">
               <div class="featured-download-mark" aria-hidden="true">
                 <strong>E4M+</strong>
-                <span>Launcher 2.0</span>
+                <span>Launcher 3.0</span>
               </div>
               <div class="featured-download-content">
                 <div class="download-facts"><span>Official tool</span><span>24 Jul 2026</span></div>
-                <h3>E4M+ Launcher 2.0</h3>
+                <h3>E4M+ Launcher 3.0</h3>
                 <p>Launch E4M+ editor and game sessions, convert standard maps, and use supported US or EU road layouts for expanded map projects.</p>
               </div>
-              <a class="featured-download-action" href="https://mega.nz/file/Dnx0nL6Q#rNUHtfflQVQHS2AUi6SpPD4SkbeZ-0NDFRtzam6uenI" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
+              <a class="featured-download-action" href="https://mega.nz/file/SngUUbqD#CIqVqIEy_xMWCPD2sgL1UmbCPTdR3kZ9ZX6Jgzcc_Wc" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
             </article>
 
             <article class="featured-download featured-download-red">
@@ -306,14 +306,14 @@ const articles = [
   },
   {
     category: "E4M+ Launcher",
-    title: "E4M+ Launcher 2.0",
+    title: "E4M+ Launcher 3.0",
     tags: ["E4M+", "launcher", "map converter", "expanded maps", "EM4Resource", "download"],
     body: `
       <div class="e4mplus-release-header">
-        <span>E4M+ Launcher 2.0</span>
+        <span>E4M+ Launcher 3.0</span>
         <h3>Expanded map workflow for Emergency 4 creators</h3>
         <p>E4M+ is an EM4Resource launcher and map-project tool for supported Emergency 4 / 911: First Responders installations. It is built for creators who want larger map projects, higher-resolution terrain workflows, and a cleaner way to prepare E4M+ editor and game sessions.</p>
-        <a href="https://mega.nz/file/Dnx0nL6Q#rNUHtfflQVQHS2AUi6SpPD4SkbeZ-0NDFRtzam6uenI" target="_blank" rel="noreferrer">Download E4M+ Launcher 2.0</a>
+        <a href="https://mega.nz/file/SngUUbqD#CIqVqIEy_xMWCPD2sgL1UmbCPTdR3kZ9ZX6Jgzcc_Wc" target="_blank" rel="noreferrer">Download E4M+ Launcher 3.0</a>
       </div>
 
       <div class="e4mplus-compatibility-note">
