@@ -22,7 +22,7 @@ const articles = [
   {
     category: "Start Here",
     title: "About EM4Resource",
-    tags: ["EM4Resource", "staff", "development team", "about"],
+    tags: ["EM4Resource", "staff", "development team", "contributors", "about"],
     body: `
       <p>EM4Resource develops modifications, provides game support, publishes documentation, and maintains community resources for Emergency 4 development.</p>
       <p><strong>EM4Resource is not affiliated with Sixteen Tons Entertainment, the creators of the Emergency series games.</strong></p>
@@ -31,7 +31,7 @@ const articles = [
       <table>
         <thead><tr><th>Role</th><th>Name</th></tr></thead>
         <tbody>
-          <tr><td>Founder and Development Team Lead</td><td>Harlem</td></tr>
+          <tr><td>Founder &amp; Development Team Lead</td><td>Harlem</td></tr>
           <tr><td>Administrator and Development Team Co-Lead</td><td>Slamming</td></tr>
           <tr><td>Systems Operations Administrator</td><td>Harp</td></tr>
           <tr><td>Public Relations Administrator</td><td>Lucas001</td></tr>
@@ -49,12 +49,20 @@ const articles = [
           <tr><td>Development Team Lead</td><td>Harlem</td></tr>
           <tr><td>Development Team Co-Lead</td><td>Slamming</td></tr>
           <tr><td>Development Team Lead Audio</td><td>TymeLess</td></tr>
-          <tr><td>Development Team Lead Scripter</td><td>TTBL255</td></tr>
+          <tr><td>Development Team Scripter</td><td>TTBL255</td></tr>
+          <tr><td>Development Team Scripter</td><td>Timber</td></tr>
+          <tr><td>Development Team Member</td><td>V_0</td></tr>
+          <tr><td>Development Team Member</td><td>fknowen</td></tr>
+        </tbody>
+      </table>
+
+      <h3>EM4Resource Contributors</h3>
+      <p>Community developers who have had involvement with making our modifications better.</p>
+      <table>
+        <thead><tr><th>Role</th><th>Name</th></tr></thead>
+        <tbody>
           <tr><td>Development Team Member</td><td>59Fire</td></tr>
           <tr><td>Development Team Member</td><td>SlateDragon</td></tr>
-          <tr><td>Development Team Member</td><td>V_0</td></tr>
-          <tr><td>Development Team Member</td><td>Timber</td></tr>
-          <tr><td>Development Team Member</td><td>guj</td></tr>
         </tbody>
       </table>
     `
@@ -103,7 +111,7 @@ const articles = [
                 <h3>E4M+ Launcher 3.5</h3>
                 <p>Launch E4M+ editor and game sessions, convert standard maps, and use supported US or EU road layouts for expanded map projects.</p>
               </div>
-              <a class="featured-download-action" href="https://mega.nz/file/3yoHHZIR#Miq6sEsmRg1KHnbayQnkCNeWmo6dFkQKFThyAO-su90" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
+              <a class="featured-download-action" href="https://mega.nz/file/LjoE2QzZ#dP1heAXbI1Tj4oH0yTEsBuiGi3mn2mgBQW0ZAYW-3dY" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
             </article>
 
             <article class="featured-download featured-download-red">
@@ -313,7 +321,7 @@ const articles = [
         <span>E4M+ Launcher 3.5</span>
         <h3>Expanded map workflow for Emergency 4 creators</h3>
         <p>E4M+ is an EM4Resource launcher and map-project tool for supported Emergency 4 / 911: First Responders installations. It is built for creators who want larger map projects, higher-resolution terrain workflows, and a cleaner way to prepare E4M+ editor and game sessions.</p>
-        <a href="https://mega.nz/file/3yoHHZIR#Miq6sEsmRg1KHnbayQnkCNeWmo6dFkQKFThyAO-su90" target="_blank" rel="noreferrer">Download E4M+ Launcher 3.5</a>
+        <a href="https://mega.nz/file/LjoE2QzZ#dP1heAXbI1Tj4oH0yTEsBuiGi3mn2mgBQW0ZAYW-3dY" target="_blank" rel="noreferrer">Download E4M+ Launcher 3.5</a>
       </div>
 
       <div class="e4mplus-compatibility-note">
