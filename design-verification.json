@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "article_content_preserved": 280,
+  "categories_accessible": 50,
+  "topic_groups": 8,
+  "route_and_layout_checks": 726,
+  "mobile_and_desktop_widths": [
+    320,
+    360,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "download_links_preserved": 16,
+  "local_content_links_checked": 40,
+  "javascript_errors": [],
+  "horizontal_overflow": [],
+  "keyboard_search_history_navigation_and_mobile_menus": "passed",
+  "photo_credit": "Steve_S \u2014 999 OTF Modification",
+  "photo_preserved_byte_for_byte": true,
+  "community_logos_loaded": true,
+  "removed_game_menu_media_and_decorative_labels": true
+}

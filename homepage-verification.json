@@ -1,0 +1,19 @@
+{
+  "backup_verified_files": 79,
+  "unchanged_article_data": true,
+  "unchanged_file_library": true,
+  "screenshots": 6,
+  "crossfade_seconds": 2,
+  "browser_checks": "Zero gap above and below hero; height equals 60% of viewport. At 390x844, height 506.39px, no horizontal overflow, links clear of credit. No slideshow buttons. UI crop visually reviewed; 12-second automatic rotation retained.",
+  "publicly_deployed": false,
+  "interval_seconds": 12,
+  "slideshow_controls": false,
+  "automatic_in_reduced_motion": true,
+  "framing": "60vh full-width cover banner; no letterboxing or separate credit strip; 5% edge crop on three HUD screenshots.",
+  "reference_measurement": {
+    "url": "https://web.archive.org/web/20220301041855/https://gtapolicemods.com/",
+    "selector": ".landingHero",
+    "height_at_900px_viewport": 540,
+    "height_at_1000px_viewport": 600
+  }
+}

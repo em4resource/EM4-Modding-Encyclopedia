@@ -1,0 +1,53 @@
+{
+  "viewports": [
+    {
+      "buttonHeight": 30,
+      "headline": "The latest and greatest\nof EM4 modding.",
+      "imageFit": "contain",
+      "linksClear": true,
+      "overflow": false,
+      "removedBars": 0,
+      "width": 320
+    },
+    {
+      "buttonHeight": 30,
+      "headline": "The latest and greatest\nof EM4 modding.",
+      "imageFit": "contain",
+      "linksClear": true,
+      "overflow": false,
+      "removedBars": 0,
+      "width": 390
+    },
+    {
+      "buttonHeight": 32,
+      "headline": "The latest and greatest\nof EM4 modding.",
+      "imageFit": "contain",
+      "linksClear": true,
+      "overflow": false,
+      "removedBars": 0,
+      "width": 768
+    },
+    {
+      "buttonHeight": 32,
+      "headline": "The latest and greatest\nof EM4 modding.",
+      "imageFit": "contain",
+      "linksClear": true,
+      "overflow": false,
+      "removedBars": 0,
+      "width": 1440
+    }
+  ],
+  "backup": "D:\\New project\\Backups\\EM4 Website\\Before refined header 2026-09-13",
+  "unchanged": [
+    "assets/js/community-gallery.js",
+    "assets/js/data.js",
+    "assets/js/script-case-studies.js",
+    "assets/js/file-library.js"
+  ],
+  "deployed": false,
+  "latest_change": {
+    "discord_banner_restored": true,
+    "computed_banner_and_button_color": "rgb(88, 101, 242)",
+    "utility_bar_absent": true
+  }
+}
