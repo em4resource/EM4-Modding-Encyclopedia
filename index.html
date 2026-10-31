@@ -719,6 +719,208 @@ body:has(main.is-home) .site-footer{background:#17181b;border:0}
 @media(max-width:650px){.tutorial-intro{padding-top:4px;padding-bottom:24px}.tutorial-intro h1{font-size:27px}.tutorial-intro>p{font-size:16px}.tutorial-map-heading{align-items:center}.tutorial-map-heading h2{font-size:18px}.tutorial-map-heading>a{font-size:12px}.tutorial-parts{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}.tutorial-parts a{padding:12px 5px}.tutorial-parts a:last-child{grid-column:1/-1}.tutorial-parts span{font-size:14px}.tutorial-lesson-links{columns:1}.tutorial-chapter{padding-top:20px}.tutorial-chapter h3{font-size:17px}.tutorial-lesson-links li{padding:8px 0}.tutorial-part-content>header h2{font-size:22px}.lesson-sidebar{padding:16px 20px;display:block}.lesson-sidebar details{margin-top:14px}.lesson-content{padding:0 20px 40px}.lesson-breadcrumb .breadcrumb{padding-top:20px;font-size:11px}.lesson-title h1{font-size:27px}.lesson-body{font-size:15px;line-height:1.85}.lesson-body h2,.lesson-body h3{font-size:21px}.lesson-body .lesson-code pre{padding:12px 10px;font-size:12px}.lesson-code .code-line-numbers{padding-right:10px;margin-right:10px}.lesson-body td,.lesson-body th{padding:8px;font-size:13px}.lesson-pager{gap:18px}.lesson-pager span{font-size:13px}.tutorial-search input{font-size:14px}.tutorial-search button{padding-left:15px;padding-right:15px}}
 
 </style>
+<style id="guides-redesign">
+/* Guides redesign: scoped to the library and reader. */
+.gl-shell{--gl-bg:#191e25;--gl-panel:#222932;--gl-line:#39414b;--gl-muted:#abb8c7;--gl-accent:#78d2e7;max-width:1320px;margin:auto;padding:0 36px 64px;color:#e7edf4;font:15px/1.6 "Segoe UI",Arial,sans-serif}
+.gl-shell *{box-sizing:border-box}.gl-shell a{color:inherit;text-decoration:none}.gl-shell a:hover{color:var(--gl-accent)}.gl-shell :is(a,button,input,select,summary):focus-visible{outline:2px solid var(--gl-accent);outline-offset:4px}
+.gl-shell .breadcrumb{font-size:12px;line-height:1.6;padding:24px 0;flex-wrap:wrap;gap:8px}.gl-shell .breadcrumb>span:last-child{overflow-wrap:anywhere}.gl-shell h1,.gl-shell h2,.gl-shell h3{color:#f5f7fa;letter-spacing:-.025em;margin:0;font-family:"Segoe UI",Arial,sans-serif}.gl-shell p{color:var(--gl-muted);margin:0}.gl-eyebrow{font-size:11px!important;font-weight:650;letter-spacing:.13em;line-height:1.5;color:var(--gl-accent)!important}.gl-hero{padding:24px 0 36px;border-bottom:1px solid var(--gl-line)}.gl-hero h1{font-size:clamp(32px,3.4vw,46px);line-height:1.15;margin:12px 0 15px}.gl-hero>p{font-size:18px}.gl-search{display:flex;align-items:center;gap:12px;border:1px solid #53616f;border-radius:7px;background:#242c36;padding:6px 7px 6px 16px;max-width:760px;margin-top:25px}.gl-search>svg{width:21px;height:21px;flex:none;color:var(--gl-muted)}.gl-search input{background:transparent!important;border:0!important;box-shadow:none!important;color:#f6f8fb;min-width:0;flex:1;width:100%;height:40px;padding:5px 0;font:inherit;outline-offset:0!important}.gl-search input::placeholder{color:#aab7c6}.gl-search button{background:#79d3e8;border:1px solid #79d3e8;color:#102833;border-radius:4px;min-height:42px;padding:8px 23px;font:650 14px "Segoe UI",Arial,sans-serif;cursor:pointer}.gl-search button:hover{background:#a0e8f6}.gl-search-hints{display:flex;flex-wrap:wrap;gap:8px 19px;margin-top:13px;font-size:12px;color:#c3cfdd}.gl-search-hints>span{color:#8798aa}.gl-search-hints a{text-decoration:underline;text-decoration-color:#526477;text-underline-offset:4px}.gl-entry-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:24px;margin:32px 0 45px}.gl-start,.gl-help{padding:25px 28px;border:1px solid var(--gl-line);border-radius:8px;background:#222932}.gl-start{border-top:3px solid var(--gl-accent)}.gl-help{background:transparent;border-top:3px solid #b1bdcc}.gl-entry-grid h2{font-size:23px;margin:8px 0}.gl-entry-grid p{font-size:14px}.gl-start ol{list-style:none;margin:21px 0 15px;padding:0;display:grid;gap:12px}.gl-start li{display:flex;align-items:center;gap:14px}.gl-start li>span{display:grid;place-items:center;flex:none;width:25px;height:25px;border-radius:50%;border:1px solid #4c6874;color:#a9e6f2;font-size:11px}.gl-start li>a{font-weight:600;font-size:14px}.gl-text-link{color:var(--gl-accent)!important;font-size:13px;font-weight:600}.gl-help-links{display:grid;margin:18px 0 16px}.gl-help-links a{padding:8px 0;border-bottom:1px solid var(--gl-line);font-size:14px}.gl-section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:0 0 21px}.gl-section-title h2{font-size:25px;margin-top:7px;line-height:1.3}.gl-section-title>a,.gl-section-title>p{font-size:13px;flex-shrink:0}.gl-section-title>a{color:var(--gl-accent)}.gl-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.gl-topic-card{display:block;padding:23px;border:1px solid var(--gl-line);border-radius:7px;background:#222932;transition:border-color .15s,background .15s}.gl-topic-card:hover{border-color:var(--gl-accent);background:#283340}.gl-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;color:#a3b3c5;font-size:11px}.gl-icon{display:grid;place-items:center;color:var(--gl-accent)}.gl-icon svg{width:27px;height:27px}.gl-topic-card h3{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:20px;line-height:1.3;margin-bottom:9px}.gl-topic-card h3>span{color:#7d95aa;font-size:19px;font-weight:400}.gl-topic-card p{font-size:14px;line-height:1.65;max-width:32em}.gl-reference{margin-top:44px;padding-top:34px;border-top:1px solid var(--gl-line)}.gl-reference-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.gl-reference-grid>a{display:flex;align-items:center;gap:18px;padding:19px 0;border-bottom:1px solid var(--gl-line)}.gl-reference-grid>a>span:nth-child(2){flex:1}.gl-reference-grid strong{font-size:15px;display:block}.gl-reference-grid small{color:var(--gl-muted);display:block;font-size:13px;margin-top:3px}.gl-reference-grid svg{width:23px;height:23px}.gl-bottom-help{margin-top:35px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px}.gl-bottom-help a{color:var(--gl-accent)}
+.gl-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:45px;margin-top:12px}.gl-sidebar{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;align-self:start;font-size:13px;padding-right:16px;scrollbar-width:thin}.gl-sidebar>summary{display:none}.gl-sidebar nav{display:grid;gap:3px}.gl-sidebar nav>a{padding:8px 11px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-radius:4px;color:#bec9d7;line-height:1.35}.gl-sidebar nav>a:hover{background:#27323d;color:#fff}.gl-sidebar nav>a[aria-current]{background:#243b47;color:#a4e6f3;border-left:2px solid var(--gl-accent);padding-left:9px}.gl-sidebar nav>a>span{font-size:10px;color:#91a2b5}.gl-sidebar nav>p{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#8fa1b6;margin:22px 11px 5px}.gl-list-main{min-width:0}.gl-list-header h1{font-size:35px;line-height:1.2;margin:10px 0 13px}.gl-list-header>p{font-size:16px;max-width:650px}.gl-list-main .gl-search{max-width:none}.gl-recommended{background:#232e38;border:1px solid #3d5260;border-left:3px solid #78d2e7;border-radius:5px;padding:19px 22px;margin:24px 0}.gl-recommended h2{font-size:15px;margin-bottom:10px}.gl-recommended>div{display:grid}.gl-recommended a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:7px 0;font-size:14px;color:#c3e2ed}.gl-recommended a+ a{border-top:1px solid #354552}.gl-filters{display:flex;align-items:end;gap:15px;margin:26px 0}.gl-filters label{display:grid;gap:7px;font-size:11px;color:#b7c5d4}.gl-filters select{color:#e5edf7;border:1px solid #485565;border-radius:4px;background:#242c36;padding:10px 30px 10px 11px;min-height:43px;font:13px "Segoe UI",Arial,sans-serif;max-width:100%}.gl-filters>a{margin-left:auto;font-size:13px;color:var(--gl-accent);padding-bottom:10px}.gl-result-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #51606f;padding-bottom:12px;gap:15px}.gl-result-heading h2{font-size:16px}.gl-result-heading>span{font-size:12px;color:var(--gl-muted)}.gl-results{list-style:none;padding:0;margin:0}.gl-results li{border-bottom:1px solid var(--gl-line)}.gl-results li>a{display:flex;align-items:center;gap:22px;justify-content:space-between;padding:21px 12px 21px 0}.gl-results li>a:hover{background:#222b35}.gl-results li>a>div{min-width:0}.gl-results h3{font-size:18px;line-height:1.45;margin:5px 0 6px;overflow-wrap:anywhere}.gl-results p{font-size:13px;line-height:1.65;max-width:780px}.gl-result-meta{font-size:11px;color:#9bb3c8}.gl-results li>a>span{color:var(--gl-accent)}.gl-pagination{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:25px 0;font-size:13px}.gl-pagination a{padding:9px 15px;border:1px solid #4a5968;border-radius:4px;color:#cee4f1}.gl-empty{text-align:center;padding:50px 20px;border-bottom:1px solid var(--gl-line)}.gl-empty>svg{width:32px;height:32px;color:var(--gl-accent);margin-bottom:15px}.gl-empty h2{font-size:23px;margin-bottom:12px}.gl-empty p{font-size:14px}.gl-empty a{display:inline-block;margin-top:20px;color:var(--gl-accent)}.gl-download-results{margin-top:35px}.gl-download-results>h2{font-size:21px;margin-bottom:20px}
+.gl-reader-shell{max-width:1480px}.gl-reader{display:grid;grid-template-columns:200px minmax(0,760px) 190px;gap:32px;align-items:start;margin-top:12px}.gl-article{min-width:0;--lesson-accent:#78d2e7;--lesson-soft:#22333d}.gl-article-header{border-bottom:1px solid var(--gl-line);padding:0 0 27px;margin-bottom:27px}.gl-article-header h1{font-size:clamp(27px,2.6vw,38px);line-height:1.22;overflow-wrap:anywhere;margin:13px 0 18px}.gl-article-header .gl-eyebrow{font-size:10px!important;letter-spacing:.08em}.gl-article-header .gl-eyebrow>span{color:#9caebe}.gl-article .article-body{max-width:none;color:#d5dde7;font:16px/1.85 "Segoe UI",Arial,sans-serif;overflow-wrap:anywhere}.gl-article .article-body p{color:#c5cfdb;margin:0 0 1.2em}.gl-article .article-body h2{font-size:25px;line-height:1.4;margin:38px 0 15px;scroll-margin-top:25px}.gl-article .article-body h3{font-size:20px;line-height:1.45;margin:28px 0 12px;scroll-margin-top:25px}.gl-article .article-body li{margin:8px 0}.gl-article .article-body a{color:#8bd7ea;text-decoration:underline;text-underline-offset:3px}.gl-article .article-body :is(pre,table){font-size:13px}.gl-article .article-body pre{max-width:100%;overflow:auto;overflow-wrap:normal}.gl-article .article-body img{max-width:100%;height:auto}.gl-article .article-body iframe{max-width:100%}.gl-article .article-body .table-scroll{max-width:100%;overflow:auto}.gl-article .guide-downloads{margin:0 0 30px;max-width:100%}.gl-toc{position:sticky;top:25px;max-height:calc(100vh - 50px);overflow:auto;border-left:1px solid var(--gl-line);padding-left:18px;scrollbar-width:thin}.gl-toc h2{font-size:12px;font-weight:650;margin:0 0 14px}.gl-toc nav,.gl-mobile-toc nav{display:grid;gap:9px}.gl-toc a{font-size:11px;line-height:1.6;color:#b6c4d3;overflow-wrap:anywhere}.gl-toc .gl-subheading{padding-left:10px;color:#98aabb}.gl-toc-top{display:block;margin:25px 0 10px;color:var(--gl-accent)!important}.gl-mobile-toc{display:none}.gl-related{margin:45px 0 20px;padding-top:28px;border-top:1px solid var(--gl-line)}.gl-related h2{font-size:20px;margin:0 0 15px}.gl-related>a{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--gl-line);font-size:14px;overflow-wrap:anywhere}.gl-related>a>span{color:var(--gl-accent)}.gl-article-footer{display:flex;justify-content:space-between;gap:20px;margin:28px 0;font-size:12px;color:#9fc6dc}.gl-article .lesson-checks details{margin:15px 0}.gl-article .lesson-checks summary{cursor:pointer;color:#d3e9f1;font-weight:600}.gl-article .lesson-checks details p{padding-top:10px}
+@media(min-width:901px){.gl-sidebar:not([open])>nav{display:grid}}
+@media(max-width:1200px){.gl-reader{grid-template-columns:190px minmax(0,1fr);gap:28px}.gl-toc{display:none}.gl-mobile-toc{display:block;border:1px solid var(--gl-line);border-radius:5px;padding:13px 17px;margin-bottom:25px}.gl-mobile-toc summary{cursor:pointer;font-size:13px;color:#cfdeed}.gl-mobile-toc nav{margin-top:15px;font-size:12px}.gl-mobile-toc a{color:#aac9de}.gl-mobile-toc .gl-subheading{padding-left:12px}.gl-mobile-toc[hidden]{display:none}.gl-section-title>p{flex-shrink:1}.gl-layout{gap:28px}}
+@media(max-width:900px){.gl-shell{padding:0 24px 45px}.gl-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gl-layout,.gl-reader{display:block}.gl-sidebar{position:static;max-height:none;padding:0;border:1px solid var(--gl-line);border-radius:5px;margin-bottom:28px}.gl-sidebar>summary{display:block;cursor:pointer;padding:12px 15px;font-size:13px;font-weight:600;color:#d0dfeb}.gl-sidebar>summary:after{content:'＋';float:right}.gl-sidebar[open]>summary:after{content:'−'}.gl-sidebar nav{padding:0 10px 15px}.gl-entry-grid{grid-template-columns:1fr 1fr;gap:18px}.gl-start,.gl-help{padding:22px}.gl-entry-grid h2{font-size:21px}.gl-section-title{align-items:start}.gl-section-title h2{font-size:23px}.gl-article-header h1{font-size:34px}.gl-list-main .gl-search{margin-top:20px}.gl-reader-shell .breadcrumb{font-size:11px}}
+@media(max-width:600px){.gl-shell{padding:0 18px 35px}.gl-shell .breadcrumb{padding:18px 0;font-size:11px}.gl-hero{padding:14px 0 26px}.gl-hero h1{font-size:34px;max-width:350px}.gl-hero>p{font-size:16px}.gl-search{gap:9px;padding-left:12px}.gl-search>svg{width:17px;height:17px}.gl-search input{font-size:14px}.gl-search button{padding:8px 13px;font-size:12px}.gl-search-hints{font-size:11px;gap:8px 12px}.gl-entry-grid{grid-template-columns:1fr;margin:24px 0 32px;gap:15px}.gl-start,.gl-help{padding:22px}.gl-section-title{display:block}.gl-section-title>a,.gl-section-title>p{display:block;margin-top:12px}.gl-topic-grid{grid-template-columns:1fr;gap:12px}.gl-topic-card{padding:20px}.gl-card-top{margin-bottom:13px}.gl-topic-card h3{font-size:21px}.gl-topic-card p{max-width:none}.gl-reference{margin-top:30px;padding-top:28px}.gl-reference-grid{grid-template-columns:1fr}.gl-reference-grid>a{gap:14px}.gl-bottom-help{margin-top:25px;display:block}.gl-bottom-help>a{display:block;margin-top:10px}.gl-list-header h1{font-size:29px}.gl-list-header>p{font-size:14px}.gl-filters{gap:12px;flex-wrap:wrap}.gl-filters label:first-child{flex:1;min-width:140px}.gl-filters select{width:100%;font-size:12px}.gl-filters>a{margin-left:0;padding-bottom:0}.gl-recommended{padding:17px}.gl-results h3{font-size:17px}.gl-results p{font-size:13px}.gl-result-meta{font-size:10px}.gl-article-header h1{font-size:29px}.gl-article .article-body{font-size:15px;line-height:1.8}.gl-article .article-body h2{font-size:23px}.gl-article .article-body h3{font-size:19px}.gl-article-footer{flex-wrap:wrap}.gl-reader-shell .breadcrumb>span:last-child{display:none}}
+@media print{.gl-sidebar,.gl-toc,.gl-mobile-toc,.gl-related,.gl-article-footer{display:none!important}.gl-reader{display:block}.gl-shell,.gl-article .article-body,.gl-article .article-body p,.gl-shell h1,.gl-shell h2,.gl-shell h3{color:#000!important}.gl-article .article-body pre{white-space:pre-wrap}}
+
+/* Neutral surfaces, readable small text, and consistent link styling. */
+@media screen {
+ main:has(> .gl-shell){background:#181a1e}
+ .gl-shell{--gl-bg:#181a1e;--gl-panel:#26292e;--gl-line:#525861;--gl-muted:#cdd1d8;--gl-accent:#a6ceff;color:#edf0f4;font-size:16px}
+ .gl-shell h1,.gl-shell h2,.gl-shell h3{color:#f5f6f8;letter-spacing:-.015em}
+ .gl-shell .breadcrumb{font-size:14px;color:#d1d5dc}
+ .gl-shell .breadcrumb a{color:var(--gl-accent)}
+ .gl-shell .gl-eyebrow{color:#d1d5dc!important;font-size:14px!important;font-weight:600;letter-spacing:0;text-transform:none}
+ .gl-hero{padding-top:14px}
+ .gl-hero h1{margin-top:8px}
+ .gl-hero>p{max-width:700px;font-size:19px;line-height:1.65}
+ .gl-search{background:#26292e;border-color:#7b838f}
+ .gl-search input{font-size:17px;color:#f5f6f8}
+ .gl-search input::placeholder{color:#d1d5dc;opacity:1}
+ .gl-search button{background:#a6ceff;border-color:#a6ceff;color:#17263a;font-size:15px}
+ .gl-search button:hover{background:#c1ddff}
+ .gl-search-hints{font-size:14px;gap:10px 20px}
+ .gl-search-hints>span{color:#cdd1d8}
+ .gl-search-hints a{color:var(--gl-accent);text-decoration-color:currentColor}
+ .gl-start,.gl-help{background:#26292e;border-color:#525861}
+ .gl-start{border-top-color:#a6ceff}
+ .gl-help{border-top-color:#cdd1d8}
+ .gl-entry-grid p{font-size:16px}
+ .gl-start li>span{background:#343940;border-color:#89919e;color:#f5f6f8;font-size:13px;width:28px;height:28px}
+ .gl-start li>a,.gl-help-links a{font-size:16px;color:#a6ceff}
+ .gl-start li>a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+ .gl-help-links a{padding:10px 0}
+ .gl-text-link{font-size:15px}
+ .gl-section-title>a,.gl-section-title>p{font-size:15px;flex-shrink:1}
+ .gl-topic-card{background:#26292e;border-color:#525861}
+ .gl-topic-card:hover{background:#30343a;border-color:#a6ceff}
+ .gl-topic-card:hover h3{text-decoration:underline;text-underline-offset:4px}
+ .gl-card-top{font-size:14px;color:#cdd1d8}
+ .gl-icon,.gl-topic-card h3>span{color:#cdd1d8}
+ .gl-topic-card p{font-size:16px;line-height:1.65}
+ .gl-reference-grid strong{font-size:17px}
+ .gl-reference-grid small{font-size:15px;line-height:1.65}
+ .gl-reference-grid>a:hover strong{text-decoration:underline;text-underline-offset:4px}
+ .gl-bottom-help{font-size:15px}
+ .gl-sidebar{font-size:14px}
+ .gl-sidebar nav>a{color:#e0e3e9;line-height:1.5}
+ .gl-sidebar nav>a:hover{background:#30343a;color:#fff}
+ .gl-sidebar nav>a[aria-current]{background:#30435c;color:#f1f6ff;border-color:#a6ceff;font-weight:600}
+ .gl-sidebar nav>a>span{font-size:13px;color:#cdd1d8}
+ .gl-sidebar nav>p{font-size:13px;letter-spacing:0;text-transform:none;color:#d1d5dc}
+ .gl-list-header>p{font-size:17px}
+ .gl-recommended{background:#26292e;border-color:#525861;border-left-color:#a6ceff}
+ .gl-recommended h2{font-size:17px}
+ .gl-recommended a{font-size:16px;color:#a6ceff}
+ .gl-recommended a+a{border-color:#525861}
+ .gl-recommended a:hover{text-decoration:underline;text-underline-offset:4px}
+ .gl-filters label{font-size:14px;color:#d1d5dc}
+ .gl-filters select{background:#26292e;border-color:#7b838f;color:#edf0f4;font-size:15px}
+ .gl-filters>a{font-size:15px}
+ .gl-result-heading h2{font-size:18px}
+ .gl-result-heading>span{font-size:14px}
+ .gl-results li>a:hover{background:#26292e}
+ .gl-results li>a:hover h3{text-decoration:underline;text-underline-offset:4px}
+ .gl-results h3{font-size:20px}
+ .gl-results p{font-size:16px;line-height:1.7}
+ .gl-result-meta{font-size:14px;color:#cdd1d8}
+ .gl-pagination{font-size:15px}
+ .gl-pagination a{color:#a6ceff;border-color:#7b838f}
+ .gl-empty p{font-size:16px}
+ .gl-article{--lesson-accent:#a6ceff;--lesson-soft:#30343a}
+ .gl-article-header .gl-eyebrow{font-size:14px!important;letter-spacing:0}
+ .gl-article-header .gl-eyebrow>span{color:#cdd1d8}
+ .gl-article .article-body{font-size:17px;line-height:1.85;color:#edf0f4}
+ .gl-article .article-body p{color:#e0e3e9}
+ .gl-article .article-body a{color:#a6ceff}
+ .gl-article .article-body table{font-size:15px;background:#22252a;color:#edf0f4}
+ .gl-article .article-body :is(th,td){border-color:#525861;color:#edf0f4}
+ .gl-article .article-body th{background:#363a42}
+ .gl-article .article-body tr{background:#22252a}
+ .gl-article .article-body tr:nth-child(even){background:#2c3036}
+ .gl-article .article-body :not(pre)>code{background:#353a43;color:#f1f4f8}
+ .gl-article .article-body pre{font-size:14px;background:#14171c;color:#edf0f4}
+ .gl-article .lesson-code-toolbar{background:#30343b;border-color:#66707c;color:#e0e3e9;font-size:14px}
+ .gl-article .lesson-code-toolbar button{color:#edf0f4;border-color:#89919e;font-size:14px;min-height:36px}
+ .gl-article .code-line-numbers{color:#b8c0cc}
+ .gl-article .hljs-comment{color:#bac4cf}
+ .gl-toc h2{font-size:15px}
+ .gl-toc a,.gl-toc .gl-subheading{font-size:14px;color:#d1d5dc;line-height:1.6}
+ .gl-toc a:hover,.gl-mobile-toc a:hover{color:#a6ceff;text-decoration:underline;text-underline-offset:3px}
+ .gl-mobile-toc summary,.gl-sidebar>summary{font-size:15px;color:#edf0f4}
+ .gl-mobile-toc nav{font-size:15px}
+ .gl-mobile-toc a{color:#a6ceff}
+ .gl-related>a{font-size:16px;color:#a6ceff}
+ .gl-article-footer{font-size:14px;color:#a6ceff}
+ .gl-article .lesson-checks summary{color:#edf0f4}
+}
+@media screen and (max-width:600px){
+ .gl-shell .breadcrumb{font-size:13px}
+ .gl-hero>p{font-size:17px}
+ .gl-search input{font-size:16px}
+ .gl-search button{font-size:14px;padding:8px 13px}
+ .gl-search-hints{font-size:14px;gap:8px 14px}
+ .gl-start,.gl-help{padding:20px}
+ .gl-start li{align-items:flex-start}
+ .gl-filters{align-items:stretch}
+ .gl-filters label{flex:1;min-width:0}
+ .gl-filters select{font-size:14px;padding-right:20px}
+ .gl-result-meta{font-size:13px}
+ .gl-results h3{font-size:19px}
+ .gl-results p{font-size:16px}
+ .gl-article .article-body{font-size:17px}
+ .gl-article .article-body :is(pre,table){font-size:14px}
+ .gl-recommended a{overflow-wrap:anywhere}
+}
+
+/* Color identifies topics; labels and icons carry the same information. */
+@media screen {
+ .gl-shell{--topic-color:#8cc9ff;--topic-fill:#193e68;--topic-edge:#498cd2}
+ [data-topic="start"]{--topic-color:#8af0c4;--topic-fill:#174a40;--topic-edge:#389a7e}
+ [data-topic="vehicles"]{--topic-color:#8cc9ff;--topic-fill:#193e68;--topic-edge:#498cd2}
+ [data-topic="models"]{--topic-color:#d6b5ff;--topic-fill:#49316e;--topic-edge:#9a71d1}
+ [data-topic="maps"]{--topic-color:#87eed3;--topic-fill:#164d48;--topic-edge:#399f89}
+ [data-topic="scripting"]{--topic-color:#ffc587;--topic-fill:#613c24;--topic-edge:#cd8b48}
+ [data-topic="missions"]{--topic-color:#ffb4cf;--topic-fill:#622e4c;--topic-edge:#cc7198}
+ [data-topic="audio-ui"]{--topic-color:#aebaff;--topic-fill:#323c72;--topic-edge:#798bdb}
+ [data-topic="fixes"]{--topic-color:#ffda87;--topic-fill:#53411d;--topic-edge:#b59a51}
+ [data-topic="editor"]{--topic-color:#8cc9ff;--topic-fill:#193e68;--topic-edge:#498cd2}
+ [data-topic="files"]{--topic-color:#ffda87;--topic-fill:#53411d;--topic-edge:#b59a51}
+ [data-topic="sdk"]{--topic-color:#d6b5ff;--topic-fill:#49316e;--topic-edge:#9a71d1}
+ [data-topic="examples"]{--topic-color:#ffc587;--topic-fill:#613c24;--topic-edge:#cd8b48}
+ [data-topic="resources"]{--topic-color:#87eed3;--topic-fill:#164d48;--topic-edge:#399f89}
+ main:has(> .gl-home){background:#111c30}
+ .gl-home{--gl-line:#405575;--gl-muted:#d5deef;--gl-accent:#9cceff}
+ .gl-home .gl-hero{background:linear-gradient(115deg,#17436e 0%,#28375f 62%,#473365 100%);border:1px solid #607bab;border-radius:13px;padding:30px 34px 27px;margin:6px 0 30px;box-shadow:inset 0 3px 0 #7cc5ff}
+ .gl-home .gl-hero .gl-eyebrow{display:inline-block;background:#132944;color:#bde2ff!important;border:1px solid #5e88b7;border-radius:20px;padding:4px 13px;font-size:13px!important}
+ .gl-home .gl-hero h1{color:#fff;margin:14px 0 12px}
+ .gl-home .gl-hero>p{color:#edf2fc}
+ .gl-home .gl-search{background:#11263f;border-color:#819dbe}
+ .gl-home .gl-search input::placeholder{color:#e0e9f5}
+ .gl-home .gl-search button{background:#a8d7ff;border-color:#a8d7ff;color:#102a45}
+ .gl-home .gl-search-hints>span{color:#e2e8f6}
+ .gl-home .gl-search-hints a{color:#c4e4ff}
+ .gl-home .gl-entry-grid{margin-top:0}
+ .gl-home .gl-start{background:#183e38;border-color:#418f7b;border-top-color:#7ce9bd}
+ .gl-home .gl-start .gl-eyebrow{color:#9ef2d0!important}
+ .gl-home .gl-start p{color:#d8ede6}
+ .gl-home .gl-start li>span{background:#245c4f;border-color:#73c5ab;color:#fff}
+ .gl-home .gl-start li>a,.gl-home .gl-start .gl-text-link{color:#b4f8df!important}
+ .gl-home .gl-help{background:#44371f;border-color:#95804a;border-top-color:#ffd378}
+ .gl-home .gl-help .gl-eyebrow{color:#ffe1a3!important}
+ .gl-home .gl-help p{color:#f0e5cb}
+ .gl-home .gl-help-links a,.gl-home .gl-help .gl-text-link{color:#ffe4aa!important}
+ .gl-home .gl-help-links a{border-color:#897449}
+ .gl-home .gl-section-title{padding-left:17px;border-left:5px solid #82c7ff}
+ .gl-home .gl-section-title h2{font-size:28px;color:#fff;margin-top:0}
+ .gl-home .gl-topic-grid{gap:20px}
+ .gl-home .gl-topic-card{background:var(--topic-fill);border:1px solid var(--topic-edge);border-top:4px solid var(--topic-color);border-radius:10px;padding:24px;box-shadow:0 6px 20px #07101f33}
+ .gl-home .gl-topic-card:hover{background:var(--topic-fill);border-color:var(--topic-color);box-shadow:0 0 0 2px var(--topic-color),0 8px 22px #07101f66}
+ .gl-home .gl-card-top{color:#edf1fa;margin-bottom:20px}
+ .gl-home .gl-topic-card .gl-icon{width:50px;height:50px;border:1px solid var(--topic-edge);border-radius:11px;background:#111c30;color:var(--topic-color)}
+ .gl-home .gl-topic-card .gl-icon svg{width:28px;height:28px}
+ .gl-home .gl-topic-card h3{color:#fff;font-size:22px}
+ .gl-home .gl-topic-card h3>span{color:var(--topic-color)}
+ .gl-home .gl-topic-card p{color:#f0f3f9}
+ .gl-home .gl-reference{border-top-color:#405575}
+ .gl-home .gl-reference .gl-section-title{border-left-color:#d0a8ff}
+ .gl-home .gl-reference-grid{gap:14px}
+ .gl-home .gl-reference-grid>a{background:#202f48;border:1px solid #4d6485;border-radius:7px;padding:18px}
+ .gl-home .gl-reference-grid>a:hover{background:#293d5b;border-color:var(--topic-color)}
+ .gl-home .gl-reference-grid .gl-icon{color:var(--topic-color)}
+ .gl-home .gl-reference-grid strong{color:#f7f9ff}
+ .gl-home .gl-reference-grid small{color:#d5deef}
+ .gl-home .gl-bottom-help p{color:#d5deef}
+ .gl-shell[data-topic] .gl-list-header{padding:23px 25px;background:var(--topic-fill);border:1px solid var(--topic-edge);border-left:5px solid var(--topic-color);border-radius:8px}
+ .gl-shell[data-topic] .gl-list-header .gl-eyebrow{color:var(--topic-color)!important}
+ .gl-shell[data-topic] .gl-list-header p{color:#f0f3f9}
+ .gl-shell[data-topic] .gl-sidebar a[aria-current]{background:var(--topic-fill);border-color:var(--topic-color);color:#fff}
+ .gl-shell[data-topic] .gl-recommended{border-left-color:var(--topic-color)}
+ .gl-reader-shell[data-topic] .gl-article-header{border-bottom:2px solid var(--topic-color)}
+ .gl-reader-shell[data-topic] .gl-article-header .gl-eyebrow{color:var(--topic-color)!important}
+}
+@media screen and (max-width:600px){
+ .gl-home .gl-hero{padding:23px 18px;margin-top:0}
+ .gl-home .gl-hero h1{font-size:31px}
+ .gl-home .gl-search{gap:7px;padding-left:10px}
+ .gl-home .gl-search>svg{display:none}
+ .gl-home .gl-search-hints{font-size:13px}
+ .gl-home .gl-section-title h2{font-size:25px}
+ .gl-home .gl-topic-card{padding:21px}
+ .gl-home .gl-reference-grid>a{padding:17px}
+ .gl-shell[data-topic] .gl-list-header{padding:20px}
+}
+
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -8371,59 +8573,8 @@ function renderHome(){
  mountCommunityGallery(document.getElementById('communityGallery'));
  document.title='EM4Resource — Emergency 4 modding community';
 }
-function libraryHref(params){return '#reference'+(params.size?'?'+params.toString():'');}
-function renderLibrary(defaultGroup='',defaultCategory=''){
- const groupOptions=[['all','All guides'],...groups.map(g=>[slug(g.name),g.name])];
- main.innerHTML=`<div class="wrap guide-directory" data-default-group="${esc(defaultGroup)}" data-default-category="${esc(defaultCategory)}">${crumb(['Guides'])}<header class="guide-directory-heading"><h1>Guides &amp; reference</h1><span>EM4Resource Library</span></header><div class="guide-directory-layout"><aside class="guide-directory-nav"><h2>Browse guides</h2><nav aria-label="Guide sections">${groupOptions.map(([id,label])=>`<a href="#library?group=${id}" data-guide-group="${id}"><span>${esc(label)}</span><small>${id==='all'?articles.length:articles.filter(a=>groups.find(g=>slug(g.name)===id).categories.includes(a.category)).length}</small></a>`).join('')}</nav></aside><section class="guide-directory-main" aria-label="Guide list"><form class="guide-directory-search" id="guideDirectorySearch" role="search"><label class="sr-only" for="guideQuery">Search guides</label><input id="guideQuery" type="search" placeholder="Search guides, tools, or errors" autocomplete="off"><button type="submit">Search</button></form><div class="guide-directory-filters"><label class="guide-mobile-group">Section<select id="guideGroup">${groupOptions.map(([id,label])=>`<option value="${id}">${esc(label)}</option>`).join('')}</select></label><label>Topic<select id="guideTopic"></select></label><label>Sort<select id="guideSort"><option value="title">Title: A to Z</option><option value="relevance">Best match</option></select></label></div><div class="guide-list-heading"><h2 id="guideListTitle"></h2><span id="guideResultCount" role="status"></span></div><div id="guideResults"></div><nav class="guide-pagination" id="guidePagination" aria-label="Guide pages"></nav></section></div></div>`;
- const update=()=>{
-  const p=new URLSearchParams();p.set('group',document.getElementById('guideGroup').value);
-  const q=document.getElementById('guideQuery').value.trim(),category=document.getElementById('guideTopic').value,sort=document.getElementById('guideSort').value;
-  if(q)p.set('q',q);if(category)p.set('category',category);if(sort!=='title')p.set('sort',sort);
-  location.hash=libraryHref(p);
- };
- document.getElementById('guideDirectorySearch').addEventListener('submit',e=>{e.preventDefault();if(document.getElementById('guideQuery').value.trim())document.getElementById('guideSort').value='relevance';update();});
- document.getElementById('guideTopic').addEventListener('change',update);
- document.getElementById('guideSort').addEventListener('change',update);
- document.getElementById('guideGroup').addEventListener('change',()=>{document.getElementById('guideTopic').value='';update();});
- document.title='Guides & reference — EM4Resource';
-}
-function applyLibraryRoute(section){
- const directory=main.querySelector('.guide-directory');if(!directory)return;
- const p=new URLSearchParams(section||''),query=p.get('q')||'';
- const requestedGroup=p.get('group')||directory.dataset.defaultGroup||(query?'all':slug(groups[0].name));
- const group=groups.find(g=>slug(g.name)===requestedGroup),groupId=group?slug(group.name):'all';
- const allowed=group?group.categories:categories;
- const requestedCategory=p.get('category')||directory.dataset.defaultCategory;
- const category=allowed.includes(requestedCategory)?requestedCategory:'';
- const sort=p.get('sort')==='relevance'?'relevance':'title';
- document.getElementById('guideQuery').value=query;document.getElementById('guideGroup').value=groupId;document.getElementById('guideSort').value=sort;
- document.getElementById('guideTopic').innerHTML='<option value="">All topics</option>'+[...allowed].sort((a,b)=>a.localeCompare(b)).map(c=>`<option value="${esc(c)}" ${c===category?'selected':''}>${esc(c)}</option>`).join('');
- document.querySelectorAll('[data-guide-group]').forEach(a=>{
-  if(a.dataset.guideGroup===groupId)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
-  const next=new URLSearchParams();next.set('group',a.dataset.guideGroup);if(query)next.set('q',query);if(sort!=='title')next.set('sort',sort);a.href=libraryHref(next);
- });
- let found=(query?searchArticles(query):[...articles]).filter(a=>allowed.includes(a.category)&&(!category||a.category===category));
- if(sort==='title')found.sort((a,b)=>a.title.localeCompare(b.title,undefined,{numeric:true}));
- const pageSize=20,totalPages=Math.max(1,Math.ceil(found.length/pageSize));
- const current=Math.min(totalPages,Math.max(1,parseInt(p.get('page'),10)||1)),start=(current-1)*pageSize;
- document.getElementById('guideListTitle').textContent=category||(group?group.name:'All guides');
- document.getElementById('guideResultCount').textContent=found.length?`${start+1}-${Math.min(start+pageSize,found.length)} of ${found.length} guides`:'0 guides';
- document.getElementById('guideResults').innerHTML=found.length?`<div class="guide-column-labels" aria-hidden="true"><span>Guide</span><span>Topic</span><span>Read time</span></div><ul class="guide-rows">${found.slice(start,start+pageSize).map(a=>`<li><a href="#article/${a.id}"><span class="guide-title">${esc(a.title)}</span><span class="guide-topic">${esc(a.category)}</span><span class="guide-time">${a.minutes} min</span></a></li>`).join('')}</ul>`:`<div class="guide-empty"><h3>No matching guides</h3><p>Try a different search or select another topic.</p><a href="#library?group=all">View all guides</a></div>`;
- const emptyReset=document.querySelector('.guide-empty a');if(emptyReset)emptyReset.href='#reference?group=all';
- const pageLink=n=>{const next=new URLSearchParams();next.set('group',groupId);if(query)next.set('q',query);if(category)next.set('category',category);if(sort!=='title')next.set('sort',sort);next.set('page',n);return libraryHref(next);};
- document.getElementById('guidePagination').innerHTML=totalPages>1?`${current>1?`<a href="${pageLink(current-1)}" aria-label="Previous page">&larr; Previous</a>`:'<span></span>'}<span>Page ${current} of ${totalPages}</span>${current<totalPages?`<a href="${pageLink(current+1)}" aria-label="Next page">Next &rarr;</a>`:'<span></span>'}`:'';
-}
-function renderCategory(category){
- if(!categories.includes(category)){renderMissing();return;}
- const group=groups.find(g=>g.categories.includes(category));
- renderLibrary(slug(group.name),category);
- document.title=category+' — EM4Resource';
-}
-function renderTopic(id){
- const g=groups.find(g=>slug(g.name)===id);if(!g){renderMissing();return;}
- renderLibrary(slug(g.name));
- document.title=g.name+' — EM4Resource';
-}
+function renderCategory(category){if(!categories.includes(category)){renderMissing();return;}renderGuideLibrary('',{category,all:true});}
+function renderTopic(id){renderGuideLibrary('group='+encodeURIComponent(id),{all:true});}
 function enhanceArticle(root){
  root.querySelectorAll('table').forEach(table=>{const wrap=document.createElement('div');wrap.className='table-scroll';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Scrollable reference table');table.before(wrap);wrap.append(table);});
  root.querySelectorAll('a[target="_blank"]').forEach(a=>a.rel='noopener noreferrer');
@@ -8442,19 +8593,17 @@ function searchArticles(query){
  const words=query.toLowerCase().trim().split(/\s+/).filter(Boolean);if(!words.length)return [];
  return articles.map(a=>{const title=a.title.toLowerCase();const meta=[title,a.category,...a.tags].join(' ').toLowerCase();const all=meta+' '+a.searchText;return {a,score:words.every(w=>all.includes(w))?words.reduce((s,w)=>s+(title.includes(w)?10:meta.includes(w)?4:1),0):0};}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.a);
 }
-function renderSearch(query){
- const found=searchArticles(query);const foundFiles=getDownloadFiles().filter(f=>matchesFile(f,query));main.innerHTML=docs(heading('Search the library',query?`Results for “${query}”`:'Search the guides',`${found.length} matching guides · ${foundFiles.length} downloads.`)+(foundFiles.length?`<section class="search-file-results"><h2>Downloads</h2>${foundFiles.map(f=>fileCard(f,true)).join('')}</section>`:'')+(found.length?found.map(row).join(''):`<div class="empty-state"><h2>No guides found</h2><p>Try a shorter term, a file extension such as V3O, or the name of the tool you are using.</p><button class="button" type="button" data-search-open>Try another search →</button></div>`));document.title='Search — EM4Resource';
-}
+function renderSearch(query){renderGuideLibrary('',{q:query,all:true});}
 function renderMissing(){main.innerHTML=`<div class="wrap" style="padding-top:60px;padding-bottom:90px">${heading('Page not found','Let’s get you back on track.','This article or topic could not be found.')}<a class="button" href="#library">Browse the guide library →</a></div>`;document.title='Page not found — EM4Resource';}
 let lastRoute='';
 function renderRoute(){
  const raw=location.hash.slice(1)||'home';let path,section;
  try{[path,section]=raw.split('?');path=decodeURIComponent(path);}catch{renderMissing();return;}
  const [type,...rest]=path.split('/');const value=rest.join('/');
- if(path!==lastRoute){
+ if(path!==lastRoute || ['library','reference','category','topic','search'].includes(type)){
   disposeCommunityGallery();
   main.classList.toggle('is-home',type==='home');
-  if(type==='home')renderHome();else if(type==='file')renderFileDetail(value);else if(type==='library')renderTutorialMap(section);else if(type==='reference')renderLibrary();else if(type==='category')renderCategory(value);else if(type==='topic')renderTopic(value);else if(type==='article')renderArticle(value);else if(type==='downloads')renderDownloads();else if(type==='search')renderSearch(value);else if(type==='main'){if(!lastRoute)renderHome();main.focus();return;}else renderMissing();
+  if(type==='home')renderHome();else if(type==='file')renderFileDetail(value);else if(type==='library')renderGuideLibrary(section);else if(type==='reference')renderGuideLibrary(section,{all:true});else if(type==='category')renderCategory(value);else if(type==='topic')renderTopic(value);else if(type==='article')renderArticle(value);else if(type==='downloads')renderDownloads();else if(type==='search')renderSearch(value);else if(type==='main'){if(!lastRoute)renderHome();main.focus();return;}else renderMissing();
   const active=type==='home'?'home':type==='article'&&value==='em4-memory-patcher'?'patcher':type==='downloads'||type==='file'||(type==='article'&&value==='modification-downloads')?'downloads':type==='article'&&value==='e4m-plus-launcher-3-5'?'launcher':type==='category'&&groups.find(g=>g.name==='Troubleshooting').categories.includes(value)?'help':'library';
   document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
   document.getElementById('primaryNav').classList.remove('is-open');document.getElementById('menuToggle').setAttribute('aria-expanded','false');
@@ -8462,8 +8611,8 @@ function renderRoute(){
   window.scrollTo({top:0,behavior:'instant'});lastRoute=path;
  }
  if(type==='downloads')applyFileRoute(section);
- if(['reference','category','topic'].includes(type))applyLibraryRoute(section);
- if(type==='library')applyTutorialRoute(section);
+ 
+ 
  if(section && type!=='downloads'){const n=new URLSearchParams(section).get('section');const el=n!==null?document.getElementById('section-'+n):null;if(el)el.scrollIntoView({behavior:'instant',block:'start'});}
 }
 const dialog=document.getElementById('searchDialog'),searchBox=document.getElementById('searchBox'),quickResults=document.getElementById('searchResults');
@@ -8490,84 +8639,99 @@ document.getElementById('headerSearch').addEventListener('submit',event=>{event.
 document.getElementById('searchForm').addEventListener('submit',event=>{event.preventDefault();const q=searchBox.value.trim();if(q){dialog.close();location.hash='search/'+encodeURIComponent(q);}});
 document.addEventListener('keydown',event=>{const editing=/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)||document.activeElement.isContentEditable;if((event.key==='/'&&!editing)||((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='k')){event.preventDefault();openSearch();}});
 dialog.addEventListener('keydown',event=>{if(!['ArrowDown','ArrowUp'].includes(event.key))return;const links=[...quickResults.querySelectorAll('a')];if(!links.length)return;event.preventDefault();let i=links.indexOf(document.activeElement);i=event.key==='ArrowDown'?(i+1)%links.length:(i<=0?links.length-1:i-1);links[i].focus();});
-const tutorialParts=[
- {id:'start',name:'Getting started',color:'teal',intro:'Get familiar with the game files, open the editor, and make your first small change.',chapters:[
-  {name:'Before your first edit',titles:['Emergency 4 Overview','What You Need Before Modding','How to Install a Mod','How to Load a Mod in the Editor']},
-  {name:'Meet the editor',titles:['Emergency 4 Editor Basics','How the Game Is Put Together','Important Emergency 4 Folders','Models vs Prototypes']},
-  {name:'Make a change',titles:['Creating a New Mod in the Editor','Creating a New Mod Safely','First Safe Edit to Practice','Recommended Modding Workflow']}
- ]},
- {id:'first-changes',name:'Your first changes',color:'amber',intro:'Change a vehicle skin, add a unit, and give it lights and working commands.',chapters:[
-  {name:'Reskin a vehicle',titles:['Texture Editing Overview','Where to Find Textures','DDS Files and Alpha Reflections','Basic Vehicle Reskin Workflow','Skinning and Texture Workflow']},
-  {name:'Add a vehicle or person',titles:['What Models Control','What Prototypes Control','Adding a Vehicle','Transferring a Vehicle Between Mods','Adding a Person','Transferring a Person Between Mods','Unit Folder and Freeplay Menu Setup']},
-  {name:'Finish the details',titles:['Vehicle Doors, Wheels, and Child Objects','Vehicle and Object Lighting','Emergency Vehicle Lighting','Command Icons and Cursor Icons','Dispatch and Radio Audio','Language Text and Localization Workflow']}
- ]},
- {id:'building',name:'Build your mod',color:'blue',intro:'Bring models, terrain, roads, and units together into a playable mod.',chapters:[
-  {name:'Models and assets',categories:['3D Modeling','Models','Prototypes','Asset Workshop']},
-  {name:'Build a map',categories:['Map Basics','New Freeplay Map','Terrain Cleanup','Ground Texture Files','Road and Grass Art','Detail Polygons']},
-  {name:'Make the map work',categories:['Entries and Boundaries','Virtual Objects','Emergency Roads','Civilian Paths','Freeplay Events','Map Testing','Lag and Performance']},
-  {name:'Configure your mod',categories:['Mod Creation','Audio','UI and Icons','Lighting']}
- ]},
- {id:'scripting',name:'Learn scripting',color:'coral',intro:'Start with a command button. Learn its checks and actions before moving on to callouts and missions.',chapters:[
-  {name:'Understand a command',titles:['Beginner Scripting Learning Path','Scripts Folder Deep Dive','How EM4 Command Scripts Work','Parser Rules That Prevent Crashes','CommandScript and MissionScript']},
-  {name:'Write your first command',titles:['Create Your First Script From Scratch','CommandScript Restrictions and Visibility','Actions, Delays, and Why Timing Matters','Action Queue Fundamentals','Common PushAction Families']},
-  {name:'Work with game objects',titles:['Core SDK Classes','GameObject: The Main Workhorse','GameObject Flags','Person SDK Deep Dive','Vehicle SDK Deep Dive','Lists and Safe Iteration','Game, Lists, Spawns, and Paths']},
-  {name:'Callouts and missions',categories:['Freeplay and Missions','Mission Making']},
-  {name:'Read existing scripts',titles:['How to Read a Script Case Study','Script: move.script','Script: entercar.script','Script: VehicleCommand_FlashingLights.script','Script: VehicleCommand_SirenControl.script']}
- ]},
- {id:'reference',name:'Fixes & reference',color:'lilac',intro:'Look up an error, an editor setting, or an SDK function when you need it.',chapters:[
-  {name:'Troubleshooting',categories:['Troubleshooting','Common Issues','Cheats and Debugging','Graphics and Shadows','Windows Fullscreen Fix','White Map Bug','Packed and Locked V3O','White Model Fixes','Installing Mods']},
-  {name:'SDK reference',categories:['SDK Glossary','SDK Reference']},
-  {name:'Editor and file reference',categories:['Editor Manual','Folder Structure']},
-  {name:'Script case studies',categories:['Case Studies']},
-  {name:'Tools and community',categories:['EM4 Memory Patcher','E4M+ Launcher','Start Here','Getting Started','EM4 History','Discord Rules','EM4Resource Downloads']}
- ]}
+/* Topic-first guide library. Original article bodies and stable IDs are retained. */
+const guideTopics = [
+ {id:'start',name:'Getting started',description:'Set up your tools and make your first change in the editor.',icon:'compass',categories:['Start Here','Getting Started','Installing Mods'],featured:['What You Need Before Modding','How to Load a Mod in the Editor','First Safe Edit to Practice']},
+ {id:'vehicles',name:'Vehicles & people',description:'Add vehicles and people to a mod. Set up their lights, equipment, and commands.',icon:'truck',categories:['Adding a Vehicle','Transferring a Vehicle','Adding a Person','Transferring a Person','Mod Creation','Lighting'],featured:['Adding a Vehicle','Transferring a Vehicle Between Mods','Emergency Vehicle Lighting']},
+ {id:'models',name:'Models & textures',description:'Create 3D models, change vehicle skins, and import them into Emergency 4.',icon:'cube',categories:['3D Modeling','Textures','Models','Prototypes','Asset Workshop'],featured:['Basic Vehicle Reskin Workflow','Creating Your First Emergency 4 Vehicle Model','Blender 4.2 V3O Plugin']},
+ {id:'maps',name:'Maps & terrain',description:'Build a map with terrain, roads, traffic, and working freeplay events.',icon:'map',categories:['Map Basics','New Freeplay Map','Terrain Cleanup','Ground Texture Files','Road and Grass Art','Detail Polygons','Entries and Boundaries','Virtual Objects','Emergency Roads','Civilian Paths','Freeplay Events','Map Testing','Lag and Performance'],featured:['Map Building Workflow','Creating a New Freeplay Map','Roads, Streets, and Civilian Traffic']},
+ {id:'scripting',name:'Scripts & commands',description:'Learn how scripts work and create commands for vehicles and people.',icon:'code',categories:['Scripting','Create Your Own Script'],featured:['Beginner Scripting Learning Path','How EM4 Command Scripts Work','Create Your First Script From Scratch']},
+ {id:'missions',name:'Missions & callouts',description:'Build missions and callouts with objectives, timers, and completion rules.',icon:'flag',categories:['Mission Making','Freeplay and Missions'],featured:['Mission Making Overview','Building a Custom Callout','Building a Simple Mission From Scratch']},
+ {id:'audio-ui',name:'Audio & interface',description:'Change sounds, button icons, menus, and in-game text.',icon:'sound',categories:['Audio','UI and Icons'],featured:['Dispatch and Radio Audio','Command Icons and Cursor Icons','Language Text and Localization Workflow']},
+ {id:'fixes',name:'Troubleshooting',description:'Find help with crashes, missing textures, mod installation, and slow performance.',icon:'tool',categories:['Troubleshooting','Common Issues','Cheats and Debugging','Graphics and Shadows','Windows Fullscreen Fix','White Map Bug','Packed and Locked V3O','White Model Fixes'],featured:['How to Read logfile.txt','White Model and Missing Texture Troubleshooting','Common Mod Install Problems']},
+ {id:'editor',name:'Editor manual',description:'Find out what each editor tool and setting does.',icon:'grid',reference:true,categories:['Editor Manual'],featured:['Editor Manual Overview']},
+ {id:'files',name:'Files & folders',description:'Find the game files you need and learn what they control.',icon:'folder',reference:true,categories:['Folder Structure'],featured:['Important Emergency 4 Folders']},
+ {id:'sdk',name:'SDK reference',description:'Look up the classes and functions used in Emergency 4 scripts.',icon:'book',reference:true,categories:['SDK Reference','SDK Glossary'],featured:['SDK Reading Strategy','Core SDK Classes']},
+ {id:'examples',name:'Script examples',description:'Read working scripts with explanations of how they work.',icon:'code',reference:true,categories:['Case Studies'],featured:['How to Read a Script Case Study']},
+ {id:'resources',name:'Tools & community',description:'Find the launcher, memory patcher, server rules, and community information.',icon:'link',reference:true,categories:['EM4 Memory Patcher','E4M+ Launcher','EM4 History','Discord Rules'],featured:['EM4 Memory Patcher','E4M+ Launcher 3.5']}
 ];
-// Assign each article once so the lesson sequence never loops through duplicates.
-const tutorialLocations=new Map();
-tutorialParts.forEach((part,pi)=>part.chapters.forEach((chapter,ci)=>{
- const candidates=chapter.titles?chapter.titles.map(t=>articles.find(a=>a.title===t)).filter(Boolean):articles.filter(a=>(chapter.categories||[]).includes(a.category));
- chapter.lessons=candidates.filter(a=>!tutorialLocations.has(a.id));
- chapter.lessons.forEach((a,i)=>tutorialLocations.set(a.id,{part,chapter,partNumber:pi+1,chapterNumber:ci+1,lessonNumber:i+1}));
-}));
-const extra=articles.filter(a=>!tutorialLocations.has(a.id));
-if(extra.length){const part=tutorialParts[4],chapter={name:'Additional guides',lessons:extra};part.chapters.push(chapter);extra.forEach((a,i)=>tutorialLocations.set(a.id,{part,chapter,partNumber:5,chapterNumber:part.chapters.length,lessonNumber:i+1}));}
-const tutorialSequence=tutorialParts.flatMap(p=>p.chapters.flatMap(c=>c.lessons));
-const partHref=id=>'#library?part='+id;
-function renderTutorialMap(){
- main.innerHTML=`<div class="tutorial-map wrap">${crumb(['Guides'])}<header class="tutorial-intro"><h1>Learn Emergency 4 modding</h1><p>From your first edit to your own scripts. One chapter at a time.</p><form id="tutorialSearch" class="tutorial-search" role="search"><label class="sr-only" for="tutorialQuery">Search the tutorials</label><input id="tutorialQuery" type="search" placeholder="Search the tutorials"><button type="submit">Search</button></form></header><div class="tutorial-map-heading"><h2>Table of contents</h2><a href="#reference?group=all">All guides A–Z <span aria-hidden="true">→</span></a></div><nav class="tutorial-parts" aria-label="Tutorial parts">${tutorialParts.map((p,i)=>`<a class="tone-${p.color}" href="${partHref(p.id)}" data-tutorial-part="${p.id}"><small>PART ${i+1}</small><span>${esc(p.name)}</span></a>`).join('')}</nav><div id="tutorialChapters"></div></div>`;
- document.getElementById('tutorialSearch').addEventListener('submit',e=>{e.preventDefault();const q=document.getElementById('tutorialQuery').value.trim();if(q)location.hash='search/'+encodeURIComponent(q);});
- document.title='Learn Emergency 4 modding — EM4Resource';
+const guideOverrides = {
+ 'About EM4Resource':'resources','Encyclopedia Sections':'resources',
+ 'Creating a New Mod in the Editor':'start','Creating a New Mod Safely':'start','First Safe Edit to Practice':'start','Backup Strategy That Saves Hours':'start',
+ 'Common Mod Install Problems':'fixes','How to Ask for Help Effectively':'fixes','Which Layer Is Broken?':'fixes',
+ 'Language Text and Localization Workflow':'audio-ui','Building a Custom Callout':'missions',
+ 'Vehicle and Object Lighting':'vehicles','Vehicle Asset Pipeline':'vehicles','Emergency 4 File Formats':'files'
+};
+const guideArticles=articles.filter(a=>a.title!=='Modification Downloads');
+const guideTopicOf = a => guideTopics.find(t=>t.id===guideOverrides[a.title]) || guideTopics.find(t=>t.categories.includes(a.category));
+guideTopics.forEach(t=>t.articles=guideArticles.filter(a=>guideTopicOf(a)===t));
+const guideTopicHref=id=>'#library?topic='+encodeURIComponent(id);
+const guideIcons={compass:'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18M16 8l-3 5-5 3 3-5z',truck:'M3 6h11v11H3zM14 10h4l3 4v3h-7M5 17a2 2 0 1 0 4 0M15 17a2 2 0 1 0 4 0',cube:'m12 3 9 5v9l-9 5-9-5V8zM3 8l9 5 9-5M12 13v9M7 6l9 5',map:'m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16',code:'m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16',flag:'M5 22V3h14l-3 5 3 5H5',sound:'M4 9v6h4l5 4V5L8 9zM16 8a6 6 0 0 1 0 8M19 5a10 10 0 0 1 0 14',tool:'M14 4a6 6 0 0 0-7 7l-4 6a3 3 0 0 0 4 4l6-6a6 6 0 0 0 7-7l-4 4-4-4 4-4z',grid:'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z',folder:'M3 6V4h7l2 3h9v13H3z',book:'M12 5C8 3 5 3 2 4v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-6-1-10 1v15',link:'m9 15 6-6M7 14l-2 2a4 4 0 0 0 5 5l4-4a4 4 0 0 0 0-6M17 10l2-2a4 4 0 0 0-5-5l-4 4a4 4 0 0 0 0 6'};
+const guideIcon=name=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${guideIcons[name]||guideIcons.book}"/></svg>`;
+const guideType=a=>guideTopicOf(a)?.reference?'Reference':'Guide';
+const guideLink=(a,label)=>`<a href="#article/${a.id}">${esc(label||a.title)}<span aria-hidden="true">→</span></a>`;
+function guideForm(query='',topic=''){
+ return `<form class="gl-search" id="glSearch" role="search"><label class="sr-only" for="glQuery">Search guides and reference</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input id="glQuery" name="q" type="search" value="${esc(query)}" placeholder="Search guides…" autocomplete="off"><button type="submit">Search</button></form>`;
 }
-function applyTutorialRoute(section){
- const params=new URLSearchParams(section||''),part=tutorialParts.find(p=>p.id===params.get('part'))||tutorialParts[0];
- document.querySelectorAll('[data-tutorial-part]').forEach(a=>{if(a.dataset.tutorialPart===part.id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- const lessonLinks=(chapter,lessons,offset=0)=>`<ol class="tutorial-lesson-links">${lessons.map((a,i)=>`<li><span aria-hidden="true">${part.chapters.indexOf(chapter)+1}.${i+offset+1}</span><a href="#article/${a.id}">${esc(a.title)}</a></li>`).join('')}</ol>`;
- document.getElementById('tutorialChapters').innerHTML=`<section class="tutorial-part-content tone-${part.color}"><header><h2>${esc(part.name)}</h2><p>${esc(part.intro)}</p>${part.id==='start'?`<a class="tutorial-begin" href="${articleHref('Emergency 4 Overview')}">Start the first lesson <span aria-hidden="true">→</span></a>`:''}</header>${part.chapters.filter(c=>c.lessons.length).map((chapter,ci)=>`<section class="tutorial-chapter" id="chapter-${ci+1}"><h3><span>${ci+1}</span>${esc(chapter.name)}</h3>${lessonLinks(chapter,chapter.lessons.slice(0,12))}${chapter.lessons.length>12?`<details class="tutorial-more"><summary>Show all ${chapter.lessons.length} lessons</summary>${lessonLinks(chapter,chapter.lessons.slice(12),12)}</details>`:''}</section>`).join('')}</section>`;
- const target=params.get('chapter');if(target)document.getElementById('chapter-'+target)?.scrollIntoView({block:'start'});
+function bindGuideForm(topic=''){
+ document.getElementById('glSearch')?.addEventListener('submit',e=>{e.preventDefault();const p=new URLSearchParams({view:'all'});const q=document.getElementById('glQuery').value.trim();if(q)p.set('q',q);if(topic)p.set('topic',topic);location.hash='library?'+p;});
 }
-function lessonPager(a){
- const index=tutorialSequence.indexOf(a),previous=tutorialSequence[index-1],next=tutorialSequence[index+1];
- return `<nav class="lesson-pager" aria-label="Lesson navigation">${previous?`<a href="#article/${previous.id}"><small>← Previous lesson</small><span>${esc(previous.title)}</span></a>`:'<span></span>'}${next?`<a href="#article/${next.id}"><small>Next lesson →</small><span>${esc(next.title)}</span></a>`:`<a href="#library"><small>Tutorial map</small><span>Back to all chapters</span></a>`}</nav>`;
+function guideSide(topic){
+ return `<details class="gl-sidebar" open><summary>Browse topics</summary><nav aria-label="Guide topics"><a href="#library" ${topic==='home'?'aria-current="page"':''}>Guides home</a><a href="#library?view=all" ${topic==='all'?'aria-current="page"':''}>All articles</a><p>Tutorial topics</p>${guideTopics.filter(t=>!t.reference).map(t=>`<a href="${guideTopicHref(t.id)}" ${topic===t.id?'aria-current="page"':''}>${esc(t.name)}<span>${t.articles.length}</span></a>`).join('')}<p>Reference</p>${guideTopics.filter(t=>t.reference).map(t=>`<a data-topic="${t.id}" href="${guideTopicHref(t.id)}" ${topic===t.id?'aria-current="page"':''}>${esc(t.name)}<span>${t.articles.length}</span></a>`).join('')}</nav></details>`;
+}
+function responsiveGuideNav(){const n=main.querySelector('.gl-sidebar');if(n)n.open=matchMedia('(min-width:901px)').matches;}
+function renderGuideHome(){
+ main.innerHTML=`<div class="gl-shell gl-home">${crumb(['Guides & tutorials'])}<header class="gl-hero"><span class="gl-eyebrow">Emergency 4 modding</span><h1>Guides & tutorials</h1><p>Learn how to edit Emergency 4. Choose a topic below or search for a guide.</p>${guideForm()}<div class="gl-search-hints"><span>Common tasks:</span>${linkArticle('Adding a Vehicle','Add a vehicle')}${linkArticle('Basic Vehicle Reskin Workflow','Reskin a vehicle')}${linkArticle('White Model and Missing Texture Troubleshooting','Fix a white model')}</div></header><div class="gl-entry-grid"><section class="gl-start"><span class="gl-eyebrow">Beginner guides</span><h2>New to modding?</h2><p>Start with these three guides, in order.</p><ol>${[['What You Need Before Modding','Set up your tools'],['How to Load a Mod in the Editor','Open a mod in the editor'],['First Safe Edit to Practice','Make your first change']].map(([title,label],i)=>`<li><span>${i+1}</span>${linkArticle(title,label)}</li>`).join('')}</ol><a class="gl-text-link" href="${guideTopicHref('start')}">All getting-started guides →</a></section><section class="gl-help"><span class="gl-eyebrow">Troubleshooting</span><h2>Fix a problem</h2><p>Choose the problem you’re having.</p><div class="gl-help-links">${linkArticle('Common Mod Install Problems','A mod will not install')}${linkArticle('How to Read logfile.txt','The game crashes')}${linkArticle('White Model and Missing Texture Troubleshooting','A model is white or has no texture')}</div><a class="gl-text-link" href="${guideTopicHref('fixes')}">All troubleshooting guides →</a></section></div><section class="gl-topics"><div class="gl-section-title"><div><h2>Tutorials by topic</h2></div><a href="#library?view=all">View all ${guideArticles.length} articles →</a></div><div class="gl-topic-grid">${guideTopics.filter(t=>!t.reference&&!['start','fixes'].includes(t.id)).map(t=>`<a class="gl-topic-card" data-topic="${t.id}" href="${guideTopicHref(t.id)}"><div class="gl-card-top"><span class="gl-icon">${guideIcon(t.icon)}</span><span>${t.articles.length} guides</span></div><h3>${esc(t.name)}<span aria-hidden="true">↗</span></h3><p>${esc(t.description)}</p></a>`).join('')}</div></section><section class="gl-reference"><div class="gl-section-title"><div><h2>Manuals & script reference</h2></div><p>Look up a tool, file, or script function.</p></div><div class="gl-reference-grid">${guideTopics.filter(t=>t.reference).map(t=>`<a data-topic="${t.id}" href="${guideTopicHref(t.id)}"><span class="gl-icon">${guideIcon(t.icon)}</span><span><strong>${esc(t.name)}</strong><small>${esc(t.description)}</small></span><span aria-hidden="true">→</span></a>`).join('')}</div></section><div class="gl-bottom-help"><p>Need more help? Explain what you tried and what went wrong.</p>${linkArticle('How to Ask for Help Effectively','How to ask for help →')}</div></div>`;
+ bindGuideForm();document.title='Guides & tutorials — EM4Resource';
+}
+function guideRouteState(section='',legacy={}){
+ const p=new URLSearchParams(section||'');
+ const oldParts={start:'start','first-changes':'vehicles',building:'maps',scripting:'scripting',reference:'sdk'};
+ const oldGroups={'getting-started':'start','editor-assets':'editor','maps-terrain':'maps','models-textures':'models','scripting-sdk':'scripting','building-a-mod':'vehicles','audio-interface':'audio-ui',troubleshooting:'fixes'};
+ let topic=p.get('topic')||legacy.topic||oldParts[p.get('part')]||oldGroups[p.get('group')]||'';
+ const category=p.get('category')||legacy.category||'';
+ if(category&&!topic)topic=guideTopics.find(t=>t.categories.includes(category))?.id||'';
+ return {topic,category,q:p.get('q')||legacy.q||'',all:p.has('view')||p.has('group')||legacy.all,sort:p.get('sort')||'',page:Math.max(1,parseInt(p.get('page'),10)||1)};
+}
+function renderGuideLibrary(section='',legacy={}){
+ const state=guideRouteState(section,legacy),topic=guideTopics.find(t=>t.id===state.topic);
+ if(!topic&&!state.all&&!state.q&&!state.category){renderGuideHome();return;}
+ const query=state.q.trim(),allFound=query?searchArticles(query).filter(a=>a.title!=='Modification Downloads'):[...guideArticles];
+ let found=allFound.filter(a=>state.category?a.category===state.category:(!topic||guideTopicOf(a)===topic));
+ if(!query||state.sort==='title')found.sort((a,b)=>a.title.localeCompare(b.title,undefined,{numeric:true}));
+ const size=18,pages=Math.max(1,Math.ceil(found.length/size)),page=Math.min(state.page,pages),start=(page-1)*size;
+ const title=query?'Search results':state.category||topic?.name||'All articles';
+ const description=query?`Results for “${query}”${topic?' in '+topic.name:''}.`:topic?.description||'Search all articles or choose a topic to narrow the list.';
+ const params=(changes={})=>{const v={...state,...changes};const p=new URLSearchParams({view:'all'});if(v.topic)p.set('topic',v.topic);if(v.category)p.set('category',v.category);if(v.q)p.set('q',v.q);if(v.sort)p.set('sort',v.sort);if(v.page>1)p.set('page',v.page);return '#library?'+p;};
+ const featured=topic&&!query&&!state.category&&page===1?topic.featured.map(t=>articles.find(a=>a.title===t)).filter(Boolean):[];
+ const downloads=query&&!topic?getDownloadFiles().filter(f=>matchesFile(f,query)):[];
+ main.innerHTML=`<div class="gl-shell" data-topic="${topic?.id||'all'}">${crumb(['Guides & tutorials','#library'],[title])}<div class="gl-layout">${guideSide(topic?.id||'all')}<div class="gl-list-main"><header class="gl-list-header"><span class="gl-eyebrow">${topic?.reference?'Reference':'Guides & tutorials'}</span><h1>${esc(title)}</h1><p>${esc(description)}</p></header>${guideForm(query)}${featured.length?`<section class="gl-recommended"><h2>${topic.reference?'Read these first':'Recommended guides'}</h2><div>${featured.map(a=>guideLink(a)).join('')}</div></section>`:''}<div class="gl-filters"><label>Topic<select id="glTopic"><option value="">All topics</option>${guideTopics.map(t=>`<option value="${t.id}" ${t===topic?'selected':''}>${esc(t.name)}</option>`).join('')}</select></label><label>Sort<select id="glSort">${query?'<option value="relevance">Best match</option>':''}<option value="title" ${(!query||state.sort==='title')?'selected':''}>Title: A–Z</option></select></label>${query||state.category?`<a href="${topic?guideTopicHref(topic.id):'#library?view=all'}">Clear filters</a>`:''}</div><div class="gl-result-heading"><h2>${query?'Matching articles':topic?'All '+(topic.reference?'articles':'guides'):'Articles'}</h2><span role="status">${found.length?`${start+1}–${Math.min(start+size,found.length)} of ${found.length}`:'0 results'}</span></div>${found.length?`<ul class="gl-results">${found.slice(start,start+size).map(a=>`<li><a href="#article/${a.id}"><div><span class="gl-result-meta">${esc(guideTopicOf(a).name)} · ${guideType(a)} · ${a.minutes} min read</span><h3>${esc(a.title)}</h3><p>${esc(a.excerpt.slice(0,160))}${a.excerpt.length>160?'…':''}</p></div><span aria-hidden="true">→</span></a></li>`).join('')}</ul>`:`<div class="gl-empty">${guideIcon('compass')}<h2>No guides found</h2><p>Try a shorter phrase, a tool name, or a file extension such as V3O.</p>${topic&&query?`<a href="${params({topic:'',category:'',page:1})}">Search all topics for “${esc(query)}” →</a>`:'<a href="#library?view=all">Browse all articles →</a>'}</div>`}${pages>1?`<nav class="gl-pagination" aria-label="Guide pages">${page>1?`<a href="${params({page:page-1})}">← Previous</a>`:'<span></span>'}<span>Page ${page} of ${pages}</span>${page<pages?`<a href="${params({page:page+1})}">Next →</a>`:'<span></span>'}</nav>`:''}${downloads.length?`<section class="gl-download-results"><h2>Also in downloads</h2>${downloads.map(f=>fileCard(f,true)).join('')}</section>`:''}</div></div></div>`;
+ bindGuideForm(topic?.id||'');responsiveGuideNav();
+ document.getElementById('glTopic').addEventListener('change',e=>location.hash=params({topic:e.target.value,category:'',page:1}));
+ document.getElementById('glSort').addEventListener('change',e=>location.hash=params({sort:e.target.value,page:1}));
+ document.title=title+' — EM4Resource';
 }
 function renderTutorialLesson(a){
- const location=tutorialLocations.get(a.id),{part,chapter,partNumber,chapterNumber,lessonNumber}=location;
- const chapterLinks=chapter.lessons.map(item=>`<a href="#article/${item.id}" ${item.id===a.id?'aria-current="page"':''}>${esc(item.title)}</a>`).join('');
- main.innerHTML=`<div class="tutorial-reader tone-${part.color}"><aside class="lesson-sidebar"><a class="lesson-map-link" href="${partHref(part.id)}">← Tutorial map</a><details class="lesson-chapter-nav"><summary>In this chapter</summary><nav aria-label="Chapter lessons">${chapterLinks}</nav></details><details class="lesson-section-nav" open><summary>On this lesson</summary><nav class="toc-links" aria-label="Lesson sections"></nav></details></aside><div class="lesson-content"><div class="lesson-breadcrumb">${crumb(['Guides','#library'],[part.name,partHref(part.id)],[chapter.name,partHref(part.id)+'&chapter='+chapterNumber])}</div><article class="lesson-article"><header class="lesson-title"><p>PART ${partNumber} <span aria-hidden="true">/</span> ${esc(chapter.name)} <span aria-hidden="true">/</span> LESSON ${chapterNumber}.${lessonNumber}</p><h1>${esc(a.title)}</h1></header>${guideDownloadActions(a)}<div class="article-body lesson-body">${a.body}</div>${lessonPager(a)}<a class="lesson-community" href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Discuss this lesson in Discord ↗</a></article></div></div>`;
+ const topic=guideTopicOf(a),related=topic.articles.filter(item=>item.id!==a.id&&item.category===a.category).slice(0,4);
+ const other=related.length?related:topic.articles.filter(item=>item.id!==a.id).slice(0,4);
+ main.innerHTML=`<div class="gl-shell gl-reader-shell" data-topic="${topic.id}">${crumb(['Guides & tutorials','#library'],[topic.name,guideTopicHref(topic.id)],[a.title])}<div class="gl-reader">${guideSide(topic.id)}<article class="gl-article"><header class="gl-article-header"><p class="gl-eyebrow">${esc(topic.name)} <span> / ${guideType(a)} / ${a.minutes} min read</span></p><h1>${esc(a.title)}</h1><a class="gl-text-link" href="${guideTopicHref(topic.id)}">← All ${esc(topic.name.toLowerCase())} articles</a></header><details class="gl-mobile-toc"><summary>On this page</summary><nav class="gl-toc-mobile" aria-label="On this page, mobile"></nav></details>${guideDownloadActions(a)}<div class="article-body lesson-body">${a.body}</div><section class="gl-related"><h2>More in ${esc(topic.name)}</h2>${other.map(item=>guideLink(item)).join('')}<a class="gl-text-link" href="${guideTopicHref(topic.id)}">Browse this topic →</a></section><div class="gl-article-footer"><a href="#library">← Guides & tutorials</a><a href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Get help on Discord ↗</a></div></article><aside class="gl-toc"><h2>On this page</h2><nav class="toc-links" aria-label="On this page"></nav><a class="gl-toc-top" href="#article/${a.id}" data-guide-top>Back to top ↑</a></aside></div></div>`;
+ responsiveGuideNav();
  const body=main.querySelector('.lesson-body');
- // Keep copied source intact, but put the explanation before the source appendix.
  if(a.category==='Case Studies'){
   const source=[...body.children].find(el=>/^H[23]$/.test(el.tagName)&&el.textContent.trim()==='Full copied script');
   if(source){const nodes=[source];let next=source.nextElementSibling;while(next&&!/^H[23]$/.test(next.tagName)){nodes.push(next);next=next.nextElementSibling;}nodes.forEach(n=>body.append(n));}
  }
  const downloads=new Set(articleDownloads(a).map(l=>l.href));body.querySelectorAll('a[href]').forEach(link=>{if(downloads.has(link.getAttribute('href')))link.classList.add('inline-download-action');});
  const checks=lessonChecks[a.title];
- if(checks)body.insertAdjacentHTML('beforeend',`<section class="lesson-checks"><h2>Check your understanding</h2>${checks.map(([question,answer],i)=>`<div class="lesson-check"><h4>${i+1}. ${esc(question)}</h4><details><summary>Show answer</summary><p>${esc(answer)}</p></details></div>`).join('')}</section>`);
+ if(checks)body.insertAdjacentHTML('beforeend',`<section class="lesson-checks"><h2>Check your understanding</h2>${checks.map(([question,answer])=>`<details><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join('')}</section>`);
  enhanceLesson(body,a);
- const headings=[...body.querySelectorAll('h2,h3')];
- main.querySelector('.toc-links').innerHTML=headings.map((h,i)=>{h.id='section-'+i;return `<a href="#article/${a.id}?section=${i}">${esc(h.textContent)}</a>`;}).join('');
- const sidebar=main.querySelector('.lesson-section-nav');if(!headings.length)sidebar.remove();else sidebar.open=matchMedia('(min-width:1001px)').matches;
+ const headings=[...body.querySelectorAll('h2,h3')],links=headings.map((h,i)=>{h.id='section-'+i;return `<a class="${h.tagName==='H3'?'gl-subheading':''}" href="#article/${a.id}?section=${i}">${esc(h.textContent)}</a>`;}).join('');
+ main.querySelector('.toc-links').innerHTML=links;main.querySelector('.gl-toc-mobile').innerHTML=links;
+ if(!headings.length){main.querySelector('.gl-toc').hidden=true;main.querySelector('.gl-mobile-toc').hidden=true;}
+ main.querySelector('[data-guide-top]').addEventListener('click',()=>window.scrollTo({top:0,behavior:'instant'}));
  document.title=a.title+' — EM4Resource';
 }
+
 function enhanceLesson(root,article){
  root.querySelectorAll('table').forEach(table=>{const wrap=document.createElement('div');wrap.className='table-scroll';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Reference table');table.before(wrap);wrap.append(table);});
  root.querySelectorAll('img').forEach(img=>img.loading='lazy');
