@@ -1083,12 +1083,1106 @@ body:has(main.is-home) .site-footer{background:#17181b;border:0}
 @media print{.reader-return,.reader-path,.reader-rail,.reader-next,.download-category-grid{display:none!important}.reader-v2 .gl-reader{display:block}.reader-section{break-inside:auto;border:0;background:#fff;color:#000}.downloads-v2 :is(h1,h2,h3,p,li){color:#000!important}}
 
 </style>
-</head>
+<style id="release-37-design">
+/* Scope the sunset treatment; the gallery and launcher are unchanged. */
+.memory-patcher-band{background:#07543e;border-top:5px solid #063d30;border-bottom:5px solid #063d30;position:relative}
+.memory-patcher-band:before,.memory-patcher-band:after{content:"";position:absolute;left:18px;right:18px;height:1px;background:#d8e9df;pointer-events:none}
+.memory-patcher-band:before{top:7px}.memory-patcher-band:after{bottom:7px}
+.memory-patcher-kicker{color:#ffdc68}.memory-patcher-inner p{color:#e2eee7}.memory-patcher-inner h2{color:#fff;font-family:"Arial Narrow","Segoe UI",sans-serif;font-weight:800}
+.memory-patcher-inner{padding-top:22px;padding-bottom:22px}
+.gpm-home .memory-patcher-band .download-action{background:#ffdc68;color:#12392d!important;border:2px solid #ffedac;box-shadow:0 3px 0 #002a2555}
+.gpm-home .memory-patcher-band .download-action :is(span,svg){color:inherit}
+.gpm-home .memory-patcher-band .download-action:hover{background:#ffecae;color:#12392d!important;border-color:#fff}
+.gpm-home .memory-patcher-band .download-action:focus-visible{outline:3px solid white;outline-offset:4px}
+.gpm-home .memory-patcher-band .patcher-guide-link{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.portal-nav .primary-nav a[data-nav="launcher"]{flex-direction:column;justify-content:center;gap:2px;line-height:1.2}
+.launcher-update{font:800 9px/1 "Segoe UI",sans-serif;text-transform:uppercase;color:#ffdc68;letter-spacing:0}
+@media(max-width:650px){.portal-nav .primary-nav a[data-nav="launcher"]{align-items:flex-start;padding-top:9px;padding-bottom:9px}}
+main:has(>.downloads-depot){background:#14121b;color:#f4eff6}
+.downloads-depot{max-width:1360px;padding-bottom:64px;letter-spacing:0;font-family:"Segoe UI",Arial,sans-serif}
+.downloads-depot *{box-sizing:border-box;letter-spacing:0}.downloads-depot a{color:#f6f0f7}.downloads-depot a:hover{color:#ffb9cc}
+.downloads-depot :is(a,button,input,select):focus-visible{outline:3px solid #f7b6d1;outline-offset:4px}
+.depot-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 0 28px;margin-bottom:0;border-bottom:2px solid #b56c98;position:relative}
+.depot-heading:after{content:"";position:absolute;bottom:-2px;left:0;right:0;height:2px;background:linear-gradient(90deg,#a998ef,#ffa6c1,#f8bc88);pointer-events:none}
+.depot-eyebrow{font-size:12px;font-weight:700;color:#e7adc7}.depot-heading h1{font-size:38px;line-height:1.2;margin:8px 0;color:#fff;overflow-wrap:anywhere}.depot-heading p{font-size:16px;margin:0;color:#cfc3d6;line-height:1.6}.depot-help{font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.depot-categories{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));background:#201c2a;border-bottom:1px solid #4e4159;margin:0 0 26px}
+.depot-categories a{display:flex;justify-content:center;align-items:center;gap:12px;padding:17px 10px;min-height:56px;border-bottom:3px solid transparent;font-size:14px;font-weight:600;text-decoration:none}.depot-categories a:hover{background:#33263c}.depot-categories a[aria-current]{background:#39293e;border-color:#ffb0cb;color:#ffd3e0}.depot-count{color:#b8a8c2;font-size:12px;font-weight:400}
+.depot-section-heading,.depot-results-heading{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}.depot-section-heading h2,.depot-results-heading h2{font-size:21px;color:#fff;margin:0}.depot-section-heading>span,.depot-results-heading>span{font-size:13px;color:#b9a9c1}.depot-section-heading>span{margin-left:auto}
+.depot-featured{margin:0 0 32px}.depot-featured[hidden]{display:none}.spotlight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.spotlight-file{min-width:0;background:#211b2b;border:1px solid #51425e;border-radius:5px;overflow:hidden;display:flex;flex-direction:column}.spotlight-file>div{padding:15px 17px 16px;position:relative;flex:1;display:flex;flex-direction:column;align-items:start}.spotlight-file>div>span{font-size:11px;text-transform:uppercase;color:#e3a7c9;font-weight:700}.spotlight-file h3{font-size:18px;line-height:1.4;margin:6px 0 14px}.spotlight-file h3 a{text-decoration:none}.spotlight-link{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;margin-top:auto}.spotlight-link svg{width:16px;height:16px;color:#ffc1d5}
+.file-cover{position:relative;display:block;aspect-ratio:2.05;background:#24232b;overflow:hidden;text-decoration:none!important;border-bottom:1px solid #51425e}.file-cover img{width:100%;height:100%;object-fit:cover;display:block}.file-image-credit{position:absolute;bottom:0;left:0;padding:4px 8px;background:#121018dc;color:#fff;font-size:10px;max-width:100%;line-height:1.4}
+.file-wordmark{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;background:linear-gradient(125deg,#3b3467,#8c4f83 57%,#e39491);color:#fff;gap:8px}.file-wordmark>strong{font:800 54px/1 "Segoe UI",sans-serif}.file-wordmark>strong>span{color:#ffd0b4}.file-wordmark>span{font-size:13px;font-weight:700}
+.file-title-cover{height:100%;padding:18px 22px;display:flex;flex-direction:column;justify-content:center;gap:9px;border-left:4px solid #c79bdc;background:linear-gradient(115deg,#30283d,#25212f)}.file-title-cover>span{font-size:10px;color:#d9bddb;font-weight:700}.file-title-cover>strong{font:700 22px/1.25 "Segoe UI",sans-serif;overflow-wrap:anywhere;color:#f6edf7}.file-title-cover>small{font-size:11px;color:#c6b8cc}
+[data-download-category="maps"] .file-title-cover{border-color:#8ed7d0;background:#203536}[data-download-category="audio"] .file-title-cover{border-color:#efb786;background:#392d2a}[data-download-category="archive"] .file-title-cover{border-color:#9494a9;background:#282832}
+.depot-layout{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:28px;align-items:start}.depot-browser{min-width:0}.depot-sidebar{border-left:1px solid #4c3e56;padding-left:24px}.depot-sidebar h2{font-size:18px;color:#f2e8f6;line-height:1.4;margin:0 0 12px}.depot-essentials>a{display:flex;flex-direction:column;gap:7px;padding:17px 0;border-bottom:1px solid #44374e;text-decoration:none}.depot-essentials strong{font-size:15px;color:#f3c0d6}.depot-essentials span{font-size:13px;color:#c9bacf;line-height:1.6}.depot-community{margin-top:30px}.depot-community p{font-size:14px;line-height:1.7;color:#c8b9d0}.depot-community a{font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.depot-toolbar{display:flex;gap:18px;align-items:end;padding:0 0 22px;border-bottom:1px solid #4e405a}.depot-toolbar label{display:block;font-size:13px;color:#e2d1e8;font-weight:600;margin-bottom:8px}.depot-search{flex:1;min-width:0}.depot-search>div{display:flex}.depot-toolbar input,.depot-toolbar select{background:#221d2c;color:#f7eefb;border:1px solid #7a6389;border-radius:3px;min-height:44px;font:14px "Segoe UI",sans-serif;padding:9px 11px;max-width:100%}.depot-toolbar input{width:100%;min-width:0;border-radius:3px 0 0 3px}.depot-toolbar input::placeholder{color:#b9a9c5}.depot-toolbar button{background:#ddabc9;color:#201525;border:1px solid #f6c6df;border-radius:0 3px 3px 0;padding:8px 16px;font:700 14px "Segoe UI",sans-serif;cursor:pointer}.depot-toolbar button:hover{background:#ffd0e4}.depot-toolbar .depot-sort{margin:0;display:grid;gap:8px;max-width:200px}
+.depot-results-heading{padding:23px 0 0}.depot-results-heading a{font-size:13px;margin-left:auto;text-decoration:underline}.depot-results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.depot-file{min-width:0;display:flex;flex-direction:column;border:1px solid #51425d;background:#211c2b;border-radius:5px;overflow:hidden}.depot-file-content{padding:17px 18px;flex:1}.depot-file-meta{display:flex;gap:12px;font-size:10px;font-weight:700;text-transform:uppercase;color:#e0adce;flex-wrap:wrap}.depot-release{color:#a8ded4}.depot-file h3{font-size:18px;line-height:1.4;margin:8px 0}.depot-file h3 a{text-decoration:none}.depot-file p{font-size:13px;line-height:1.7;color:#cebed7;margin:0 0 12px}.depot-file small{font-size:11px;color:#baaac5;line-height:1.5}.depot-file .file-image-credit{color:#fff;font-size:10px}.depot-file-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 17px;padding:0 18px 18px;margin-top:auto}
+.downloads-depot .depot-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;background:#ffc0cf;color:#271a2d;border:1px solid #ffd7e1;padding:9px 15px;border-radius:3px;font-size:13px;font-weight:750;text-decoration:none}.downloads-depot .depot-download:hover{background:#ffdae3;color:#211425}.depot-download svg{width:17px;height:17px;flex:none}.depot-details{font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.depot-empty{grid-column:1/-1;padding:36px 0}.depot-empty h3{color:white}.depot-empty p{color:#d0c1d8}.depot-back{display:inline-block;margin:12px 0;font-size:14px}.depot-detail .depot-heading{margin-bottom:28px}.depot-detail-body{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:40px}.depot-detail-body h2{font-size:21px;color:white;margin:0 0 16px}.depot-detail-body p{color:#d3c5db;line-height:1.8}.depot-detail-body article>h2:not(:first-child){margin-top:28px}.depot-detail-body aside{border-left:1px solid #5a4567;padding-left:24px}.depot-detail-body aside a{display:block;margin:16px 0;font-size:14px}.depot-detail-body a{text-decoration:underline;text-underline-offset:4px}.depot-detail-body img{max-width:100%;height:auto}.depot-detail-body details{background:#2b2135;padding:16px;border:1px solid #675178;margin:24px 0}.depot-detail-body summary{cursor:pointer;color:#ffc2d6}.depot-detail-body figcaption{font-size:12px;color:#c9b6d2}
+@media(max-width:1000px){.depot-layout{grid-template-columns:minmax(0,1fr) 210px;gap:22px}.depot-sidebar{padding-left:20px}.depot-toolbar{flex-wrap:wrap}.depot-search{flex-basis:100%}.depot-categories a{gap:7px;font-size:13px}.spotlight-file h3{font-size:16px}.file-title-cover>strong{font-size:19px}}
+@media(max-width:760px){.depot-layout,.depot-detail-body{grid-template-columns:1fr}.depot-sidebar,.depot-detail-body aside{border-left:0;border-top:1px solid #5a4567;padding:24px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:24px}.depot-community{margin-top:0}.depot-categories{grid-template-columns:repeat(3,minmax(0,1fr))}.depot-heading h1{font-size:32px}.spotlight-grid{grid-template-columns:repeat(3,minmax(250px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.spotlight-file{scroll-snap-align:start}.depot-heading{gap:16px}.depot-help{font-size:12px}.file-title-cover>strong{font-size:18px}}
+@media(max-width:480px){.depot-heading{align-items:flex-start;flex-direction:column;padding:12px 0 20px}.depot-heading h1{font-size:30px}.depot-heading p{font-size:14px}.depot-eyebrow{font-size:10px}.depot-categories a{font-size:12px;padding:14px 6px;gap:6px}.depot-results-grid{grid-template-columns:1fr}.depot-section-heading>span{display:none}.depot-toolbar .depot-sort{max-width:none;width:100%}.depot-sidebar,.depot-detail-body aside{display:block}.depot-community{margin-top:25px}.file-title-cover>strong{font-size:22px}.depot-detail .depot-download{white-space:normal}.depot-file h3{font-size:19px}}
+
+.skip-link:not(:focus){clip-path:inset(50%)}
+.nyc-project{background:#163f9c;color:#fff;letter-spacing:0}
+.nyc-project *{box-sizing:border-box;letter-spacing:0}
+.nyc-project .gpm-container{max-width:1320px}
+.nyc-heading{background:#ffd34c;color:#153e91;padding:29px 0 32px}
+.nyc-rule{height:2px;background:#17439c}
+.nyc-overline{display:flex;justify-content:space-between;gap:16px;font:800 11px/1.5 "Segoe UI",sans-serif;border-bottom:2px solid #17439c;padding-bottom:12px}
+.nyc-heading h2{display:flex;align-items:center;justify-content:center;gap:28px;color:#153e91;margin:20px 0 21px;font-family:Impact,"Arial Black",sans-serif;line-height:.92;transform:skew(-4deg)}
+.nyc-name{font-size:122px;text-shadow:4px 4px 0 #ffd34c,7px 7px 0 #ed482f}
+.nyc-title-rest{font-size:53px;line-height:1.02;text-align:left}
+.nyc-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:2px solid #17439c;padding-top:16px}
+.nyc-heading .nyc-intro p{color:#173d7e;font:650 16px/1.5 "Segoe UI",sans-serif;margin:0}
+.gpm-home .nyc-intro a{color:#153e91;font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:5px;white-space:nowrap}
+.nyc-gallery-shell{padding:25px 0 24px;background:#133c92}
+.nyc-gallery{outline-offset:5px}.nyc-gallery:focus-visible{outline:3px solid #ffd34c}
+.nyc-stage{position:relative;background:#293238;aspect-ratio:2/1;min-height:260px;max-height:620px;overflow:hidden}
+.nyc-full-image{display:block;width:100%;height:100%;position:absolute;inset:0}
+.nyc-photo{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.nyc-arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:54px;display:grid;place-items:center;background:#ffd34c;color:#123882;border:0;border-radius:2px;font:46px/1 Arial,sans-serif;cursor:pointer;box-shadow:0 2px 8px #0004}
+.nyc-prev{left:16px}.nyc-next{right:16px}.nyc-arrow:hover{background:#fff0ac}.nyc-project button:focus-visible,.nyc-project a:focus-visible{outline:3px solid white;outline-offset:4px}
+.nyc-caption-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 0;border-bottom:1px solid #7596d5}
+.nyc-photo-type{font-size:10px;font-weight:800;color:#ffdb6c}.nyc-caption-bar h3{font:700 22px/1.3 "Segoe UI",sans-serif;margin:5px 0 0;color:white}
+.nyc-playback{display:flex;align-items:center;gap:20px;flex:none}.nyc-count{min-width:66px;font:600 14px Consolas,monospace;color:#fff0be}
+.nyc-pause{width:44px;height:44px;border:1px solid #ffd34c;background:#12357c;color:#ffdb6c;font-size:16px;cursor:pointer;border-radius:2px}.nyc-pause:hover{background:#204eaa}
+.nyc-thumbnails{display:flex;gap:10px;overflow-x:auto;position:relative;padding:18px 3px 12px;scrollbar-color:#ffd34c #16377b;scrollbar-width:thin}
+.nyc-thumbnails button{flex:0 0 104px;width:104px;height:78px;padding:0;border:3px solid transparent;background:#293238;position:relative;cursor:pointer;border-radius:2px}
+.nyc-thumbnails button[aria-pressed="true"]{border-color:#ffd34c}.nyc-thumbnails button:hover{border-color:white}.nyc-thumbnails img{display:block;width:100%;height:100%;object-fit:contain}.nyc-thumbnails button>span{position:absolute;bottom:0;left:0;padding:2px 4px;color:#fff;background:#111c;font:11px Consolas,monospace}
+.nyc-screen-reader{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){.nyc-name{font-size:96px}.nyc-title-rest{font-size:41px}.nyc-heading h2{gap:20px}.nyc-intro{align-items:flex-start;flex-direction:column;gap:12px}.nyc-overline{font-size:9px}.nyc-stage{aspect-ratio:1.4;min-height:240px}.nyc-caption-bar h3{font-size:18px}.nyc-caption-bar{gap:12px}.nyc-playback{gap:10px}.nyc-arrow{width:36px;height:46px;font-size:37px}.nyc-prev{left:9px}.nyc-next{right:9px}.nyc-thumbnails button{flex-basis:86px;width:86px;height:66px}}
+@media(max-width:420px){.nyc-overline{flex-direction:column;gap:4px}.nyc-heading{padding-top:20px;padding-bottom:24px}.nyc-name{font-size:78px}.nyc-title-rest{font-size:30px}.nyc-heading h2{gap:16px;margin:23px 0}.nyc-heading .nyc-intro p{font-size:14px}.nyc-caption-bar h3{font-size:16px}.nyc-count{min-width:54px;font-size:12px}.nyc-stage{min-height:230px}.nyc-gallery-shell{padding-top:17px}}
+
+</style><style id="nyc-neighborhood-design">/* Homepage-only neighborhood identity; file library and article layouts stay intact. */
+.gpm-home .city-inner{max-width:1240px;margin:auto;padding:0 42px;position:relative;z-index:1}
+.gpm-home [class^="city-"],.gpm-home [class*=" city-"]{box-sizing:border-box;letter-spacing:0}
+.city-eyebrow{font:800 11px/1.4 "Segoe UI",sans-serif;display:block}
+.gpm-home .city-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:13px 20px;background:#ffcf3e;color:#112e69;border:2px solid #ffcf3e;border-radius:2px;font-weight:800;text-decoration:none}
+.city-button svg,.city-file-links svg{width:18px;height:18px;flex:none}
+.city-actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px}
+.city-actions>a:not(.city-button){text-decoration:underline;text-underline-offset:5px;font-size:14px;font-weight:700}
+.gpm-home .city-button:hover{background:#fff1b7;border-color:#fff1b7}
+.gpm-home :is(.city-button,.city-all-files,.city-guide,.city-file a,.city-guide-all,.city-actions a):focus-visible{outline:3px solid currentColor;outline-offset:5px}
+/* Keep the title aligned with its neighbours; the caption takes no layout space. */
+.portal-nav .primary-nav a[data-nav="launcher"]{flex-direction:row;align-items:center;justify-content:center;gap:0;line-height:1.6}
+.launcher-update{position:absolute;left:50%;top:3px;transform:translateX(-50%);pointer-events:none}
+/* Bodega lettering meets the familiar green NYC street blade. */
+.gpm-home .memory-patcher-band{background-color:#e4e9e5;background-image:linear-gradient(#bbc6c0 1px,transparent 1px),linear-gradient(90deg,#bbc6c0 1px,transparent 1px);background-size:100% 42px,100px 42px;color:#111;border:0;padding:12px 0}
+.memory-patcher-band:before,.memory-patcher-band:after{left:0;right:0;height:2px;background:#172524}
+.memory-patcher-band:before{top:10px}.memory-patcher-band:after{bottom:10px}
+.gpm-home .memory-patcher-inner{max-width:1240px;padding:16px 42px;gap:40px;grid-template-columns:minmax(0,1fr) 280px}
+.gpm-home .memory-patcher-kicker{color:#262c29;font-size:10px}
+.gpm-home .memory-patcher-inner h2{font:750 30px/1.1 Helvetica,Arial,sans-serif;color:#101916;margin:8px 0;text-transform:none;transform:none;text-shadow:none}
+.gpm-home .memory-patcher-inner p{color:#26332e;font-size:14px;max-width:610px;text-shadow:none}
+.gpm-home .memory-patcher-actions{align-items:stretch;gap:8px}
+.gpm-home .memory-patcher-band .download-action{position:relative;display:flex;align-items:center;gap:12px;background:#111;color:#fff!important;padding:13px 12px 11px;border:0;border-top:3px solid #fff;border-radius:0;outline:2px solid #111;box-shadow:3px 4px 0 #7c8b83;min-height:0;text-align:left}
+.gpm-home .memory-patcher-band .download-action:hover{background:#252525;color:#fff!important;border-color:#fff;outline-color:#252525}
+.subway-bullet{display:grid!important;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;background:#d7272f;color:#fff;font:800 24px/1 Helvetica,Arial,sans-serif}
+.subway-destination{font:700 18px/1.15 Helvetica,Arial,sans-serif;flex:1}.subway-destination small{display:block;font:700 12px/1.2 Helvetica,Arial,sans-serif;margin-bottom:3px}.subway-direction{font:30px/1 Arial,sans-serif}
+.street-sign-top{display:none}
+.street-sign-main{display:block;font:700 20px/1.06 "Arial Narrow",Arial,sans-serif}.street-sign-main>span{float:right;font-size:26px;line-height:.6;margin-top:3px}
+.gpm-home .memory-patcher-band .patcher-guide-link{color:#172524;text-align:center;font-size:12px;margin-top:8px;text-shadow:none}
+/* Both sets of rules meet the screen edges. */
+.nyc-heading .gpm-container{max-width:none;padding-left:0;padding-right:0}
+.nyc-heading{padding-top:15px;padding-bottom:20px;background:#ffcf3e}
+.nyc-heading h2{padding:0 20px}.nyc-name{text-shadow:4px 4px 0 #ffcf3e,7px 7px 0 #ed482f}
+.nyc-gallery-shell{position:relative;isolation:isolate;overflow:hidden;background:#153e91}
+.nyc-gallery-shell>.gpm-container{width:78%;max-width:1200px;padding:0;position:relative;z-index:1}
+.city-skyline{position:absolute;top:auto;bottom:0;height:48%;width:calc((100% - min(78%,1200px))/2);z-index:0;background-image:url('nyc-skyline.png');background-repeat:no-repeat;background-size:auto 100%;filter:brightness(0) invert(1);pointer-events:none}
+.city-skyline-left{left:0;background-position:12% bottom}.city-skyline-right{right:0;background-position:90% bottom}
+.nyc-stage{box-shadow:0 0 0 7px #153e91;max-height:560px}
+.nyc-caption-bar,.nyc-thumbnails{background:#153e91}
+/* Brooklyn: a full-width screenprint, not a generic feature card. */
+.city-launcher{background:#17449b url('nyc-brooklyn.webp') center center/cover no-repeat;color:#fff;position:relative;min-height:540px;border-top:7px solid #ffcf3e;padding:64px 0 65px}
+.city-launcher-copy{width:49%;max-width:540px}
+.city-launcher .city-eyebrow{color:#ffdc68}
+.gpm-home .city-launcher h2{font:82px/.85 Impact,"Arial Black",sans-serif;margin:24px 0 22px;color:#ffcf3e;transform:skew(-4deg);transform-origin:left;text-shadow:3px 3px 0 #0b2b6d}
+.gpm-home .city-launcher h2 span{font-size:52px}
+.gpm-home .city-launcher p{font-size:15px;line-height:1.6;color:#fff;max-width:445px;margin:0 0 23px}
+.gpm-home .city-launcher .city-lead{font-size:24px;font-weight:750;line-height:1.2;margin-bottom:12px}
+.city-launcher .city-actions>a:not(.city-button){color:white}
+.city-launcher small{display:block;color:#f3f5ff;font-size:11px;line-height:1.5;margin-top:22px;max-width:385px}
+.city-launcher-stat{position:absolute;bottom:-15px;right:42px;background:#ffcf3e;color:#153e91;padding:14px 20px;border:2px solid #153e91;transform:rotate(-3deg)}
+.city-launcher-stat strong{font:66px/.9 Impact,sans-serif;display:block}.city-launcher-stat span{font:800 10px/1.5 "Segoe UI",sans-serif}
+/* Times Square: typographic bills keep real downloads clearly labelled. */
+.city-downloads{background:#271733;color:#fff;padding-bottom:32px}
+.city-marquee{background:#ef4634;color:#fff0ac;border-top:2px solid #ffcf3e;border-bottom:6px double #ffcf3e;padding:22px 24px;text-align:center}
+.city-marquee>span{font:800 10px/1.5 "Segoe UI",sans-serif}
+.gpm-home .city-marquee h2{font:48px/1 Impact,"Arial Black",sans-serif;margin:9px 0 2px;color:#fff0ac}
+.city-file-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding:32px 0}
+.city-poster{display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:1.65;border:3px solid #ffcf3e;padding:16px 18px;background:#153e91;color:#ffcf3e!important;position:relative;text-align:center;box-shadow:6px 6px 0 #080b24}
+.city-poster-top,.city-poster-bottom{font:800 10px/1.4 "Segoe UI",sans-serif}
+.city-poster>strong{font:56px/.95 Impact,"Arial Black",sans-serif;transform:skew(-4deg);display:block}
+.city-poster>strong>span{display:block;font-size:24px;margin-top:7px}
+.city-file-1 .city-poster{background:#ffcf3e;color:#8b2138!important;border-color:#8b2138}
+.city-file-2 .city-poster{background:#14735b;color:#fff0ac!important;border-color:#fff0ac}
+.city-file-2 .city-poster>strong{font-size:33px}.city-file-2 .city-poster>strong>span{font-size:40px}
+.city-file h3{font:700 16px/1.4 "Segoe UI",sans-serif;margin:20px 0 15px;min-height:45px;color:#fff}
+.city-file h3 a{color:#fff}.city-file-links{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.city-file-links>a:first-child{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffcf3e;padding:10px 12px;color:#ffcf3e;font-size:13px;font-weight:750}
+.city-file-links>a:last-child{font-size:12px;color:#fff;text-decoration:underline;text-underline-offset:3px}
+.city-all-files{display:flex;justify-content:space-between;padding-top:18px;border-top:1px solid #9d8eab;font-weight:700;color:#ffdc68!important;font-size:15px}
+/* Queens: shop-front awning and a practical workshop directory. */
+.city-guides{background:#115b48;padding:48px 0;color:#132a33;border-top:18px solid transparent;border-image:repeating-linear-gradient(90deg,#fff0bd 0 36px,#c92f38 36px 72px) 18;position:relative}
+.city-station-sign{background:transparent;color:#fff;padding:0 0 24px;border-top:0;border-bottom:2px solid #fff0bd;box-shadow:none;position:relative}
+.city-station-sign>span:first-child{font:800 10px/1.3 "Segoe UI",sans-serif;color:#ffcf3e}
+.gpm-home .city-station-sign h2{font:48px/1 Impact,"Arial Black",sans-serif;color:#fff0bd;margin:10px 0 0;text-transform:uppercase;transform:skew(-3deg);transform-origin:left}
+.city-station-label{position:absolute;right:28px;bottom:25px;font:700 10px/1.4 "Segoe UI",sans-serif}
+.city-guide-list{background:#f1f5f0;margin-top:30px;padding:0 24px}
+.city-guide{display:grid;grid-template-columns:48px minmax(0,1fr) 26px;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid #a7b7b1;color:#132a33!important}
+.city-route{display:grid;place-items:center;width:44px;height:44px;background:transparent;color:#b32b34;border-radius:0;font:36px/1 Impact,sans-serif}
+.city-route-1,.city-route-2{background:transparent}
+.city-guide strong{display:block;font-size:20px;margin-bottom:4px}.city-guide>span>span{font-size:14px}.city-guide>span:last-child{font-size:26px}
+.city-guide:hover strong{text-decoration:underline}.city-guide-all{display:block;background:#f1f5f0;padding:20px 24px;color:#132a33!important;font-size:14px;font-weight:800}
+/* Coney Island: boardwalk illustration and a warm closing invitation. */
+.city-community{background:#f7a8ae url('nyc-coney.webp') center bottom/cover no-repeat;text-align:center;padding:55px 0 110px;color:#65192d;min-height:430px;border-top:8px solid #a32b3e}
+.gpm-home .city-community h2{font:56px/.95 Impact,"Arial Black",sans-serif;color:#791d32;margin:20px 0;transform:skew(-4deg)}
+.gpm-home .city-community p{font-size:16px;line-height:1.6;color:#65192d;max-width:560px;margin:0 auto 24px}
+.city-community .city-actions{justify-content:center}.gpm-home .city-community .city-button{background:#791d32;border-color:#791d32;color:#fff3df}
+.city-community .city-actions>a:not(.city-button),.city-about{color:#65192d!important;font-weight:800}.city-about{display:inline-block;margin-top:24px;font-size:12px;text-decoration:underline}
+body:has(main.is-home) .site-footer{background:#163e90;color:#fff;border-top:6px solid #ffcf3e}
+body:has(main.is-home) .site-footer a,body:has(main.is-home) .site-footer p{color:#fff}
+@media(min-width:1700px){.city-launcher{background-size:100% auto}.city-community{background-size:100% auto}}
+@media(max-width:650px){.gpm-home .city-community{background-size:100% auto}.gpm-home .memory-patcher-actions{max-width:260px}.gpm-home .city-skyline{top:auto}}
+@media(max-width:1000px){.gpm-home .city-inner{padding-left:28px;padding-right:28px}.gpm-home .memory-patcher-inner{padding-left:28px;padding-right:28px;gap:28px;grid-template-columns:minmax(0,1fr) 290px}.gpm-home .memory-patcher-inner h2{font-size:34px}.street-sign-main{font-size:22px}.city-launcher-copy{width:57%}.gpm-home .city-launcher h2{font-size:70px}.city-file-grid{gap:18px}.city-poster>strong{font-size:44px}.city-file-2 .city-poster>strong{font-size:26px}.city-poster{padding:12px}.city-station-label{position:static;display:block;margin-top:10px}.city-community{background-size:auto 100%;background-position:center}}
+@media(max-width:650px){.launcher-update{left:12px;top:2px;transform:none}.portal-nav .primary-nav a[data-nav="launcher"]{justify-content:flex-start;padding:13px 12px}.gpm-home .city-inner{padding-left:22px;padding-right:22px}.gpm-home .memory-patcher-inner{grid-template-columns:1fr;padding:20px 22px;gap:22px}.gpm-home .memory-patcher-inner h2{font-size:32px}.memory-patcher-actions{max-width:360px;width:100%;margin:auto}.nyc-gallery-shell>.gpm-container{width:94%}.city-skyline{width:3%;top:30px}.nyc-heading h2{padding:0 12px}.city-launcher{padding:38px 0 130px;background-position:62% bottom;background-size:auto 100%}.city-launcher-copy{width:100%;max-width:390px;background:#17449be8;padding:14px 14px 20px;margin-left:-8px}.gpm-home .city-launcher h2{font-size:66px}.gpm-home .city-launcher h2 span{font-size:42px}.city-launcher-stat{bottom:-100px;right:24px}.city-launcher-stat strong{font-size:44px}.city-actions{gap:15px}.city-file-grid{grid-template-columns:1fr;gap:30px}.city-poster{aspect-ratio:2;max-height:220px;padding:16px}.city-file h3{min-height:0;margin:16px 0 12px}.city-file-2 .city-poster>strong{font-size:36px}.city-file-2 .city-poster>strong>span{font-size:32px}.gpm-home .city-marquee h2{font-size:34px}.city-poster>strong{font-size:54px}.city-guides{padding:32px 0}.city-station-sign{padding:20px}.gpm-home .city-station-sign h2{font-size:30px}.city-guide-list{padding:0 12px}.city-guide{grid-template-columns:36px minmax(0,1fr) 16px;gap:12px}.city-route{width:34px;height:34px;font-size:20px}.city-guide strong{font-size:17px}.city-guide>span>span{font-size:13px}.city-guide-all{padding-left:12px;padding-right:12px;font-size:13px}.gpm-home .city-community h2{font-size:44px}.city-community{padding:40px 0 130px;background-size:auto 320px;background-color:#f7a8ae}.gpm-home .city-community p{font-size:14px}.city-community .city-inner{background:#f7a8aee8;padding-top:10px;padding-bottom:16px}.city-community .city-actions{flex-direction:column}}
+</style><style id="first-stop-design">.gpm-home .memory-patcher-inner{position:relative;grid-template-columns:minmax(0,1fr) 270px;gap:40px;max-width:1320px;padding-top:18px;padding-bottom:64px;align-items:center}
+.patcher-first-stop{display:block;width:138px;height:auto;aspect-ratio:69/10;object-fit:contain;position:relative;z-index:1;margin-bottom:10px}
+.gpm-home .memory-patcher-inner h2{font-size:27px}
+.gpm-home .memory-patcher-inner p{font-size:13px;max-width:640px}
+.gpm-home .memory-patcher-band .patcher-guide-link{display:inline-block;text-align:left;margin-top:9px;font-size:12px}
+.gpm-home .memory-patcher-band .download-action{border:0;outline:0;box-shadow:3px 4px 0 #7c8b83;padding-top:12px;padding-bottom:12px;position:relative;z-index:1}
+.patcher-route-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.patcher-copy{position:relative;z-index:1}
+.city-downloads{border-top:5px solid #ffcf3e}
+@media(max-width:1050px){.gpm-home .memory-patcher-inner{grid-template-columns:minmax(0,1fr) 250px;gap:24px;padding-left:28px;padding-right:28px}.gpm-home .memory-patcher-inner h2{font-size:24px}.subway-destination{font-size:16px}.subway-bullet{width:30px;height:30px;font-size:22px}}
+@media(max-width:600px){.gpm-home .memory-patcher-inner{grid-template-columns:1fr;gap:18px;padding-left:20px;padding-right:20px}.gpm-home .memory-patcher-actions{justify-self:end;margin:0;width:260px;max-width:100%}.gpm-home .memory-patcher-inner h2{font-size:24px}.gpm-home .memory-patcher-inner p{font-size:13px;line-height:1.5}}
+</style><style id="city-pages-design">/* Shared NYC wayfinding; the catalog and lesson content retain their existing routes. */
+@media screen{
+main:has(>.gl-shell){background:#f2f3f1}
+.gl-shell{--gl-bg:#f2f3f1;--gl-panel:#fff;--gl-line:#c8cdcb;--gl-muted:#505653;--gl-accent:#174e92;--route-color:#2454a4;color:#202420;font-family:Arial,Helvetica,sans-serif}
+.gl-shell *{letter-spacing:0!important}
+.gl-shell :is(h1,h2,h3){color:#171c1a;font-family:Arial,Helvetica,sans-serif}
+.gl-shell p{color:#505653}.gl-shell a:hover{color:#174e92}
+.gl-shell :is(a,button,input,select,summary):focus-visible{outline:3px solid #c57400;outline-offset:4px}
+.gl-shell .breadcrumb,.gl-shell .breadcrumb a,.gl-shell .breadcrumb>span{color:#42534a}
+.gl-shell .gl-eyebrow{color:#4d5952!important;font-size:12px!important;font-weight:700;text-transform:uppercase}
+.gl-home .gl-hero{position:relative;background:#151918;border:0;border-top:7px solid #151918;border-radius:0;box-shadow:none;padding:28px 32px 0;margin:0 0 32px}
+.gl-home .gl-hero:before{content:"";position:absolute;left:32px;right:32px;top:5px;height:2px;background:#fff}
+.gl-home .gl-hero .gl-eyebrow{color:#dce2de!important;background:none;border:0;border-radius:0;padding:0}
+.gl-home .gl-hero h1{font-size:40px;line-height:1.15;margin:12px 0;color:#fff}
+.gl-home .gl-hero>p{color:#dce2de;font-size:17px;max-width:700px}
+.gl-shell .gl-search{background:#fff;border:1px solid #939e96;border-radius:0;padding:5px 6px 5px 15px;box-shadow:none}
+.gl-shell .gl-search input{color:#171e19!important;background:transparent!important;font-size:16px}
+.gl-shell .gl-search input::placeholder{color:#5c675f}
+.gl-shell .gl-search>svg{color:#4d5e52}
+.gl-shell .gl-search button{color:#fff;background:#171c1a;border:1px solid #171c1a;border-radius:0;min-height:42px}
+.gl-shell .gl-search button:hover{background:#285c46;color:#fff}
+.gl-home .gl-search-hints,.gl-home .gl-search-hints>span,.gl-home .gl-search-hints a{color:#e0e7e2}
+.subway-route-key{display:flex;flex-wrap:wrap;gap:14px 24px;margin:26px -32px 0;padding:18px 32px;background:#242b27;border-bottom:5px solid #f5c52b}
+.subway-route-key a{display:flex;gap:8px;align-items:center;color:#fff;font-size:12px;font-weight:700;min-height:30px}
+.subway-route-key a:hover{color:#fff;text-decoration:underline}
+.subway-route-key a>span{display:grid;place-items:center;width:29px;height:29px;flex:none;border-radius:50%;background:var(--route-color);color:#fff;font-size:17px}
+.subway-route-key a:last-child>span{color:#171c1a}
+.gl-home .gl-entry-grid{gap:36px;margin:0 0 38px;grid-template-columns:1.2fr 1fr}
+.gl-home :is(.gl-start,.gl-help){background:transparent;border:0;border-radius:0;padding:5px 0 22px;box-shadow:none;border-bottom:1px solid #aeb9b1}
+.gl-home :is(.gl-start,.gl-help) :is(p,.gl-eyebrow){color:#505653!important}
+.gl-home :is(.gl-start,.gl-help) h2{font-size:25px;color:#171c1a}
+.gl-home .gl-start li>a,.gl-home .gl-start .gl-text-link,.gl-home .gl-help-links a,.gl-home .gl-help .gl-text-link{color:#145244!important}
+.gl-home .gl-start ol{position:relative;gap:0;margin:17px 0}
+.gl-home .gl-start ol:before{content:"";position:absolute;left:13px;top:18px;bottom:18px;width:4px;background:#00864a}
+.gl-home .gl-start li{position:relative;padding:9px 0;align-items:center;min-height:48px}
+.gl-home .gl-start li>span{width:30px;height:30px;background:#00864a;color:white;border:3px solid #f2f3f1;font-weight:700}
+.gl-home .gl-help-links a{border-bottom-color:#c8cdcb}
+.gl-home .gl-topic-grid{gap:0 28px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.gl-home .gl-topic-card{background:transparent;border:0;border-bottom:1px solid #b2bcb5;border-radius:0;padding:22px 0 25px;box-shadow:none;position:relative}
+.gl-home .gl-topic-card:hover{background:transparent;border-color:#192a20;box-shadow:none}
+.gl-home .gl-topic-card h3{color:#171c1a;font-size:21px}.gl-home .gl-topic-card h3>span{color:#384d3e}
+.gl-home .gl-topic-card p{color:#505653;font-size:15px}.gl-home .gl-card-top{color:#4e5b53;margin-bottom:15px}
+.gl-home .gl-topic-card .gl-icon,.gl-home .gl-reference-grid .gl-icon{width:43px;height:43px;border-radius:50%;border:0;background:var(--route-color);color:#fff;font:bold 26px/1 Arial;flex:none}
+.gl-home [data-topic="audio-ui"] .gl-icon{color:#171c1a}
+.gl-home .gl-reference{background:transparent;border:0;border-top:3px solid #202822;border-radius:0;padding:25px 0 0}
+.gl-home .gl-reference-grid>a{border-color:#c8cdcb;background:transparent;color:#25332b}
+.gl-home .gl-reference-grid :is(strong,small){color:#25332b}
+.gl-home .gl-bottom-help{background:transparent;border:0;border-top:1px solid #b2bcb5;padding:20px 0}
+.gl-home .gl-bottom-help a,.gl-home .gl-section-title>a{color:#174e92}
+.gl-shell[data-topic] .gl-list-header{position:relative;background:#171c1a;border:0;border-top:5px solid var(--route-color);border-radius:0;padding:24px 27px}
+.gl-shell[data-topic] .gl-list-header h1{color:#fff;font-size:34px}
+.gl-shell[data-topic] .gl-list-header p,.gl-shell[data-topic] .gl-list-header .gl-eyebrow{color:#e2e9e4!important}
+.gl-shell .gl-sidebar nav>a{color:#243b2c;border-radius:0;border-bottom:1px solid #dde2de;padding:10px 10px 10px 16px;position:relative}
+.gl-shell .gl-sidebar nav>a[data-route]:before{content:"";position:absolute;left:0;width:4px;top:8px;bottom:8px;background:var(--route-color)}
+.gl-shell .gl-sidebar nav>a:hover{background:#e1e8e1;color:#153f2a}
+.gl-shell .gl-sidebar nav>a[aria-current]{background:#171c1a;color:#fff;border-left:0;padding-left:16px}
+.gl-shell .gl-sidebar nav>a>span{color:#59665e}.gl-shell .gl-sidebar nav>a[aria-current]>span{color:#e3e9e5}
+.gl-shell .gl-sidebar nav>p,.gl-shell .gl-sidebar>summary{color:#3e5246}
+.gl-shell .gl-recommended{background:#e6ece7;border:0;border-left:4px solid var(--route-color);border-radius:0}
+.gl-shell .gl-recommended a{color:#163d2d}.gl-shell .gl-recommended a+a{border-color:#c0ccc3}
+.gl-shell .gl-filters label{color:#40574a}.gl-shell .gl-filters select{background:#fff;color:#1d3025;border:1px solid #95a79a;border-radius:0}
+.gl-shell .gl-results{border-left:4px solid var(--route-color);margin-left:8px;padding-left:24px}
+.gl-shell .gl-results li{position:relative;border-color:#c8cdcb}
+.gl-shell .gl-results li:before{content:"";position:absolute;left:-34px;top:31px;width:16px;height:16px;background:#f2f3f1;border:3px solid var(--route-color);border-radius:50%}
+.gl-shell .gl-results li>a:hover{background:#e8ede8}.gl-shell .gl-results h3{font-size:19px;color:#202b24}
+.gl-shell .gl-result-meta{color:#536759}.gl-shell .gl-pagination a{background:white;color:#174e92;border-color:#9aaba0;border-radius:0}
+.gl-shell .reader-return{background:#f2f3f1;border-color:#abb8af}.gl-shell .reader-return :is(a,button){color:#24533c}
+.gl-shell .reader-return .reader-back,.gl-shell .reader-return button{border:1px solid #8f9f94;border-radius:0;background:#fff;color:#1a4b33}
+.gl-shell .reader-hero{background:#171c1a;border:0;border-top:5px solid var(--route-color);border-radius:0;padding:28px}
+.gl-shell .reader-hero-icon{border:0;border-radius:50%;background:var(--route-color);color:#fff;font:bold 32px Arial;width:58px;height:58px}
+.gl-shell[data-topic="audio-ui"] .reader-hero-icon{color:#171c1a}
+.gl-shell .reader-hero h1{font-size:36px;color:#fff}.gl-shell .reader-hero p,.gl-shell .reader-hero p span{color:#dce5df}
+.gl-shell .reader-path>a{background:transparent;color:#254333;border:0;border-radius:0;border-bottom:3px solid #b7c6bc}
+.gl-shell .reader-path>a[aria-current]{background:#e5eee8;color:#153d29;border-color:#00864a}
+.gl-shell .reader-path>a>span,.gl-shell .reader-path>a[aria-current]>span{background:#00864a;color:#fff;border:0}
+.gl-shell .reader-rail{background:transparent;border:0;border-left:4px solid var(--route-color);border-radius:0}
+.gl-shell .reader-rail-heading{background:#171c1a;color:#fff;border:0}
+.gl-shell .reader-rail .toc-links a,.gl-shell .gl-toc-mobile a{color:#263e30;border-radius:0}
+.gl-shell .reader-rail .toc-links a>span:first-child,.gl-shell .gl-toc-mobile a>span:first-child{color:#425b4a}
+.gl-shell .reader-rail .toc-links a:hover,.gl-shell .reader-rail .toc-links a[aria-current]{color:#122f20;background:#dde8df}
+.gl-shell .reader-rail-help{border-color:#bdc9c0}.gl-shell .reader-rail-help strong,.gl-shell .reader-rail-help a{color:#264b35}
+.reader-v2 .article-body,.reader-v2 .article-body p{color:#252f29}.reader-v2 .article-body{font-size:17px}
+.reader-v2 .reader-section{background:transparent;border:0;border-bottom:1px solid #becac1;border-radius:0;box-shadow:none;padding:12px 0 26px;margin-bottom:22px}
+.reader-v2 .article-body .reader-intro{background:transparent;border-left:0;border-bottom:1px solid #becac1;padding-top:0}
+.reader-v2 .article-body .reader-section>h2:first-child,.reader-v2 .article-body .reader-section>h3:first-child{color:#1e2b23;border-bottom:0;padding-bottom:0}
+.reader-v2 .article-body li::marker,.reader-v2 .reader-tool-list strong{color:#26583c}
+.reader-v2 .article-body :not(pre)>code{background:#dce6de;color:#193c28}
+.reader-v2 .article-body a{color:#164f90;text-decoration:underline;text-underline-offset:3px}
+.reader-v2 .article-body :is(th,td){border-color:#a4b3a8;color:#24392b}
+.reader-v2 .article-body :is(table,tr){background:#f4f7f3}.reader-v2 .article-body th{background:#dbe6dc}
+.reader-v2 .article-body tr:nth-child(even){background:#e9eee8}
+.reader-v2 .article-body tr:nth-child(even) td{background:#e9eee8;color:#24392b}
+.reader-v2 .article-body h4{color:#1e2b23}
+.reader-v2 .article-body :is(.note,.callout,.warning,.tip,blockquote){background:#e2ece3;color:#243b2b;border-color:#829f89;border-radius:0}
+.reader-v2 .article-body .warning{background:#f3ebca;border-color:#ad8c2c;color:#453916}
+.reader-v2 .lesson-code button{background:#334c3e;border-color:#829d8d;color:#fff}
+.reader-v2 .article-body pre{background:#141b19;color:#e9f0eb}.reader-v2 .lesson-code-toolbar{background:#25372c}
+.reader-v2 .guide-downloads{background:#e2eee5;border:0;border-left:4px solid #00864a;border-radius:0}
+.reader-v2 .guide-downloads :is(h2,p){color:#153a25}
+.reader-v2 .reader-next{background:#171c1a;border:0;border-radius:0;border-top:4px solid #00864a}.reader-v2 .reader-next a{color:#fff}
+.reader-v2 .reader-next p,.reader-v2 .reader-next small{color:#dbe7df}
+.reader-v2 .gl-related{background:transparent;border:0;border-top:3px solid #253e2d;border-radius:0;padding:24px 0}
+.reader-v2 .gl-related a,.reader-v2 .gl-article-footer a{color:#164f90}
+.reader-v2 .gl-mobile-toc{background:#e6ece7;border-color:#9aaba0;border-radius:0}.reader-v2 .gl-mobile-toc summary{color:#1b3c29}
+/* Central Park: the original game screenshots remain the catalog previews. */
+main:has(>.downloads-depot){background:#f0f3ed;color:#22372b}
+.downloads-depot{color:#22372b;font-family:Arial,Helvetica,sans-serif}.downloads-depot a{color:#18583d}.downloads-depot a:hover{color:#052f1f}
+.downloads-depot :is(a,button,input,select):focus-visible{outline:3px solid #bc7900;outline-offset:4px}
+.downloads-depot .breadcrumb,.downloads-depot .breadcrumb>span{color:#496351}.downloads-depot .breadcrumb a{color:#18583d}
+.downloads-depot:not(.depot-detail) .depot-heading{display:block;min-height:235px;padding:32px;border:0;border-top:4px solid #e1bc4c;background:#164d3a url('nyc-central-park.webp') center bottom/cover no-repeat}
+.downloads-depot:not(.depot-detail) .depot-heading>div{max-width:45%}
+.downloads-depot .depot-heading:after{display:none}
+.downloads-depot .depot-heading h1{font-size:38px;color:#fff;font-family:Arial,sans-serif}
+.downloads-depot .depot-heading p,.downloads-depot .depot-eyebrow{color:#e6eee8}
+.downloads-depot .depot-heading .depot-help{display:inline-block;color:#fff;font-weight:700;margin-top:20px}
+.downloads-depot .depot-categories{background:#163f2e;border-bottom:4px solid #e1bc4c;margin-bottom:28px}
+.downloads-depot .depot-categories a{color:#eff4eb;border:0;border-right:1px solid #54705d;padding:16px 10px}
+.downloads-depot .depot-categories a:hover{background:#2f5c42;color:white}
+.downloads-depot .depot-categories a[aria-current]{background:#e2bf4c;color:#1b3527}
+.downloads-depot .depot-count{color:#d0e0d3}.downloads-depot .depot-categories a[aria-current] .depot-count{color:#2c4838}
+.downloads-depot :is(.depot-section-heading,.depot-results-heading) h2,.downloads-depot .depot-sidebar h2,.downloads-depot .depot-detail-body h2{color:#1b3f2a}
+.downloads-depot :is(.depot-section-heading,.depot-results-heading)>span{color:#526857}
+.downloads-depot :is(.spotlight-file,.depot-file){background:#fff;border:1px solid #bac9ba;border-radius:3px;box-shadow:none}
+.downloads-depot .spotlight-file>div>span,.downloads-depot .depot-file-meta{color:#2e6645}
+.downloads-depot .spotlight-link svg{color:#2c6441}.downloads-depot .file-cover{border-color:#bac9ba}
+.downloads-depot .file-wordmark{background:#164d3a;color:#f4f3e9}
+.downloads-depot .file-wordmark>strong>span{color:#e3c356}
+.downloads-depot .file-title-cover{background:#e0e9df;border-color:#3f704b}
+.downloads-depot .file-title-cover>span,.downloads-depot .file-title-cover>small{color:#41664c}.downloads-depot .file-title-cover>strong{color:#163f2a}
+.downloads-depot [data-download-category="maps"] .file-title-cover{background:#dcebed;border-color:#52868c}
+.downloads-depot [data-download-category="audio"] .file-title-cover{background:#f5ebc2;border-color:#ac881e}
+.downloads-depot [data-download-category="archive"] .file-title-cover{background:#e8e7e1;border-color:#89877a}
+.downloads-depot .depot-sidebar,.downloads-depot .depot-detail-body aside{border-color:#b1c4b4}
+.downloads-depot .depot-essentials strong{color:#205f3a}.downloads-depot .depot-essentials span,.downloads-depot .depot-community p{color:#4c6352}
+.downloads-depot .depot-essentials>a{border-color:#c5d3c6}
+.downloads-depot .depot-toolbar{border-color:#b8c8b9}.downloads-depot .depot-toolbar label{color:#31573f}
+.downloads-depot .depot-toolbar :is(input,select){background:#fff;color:#203b2b;border-color:#8ba38e;border-radius:0}
+.downloads-depot .depot-toolbar input::placeholder{color:#5b7161}
+.downloads-depot .depot-toolbar button{background:#1b5035;color:#fff;border-color:#1b5035;border-radius:0}
+.downloads-depot .depot-toolbar button:hover{background:#0e3521}
+.downloads-depot .depot-file p,.downloads-depot .depot-file small,.downloads-depot .depot-detail-body p{color:#506957}
+.downloads-depot .depot-release{color:#21653a}
+.downloads-depot .depot-file .file-image-credit{color:#fff}
+.downloads-depot .depot-download{background:#195134;color:#fff;border:1px solid #195134;border-radius:2px}
+.downloads-depot .depot-download:hover{background:#0b3320;color:#fff}
+.downloads-depot .depot-empty h3,.downloads-depot .depot-empty p{color:#244e32}
+.depot-detail .depot-heading{background:#164d3a;border:0;border-top:4px solid #e1bc4c;padding:26px 30px}
+.depot-detail .depot-heading .depot-download{background:#f0ce5f;color:#153524;border-color:#f0ce5f;flex:none}
+.downloads-depot .depot-detail-body details{background:#e2ebe0;border-color:#9fb69f}.downloads-depot .depot-detail-body summary{color:#194f31}
+.downloads-depot .depot-detail-body figcaption{color:#4e6954}
+@media(max-width:900px){
+ .gl-home .gl-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .gl-shell .gl-sidebar{background:#fff;border-radius:0}.gl-shell .gl-sidebar nav>a{padding-left:16px}
+ .downloads-depot:not(.depot-detail) .depot-heading{min-height:220px;background-size:auto 100%;background-position:right bottom;padding:26px}
+ .downloads-depot:not(.depot-detail) .depot-heading>div{max-width:47%}
+ .downloads-depot .depot-heading h1{font-size:34px}
+}
+@media(max-width:600px){
+ .gl-home .gl-hero{padding:23px 18px 0}.gl-home .gl-hero:before{left:18px;right:18px}
+ .gl-home .gl-hero h1{font-size:32px}.gl-home .gl-hero>p{font-size:15px}
+ .subway-route-key{margin:22px -18px 0;padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .subway-route-key a{font-size:11px;gap:7px}.subway-route-key a>span{width:25px;height:25px;font-size:15px}
+ .gl-home .gl-entry-grid{grid-template-columns:1fr;gap:20px}.gl-home .gl-topic-grid{grid-template-columns:1fr}
+ .gl-home .gl-topic-card{padding:20px 0}.gl-home .gl-card-top{margin-bottom:10px}
+ .gl-shell .gl-list-header h1{font-size:28px}.gl-shell[data-topic] .gl-list-header{padding:22px 20px}
+ .gl-shell .reader-hero{padding:22px 18px;gap:14px}.gl-shell .reader-hero h1{font-size:27px}
+ .gl-shell .reader-hero-icon{width:40px;height:40px;font-size:24px}
+ .reader-v2 .reader-section{padding:8px 0 22px}.reader-v2 .article-body{font-size:16px}
+ .downloads-depot:not(.depot-detail) .depot-heading{min-height:285px;padding:24px 22px 155px;background-size:auto 190px;background-position:right bottom}
+ .downloads-depot:not(.depot-detail) .depot-heading>div{max-width:100%}
+ .downloads-depot .depot-heading h1{font-size:32px}.downloads-depot .depot-heading p{font-size:14px}
+ .downloads-depot .depot-heading .depot-help{margin-top:12px;font-size:13px}
+ .depot-detail .depot-heading{padding:24px;flex-direction:column;align-items:start}
+ .depot-detail .depot-heading h1{font-size:28px}
+}
+}
+</style><style id="interior-guides-design">/* Load after city-pages.css. Every rule is gated by the interior-only class. */
+@media screen {
+  main:not(.is-home):has(> .gl-shell.ig-theme) {
+    background-color: #dce6e2;
+    background-image: linear-gradient(#afc1b8 1px, transparent 1px),
+      linear-gradient(90deg, #afc1b8 1px, transparent 1px);
+    background-size: 100% 44px, 108px 44px;
+  }
+
+  .gl-shell.ig-theme {
+    --ig-ink: #17392f;
+    --ig-paper: #f3f6f1;
+    --ig-muted: #40564d;
+    --ig-green: #115b48;
+    --ig-red: #be293b;
+    --ig-blue: #17449b;
+    --ig-yellow: #ffcf3e;
+    --gl-accent: #164c8d;
+    --gl-line: #a5b8ae;
+    --gl-muted: #40564d;
+    --gl-bg: #f3f6f1;
+    --gl-panel: #f3f6f1;
+    position: relative;
+    isolation: isolate;
+    max-width: 1320px;
+    padding: 0 40px 56px;
+    color: var(--ig-ink);
+    background: #e4ece6;
+    border-inline: 1px solid #a5b8ae;
+    font: 16px/1.65 Arial, Helvetica, sans-serif;
+  }
+
+  .gl-shell.ig-theme::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9px;
+    width: 4px;
+    background: var(--ig-green);
+    box-shadow: 8px 0 var(--ig-red), 16px 0 var(--ig-blue);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .gl-shell.ig-theme :is(h1, h2, h3, h4) { color: var(--ig-ink); letter-spacing: 0; }
+  .gl-shell.ig-theme p { color: var(--ig-muted); }
+  .gl-shell.ig-theme :is(a, button, input, select, summary):focus-visible {
+    outline: 3px solid #9b341a;
+    outline-offset: 4px;
+  }
+  .gl-shell.ig-theme :is(a, button, summary) { touch-action: manipulation; }
+  .gl-shell.ig-theme a:hover { color: #17392f; }
+  .gl-shell.ig-theme .breadcrumb { padding-block: 18px; }
+  .gl-shell.ig-theme .breadcrumb :is(a, span) { color: #314e42; }
+  .gl-shell.ig-theme .breadcrumb a:hover { color: #17392f; text-decoration: underline; }
+  .gl-shell.ig-theme .gl-eyebrow { color: #315145 !important; }
+
+  /* Civic poster lettering, ceramic surround and a three-line interchange. */
+  .gl-shell.ig-theme .ig-masthead {
+    position: relative;
+    isolation: isolate;
+    background: var(--ig-yellow);
+    border: 0;
+    border-top: 8px solid var(--ig-green);
+    border-bottom: 3px solid var(--ig-ink);
+    border-radius: 0;
+    padding: 28px 32px 48px;
+    margin: 0 0 28px;
+    box-shadow: none;
+    overflow-wrap: anywhere;
+  }
+  .gl-shell.ig-theme .ig-masthead::before { display: none; }
+  .gl-shell.ig-theme .ig-masthead h1 {
+    color: var(--ig-ink);
+    font: 700 38px/1.08 "Arial Black", Arial, sans-serif;
+    margin: 10px 0 12px;
+    max-width: 26ch;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+  .gl-shell.ig-theme .ig-masthead :is(p, p span, .gl-eyebrow) { color: #244536 !important; }
+  .gl-shell.ig-theme .ig-masthead > p { font-size: 17px; max-width: 44em; }
+  .gl-shell.ig-theme .ig-masthead-copy { min-width: 0; flex: 1; }
+  .gl-shell.ig-theme .reader-hero { align-items: center; gap: 22px; }
+  .gl-shell.ig-theme .reader-hero-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid var(--ig-paper);
+    background: var(--route-color);
+    box-shadow: 0 0 0 2px #17392f;
+    color: white;
+    font: 700 36px/1 Arial, sans-serif;
+  }
+  .gl-shell.ig-theme[data-topic="audio-ui"] .reader-hero-icon { color: #17392f; }
+  .gl-shell.ig-theme .ig-route-map {
+    position: absolute;
+    inset: auto 0 0;
+    height: 29px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .gl-shell.ig-theme .ig-map-track {
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    top: 3px;
+    background: var(--ig-blue);
+  }
+  .gl-shell.ig-theme .ig-map-track:nth-child(2) { top: 12px; background: var(--ig-green); }
+  .gl-shell.ig-theme .ig-map-track:nth-child(3) { top: 21px; background: var(--ig-red); }
+  .gl-shell.ig-theme .ig-map-track i {
+    position: absolute;
+    top: -4px;
+    left: 18%;
+    width: 13px;
+    height: 13px;
+    border: 3px solid #17392f;
+    border-radius: 50%;
+    background: #f3f6f1;
+  }
+  .gl-shell.ig-theme .ig-map-track i:nth-child(2) { left: 61%; }
+  .gl-shell.ig-theme .ig-map-track i:nth-child(3) { left: 87%; }
+  .gl-shell.ig-theme .ig-map-track:nth-child(2) i { margin-left: 24px; }
+  .gl-shell.ig-theme .ig-map-track:nth-child(3) i { margin-left: 48px; }
+
+  /* Library directory. This is .gl-home, never the site's .gpm-home. */
+  .gl-shell.ig-theme.gl-home .gl-hero { padding-bottom: 29px; }
+  .gl-shell.ig-theme.gl-home .gl-hero h1 {
+    font: 60px/1.02 Impact, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    max-width: 18ch;
+    text-shadow: 2px 2px #f3f6f1;
+  }
+  .gl-shell.ig-theme .gl-search {
+    background: var(--ig-paper);
+    border: 2px solid var(--ig-ink);
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .gl-shell.ig-theme .gl-search input { color: #17392f !important; }
+  .gl-shell.ig-theme .gl-search input::placeholder { color: #466052; }
+  .gl-shell.ig-theme .gl-search button { background: #115b48; border-color: #115b48; color: white; }
+  .gl-shell.ig-theme .gl-search button:hover { background: #17392f; color: white; }
+  .gl-shell.ig-theme.gl-home .gl-search-hints,
+  .gl-shell.ig-theme.gl-home .gl-search-hints :is(span, a) { color: #244536; }
+  .gl-shell.ig-theme.gl-home .gl-search-hints a { text-decoration-color: currentColor; }
+  .gl-shell.ig-theme .subway-route-key {
+    background: #115b48;
+    margin: 26px -32px 0;
+    padding: 16px 32px;
+    border-bottom: 0;
+    gap: 12px 22px;
+  }
+  .gl-shell.ig-theme .subway-route-key a { color: white; font-size: 13px; }
+  .gl-shell.ig-theme .subway-route-key a:hover { color: #ffcf3e; }
+  .gl-shell.ig-theme .subway-route-key a > span { border: 1px solid #f3f6f1; }
+  .gl-shell.ig-theme.gl-home .gl-entry-grid { gap: 36px; margin: 30px 0 34px; }
+  .gl-shell.ig-theme.gl-home :is(.gl-start, .gl-help) {
+    border: 0;
+    border-top: 6px solid #115b48;
+    border-bottom: 1px solid #a5b8ae;
+    padding: 22px 0;
+    background: transparent;
+  }
+  .gl-shell.ig-theme.gl-home .gl-help { border-top-color: #be293b; }
+  .gl-shell.ig-theme.gl-home :is(.gl-start, .gl-help) h2 { color: #17392f; font-size: 28px; }
+  .gl-shell.ig-theme.gl-home .gl-start li > span { border-color: #e4ece6; }
+  .gl-shell.ig-theme.gl-home .gl-section-title {
+    border-left: 0;
+    border-top: 3px solid #17392f;
+    padding: 18px 0 0;
+  }
+  /* Deliberately outrank the legacy .gl-home white-on-light title rule. */
+  .gl-shell.ig-theme.gl-home .gl-section-title h2 { color: #17392f; font-size: 27px; }
+  .gl-shell.ig-theme.gl-home .gl-section-title :is(p, a) { color: #254b3b; }
+  .gl-shell.ig-theme.gl-home .gl-topic-grid { gap: 0 28px; }
+  .gl-shell.ig-theme.gl-home .gl-topic-card { padding: 23px 0; border-bottom: 2px solid #a5b8ae; }
+  .gl-shell.ig-theme.gl-home .gl-topic-card:hover { background: #d4e2d8; border-color: #17392f; }
+  .gl-shell.ig-theme.gl-home .gl-topic-card h3 { color: #17392f; font-size: 22px; }
+  .gl-shell.ig-theme.gl-home .gl-topic-card :is(p, .gl-card-top) { color: #40564d; }
+  .gl-shell.ig-theme.gl-home .gl-topic-card .gl-icon { box-shadow: 0 0 0 3px #e4ece6, 0 0 0 5px var(--route-color); }
+  .gl-shell.ig-theme.gl-home .gl-reference { border-top: 0; padding-top: 0; }
+  .gl-shell.ig-theme.gl-home .gl-reference-grid { gap: 0 30px; }
+  .gl-shell.ig-theme.gl-home .gl-reference-grid > a {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #a5b8ae;
+    border-radius: 0;
+    padding: 19px 0;
+    min-width: 0;
+    color: #17392f;
+  }
+  .gl-shell.ig-theme.gl-home .gl-reference-grid > a:hover { background: #d4e2d8; border-color: #17392f; color: #17392f; }
+  .gl-shell.ig-theme.gl-home .gl-reference-grid :is(strong, small),
+  .gl-shell.ig-theme.gl-home .gl-reference-grid > a:hover :is(strong, small) { color: #17392f; }
+  .gl-shell.ig-theme.gl-home .gl-bottom-help p { color: #40564d; }
+  .gl-shell.ig-theme.gl-home .gl-bottom-help a { color: #164c8d; }
+
+  /* Route directory and search: stop markers, not floating cards. */
+  .gl-shell.ig-theme .gl-layout { gap: 28px; }
+  .gl-shell.ig-theme .gl-list-main { background: var(--ig-paper); padding: 0 26px 24px; }
+  .gl-shell.ig-theme .gl-list-header { margin-inline: -26px; padding-bottom: 46px; }
+  .gl-shell.ig-theme .gl-sidebar { padding-right: 0; }
+  .gl-shell.ig-theme .gl-sidebar nav > a { min-height: 43px; color: #17392f; border-color: #b3c4b8; }
+  .gl-shell.ig-theme .gl-sidebar nav > a:hover { background: #cbded0; color: #17392f; }
+  .gl-shell.ig-theme .gl-sidebar nav > a[aria-current] { background: #115b48; color: white; }
+  .gl-shell.ig-theme .gl-sidebar nav > p { color: #40564d; }
+  .gl-shell.ig-theme .gl-recommended { background: #dce9df; border-left: 5px solid var(--route-color); }
+  .gl-shell.ig-theme .gl-recommended h2 { color: #17392f; }
+  .gl-shell.ig-theme .gl-recommended a { color: #254b3b; }
+  .gl-shell.ig-theme .gl-filters select { font-size: 14px; border-color: #7e9888; }
+  .gl-shell.ig-theme .gl-results { margin-left: 8px; padding-left: 24px; }
+  .gl-shell.ig-theme .gl-results li::before { background: var(--ig-paper); }
+  .gl-shell.ig-theme .gl-results li > a:hover { background: #dce9df; }
+  .gl-shell.ig-theme .gl-results :is(h3, p, .gl-result-meta) { color: #17392f; }
+  .gl-shell.ig-theme .gl-pagination { flex-wrap: wrap; }
+  .gl-shell.ig-theme .gl-pagination a:hover { background: #dce9df; }
+
+  /* The reading surface stays quiet; colored routes run beside it to the end. */
+  .gl-shell.ig-theme .reader-return {
+    background: #e4ece6;
+    border-bottom: 1px solid #a5b8ae;
+    min-height: 70px;
+  }
+  .gl-shell.ig-theme .reader-return :is(a, button) { color: #17392f; }
+  .gl-shell.ig-theme .reader-return :is(.reader-back, button) {
+    background: #f3f6f1;
+    color: #17392f;
+    border-color: #7e9888;
+    min-height: 44px;
+  }
+  .gl-shell.ig-theme .reader-return :is(a, button):hover { color: #17392f; background: #d4e2d8; }
+  .gl-shell.ig-theme .reader-path { margin-bottom: 26px; }
+  .gl-shell.ig-theme .reader-path > a { background: #f3f6f1; color: #17392f; min-width: 0; }
+  .gl-shell.ig-theme .reader-path > a[aria-current] { border-color: #115b48; background: #d3e5d8; }
+  .gl-shell.ig-theme .gl-reader { grid-template-columns: 244px minmax(0, 1fr); gap: 26px; }
+  .gl-shell.ig-theme .reader-rail {
+    background: #e4ece6;
+    border: 0;
+    border-top: 5px solid var(--route-color);
+    max-height: calc(100vh - 110px);
+  }
+  .gl-shell.ig-theme .reader-rail-heading {
+    background: #115b48;
+    color: #fff;
+    border-top: 2px solid #f3f6f1;
+    font-size: 19px;
+  }
+  .gl-shell.ig-theme .reader-rail .toc-links { padding: 12px 0; gap: 0; }
+  .gl-shell.ig-theme .reader-rail .toc-links a,
+  .gl-shell.ig-theme .gl-toc-mobile a {
+    position: relative;
+    isolation: isolate;
+    padding: 11px 8px;
+    gap: 10px;
+    align-items: baseline;
+    min-height: 44px;
+    color: #17392f;
+  }
+  .gl-shell.ig-theme .reader-rail .toc-links a::before,
+  .gl-shell.ig-theme .gl-toc-mobile a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 21px;
+    width: 4px;
+    background: var(--route-color);
+    z-index: -1;
+  }
+  .gl-shell.ig-theme .reader-rail .toc-links a > span:first-child,
+  .gl-shell.ig-theme .gl-toc-mobile a > span:first-child {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    align-self: start;
+    flex: 0 0 30px;
+    background: #f3f6f1;
+    color: #17392f;
+    border: 2px solid var(--route-color);
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 1;
+  }
+  .gl-shell.ig-theme .reader-rail .toc-links a > span:last-child,
+  .gl-shell.ig-theme .gl-toc-mobile a > span:last-child { min-width: 0; }
+  .gl-shell.ig-theme .reader-rail .gl-subheading { margin-left: 0; }
+  .gl-shell.ig-theme .reader-rail .gl-subheading > span:last-child { padding-left: 8px; }
+  .gl-shell.ig-theme .reader-rail .toc-links a:is(:hover, [aria-current]),
+  .gl-shell.ig-theme .gl-toc-mobile a:is(:hover, [aria-current]) { background: #cbded0; color: #17392f; }
+  .gl-shell.ig-theme .reader-rail .toc-links a[aria-current] > span:first-child,
+  .gl-shell.ig-theme .gl-toc-mobile a[aria-current] > span:first-child { background: #17392f; color: #fff; border-color: #17392f; }
+  .gl-shell.ig-theme .reader-rail-help { border-color: #a5b8ae; margin-inline: 8px; }
+  .gl-shell.ig-theme .reader-rail-help :is(strong, a) { color: #17392f; }
+  /* The original .reader-short uses !important, so the corrective rule must too. */
+  .gl-shell.ig-theme .reader-short { color: #40564d !important; }
+  .gl-shell.ig-theme .gl-article {
+    --lesson-accent: #115b48;
+    --lesson-soft: #dce9df;
+    background: var(--ig-paper);
+    padding: 26px 30px 0;
+    border-top: 5px solid var(--route-color);
+  }
+  .gl-shell.ig-theme .article-body { font: 17px/1.8 Arial, Helvetica, sans-serif; color: #263d32; }
+  .gl-shell.ig-theme .article-body :is(p, li, dd) { color: #263d32; }
+  .gl-shell.ig-theme .article-body :is(h2, h3, h4) { color: #17392f; text-wrap: balance; }
+  .gl-shell.ig-theme .article-body :is(h2, h3) { scroll-margin-top: 140px !important; }
+  .gl-shell.ig-theme .reader-section {
+    position: relative;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #a5b8ae;
+    border-radius: 0;
+    padding: 12px 0 24px;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
+  .gl-shell.ig-theme .article-body .reader-section > :is(h2, h3):first-child {
+    color: #17392f;
+    font: 700 25px/1.25 Arial, sans-serif;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .gl-shell.ig-theme .article-body .reader-intro { padding-top: 0; border-left: 0; font-size: 17px; }
+  .gl-shell.ig-theme .article-body a { color: #164c8d; }
+  .gl-shell.ig-theme .article-body a:hover { color: #17392f; }
+  .gl-shell.ig-theme .article-body :not(pre) > code { background: #dde8df; color: #17392f; }
+  .gl-shell.ig-theme .article-body :is(table, tr) { background: #f3f6f1; }
+  .gl-shell.ig-theme .article-body :is(th, td) { color: #263d32; border-color: #9db3a5; }
+  .gl-shell.ig-theme .article-body th { background: #d3e5d8; color: #17392f; }
+  .gl-shell.ig-theme .article-body tr:nth-child(even) td { background: #e4ece6; color: #263d32; }
+  .gl-shell.ig-theme .article-body .table-scroll { border-color: #9db3a5; border-radius: 0; }
+  .gl-shell.ig-theme .article-body :is(details, .note, .callout, .tip, blockquote, .important-callout) {
+    background: #e0eade;
+    border-color: #91ad9b;
+    border-radius: 0;
+    color: #263d32;
+  }
+  .gl-shell.ig-theme .article-body :is(.warning, .important-callout) { background: #fff0b9; border-color: #a97a09; }
+  .gl-shell.ig-theme .article-body :is(summary, .lesson-checks summary) { color: #17392f; }
+  .gl-shell.ig-theme .reader-tool-list strong { color: #17392f; }
+  .gl-shell.ig-theme .lesson-code { border-color: #567264; border-radius: 0; }
+  .gl-shell.ig-theme .article-body pre { background: #14251e; color: #eaf3ec; }
+  .gl-shell.ig-theme .lesson-code-toolbar { background: #254e3d; color: #fff; }
+  .gl-shell.ig-theme .lesson-code-toolbar button { background: #17392f; border-color: #a6c4af; color: #fff; }
+  .gl-shell.ig-theme .lesson-code-toolbar button:hover { background: #416a51; color: #fff; }
+  .gl-shell.ig-theme .lesson-code .code-line-numbers { color: #a2b8ac; border-color: #567264; }
+  .gl-shell.ig-theme .article-body figcaption { color: #40564d; }
+  .gl-shell.ig-theme .guide-downloads { background: #d3e5d8; border-left: 5px solid #115b48; padding: 20px; }
+  .gl-shell.ig-theme .guide-downloads :is(h2, p, small) { color: #17392f; opacity: 1; }
+  .gl-shell.ig-theme :is(.download-action, .article-body a.inline-download-action) {
+    background: #115b48;
+    color: #fff !important;
+    border: 2px solid #115b48;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .gl-shell.ig-theme :is(.download-action, .article-body a.inline-download-action):hover { background: #17392f; border-color: #17392f; color: #fff !important; }
+  .gl-shell.ig-theme .reader-next { background: #115b48; border-top: 6px solid #ffcf3e; }
+  .gl-shell.ig-theme .reader-next :is(a, p, small) { color: #fff; }
+  .gl-shell.ig-theme .reader-next a:hover { color: #ffcf3e; }
+  .gl-shell.ig-theme .gl-related { border-top: 3px solid #17392f; padding: 24px 0; background: transparent; }
+  .gl-shell.ig-theme .gl-related h2 { color: #17392f; }
+  .gl-shell.ig-theme :is(.gl-related, .gl-article-footer) a { color: #164c8d; }
+  .gl-shell.ig-theme :is(.gl-related, .gl-article-footer) a:hover { color: #17392f; text-decoration: underline; }
+  .gl-shell.ig-theme .gl-article-footer { flex-wrap: wrap; }
+  .gl-shell.ig-theme .gl-mobile-toc { background: #e0eade; border-color: #91ad9b; }
+  .gl-shell.ig-theme .gl-mobile-toc summary { color: #17392f; }
+
+  /* Memory Patcher: ceramic tile station wall and the homepage's FIRST STOP sign. */
+  .gl-shell.ig-theme[data-ig-page="patcher"] {
+    --route-color: #be293b !important;
+    background-color: #e4e9e5;
+    background-image: linear-gradient(#b9c7bf 1px, transparent 1px),
+      linear-gradient(90deg, #b9c7bf 1px, transparent 1px);
+    background-size: 100% 42px, 100px 42px;
+  }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero {
+    padding: 32px 30px 50px;
+    background: transparent;
+    border-top: 6px double #17392f;
+    border-bottom: 6px double #17392f;
+    min-height: 260px;
+    gap: 28px;
+  }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .ig-masthead-copy {
+    background: #e4e9e5;
+    border: 5px double #17392f;
+    padding: 18px 24px;
+    flex: 0 1 860px;
+  }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero h1 {
+    color: #17392f;
+    font: 52px/1.04 Impact, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    max-width: 23ch;
+    margin-bottom: 0;
+  }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero-icon { width: 78px; height: 78px; font-size: 47px; background: #be293b; }
+  .gl-shell.ig-theme .ig-first-stop { display: block; width: 166px; height: auto; margin: 0 0 13px; }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero p { font-size: 13px; }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .reader-rail { background: #e4e9e5; }
+  .gl-shell.ig-theme[data-ig-page="patcher"] .guide-downloads { border-left-color: #be293b; }
+  .gl-shell.ig-theme .resource-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-block: 24px; }
+  .gl-shell.ig-theme .article-body a.resource-link:not(.inline-download-action) {
+    display: block;
+    background: transparent;
+    border: 0;
+    border-top: 2px solid #91ad9b;
+    border-radius: 0;
+    padding: 16px 0;
+    text-decoration: none;
+  }
+  .gl-shell.ig-theme .resource-link strong { display: block; }
+  .gl-shell.ig-theme .resource-link span { display: block; color: #40564d; font-size: 14px; }
+  .gl-shell.ig-theme .resource-link:hover strong { text-decoration: underline; }
+  .gl-shell.ig-theme .resource-link.inline-download-action { align-self: start; margin: 0 0 14px; }
+  .gl-shell.ig-theme .resource-link.inline-download-action span { color: #fff; }
+
+  /* Launcher: reuse the exact bridge screenprint, including its blue open sky. */
+  .gl-shell.ig-theme[data-ig-page="launcher"] {
+    --route-color: #17449b !important;
+    --ig-paper: #f0f4f5;
+    background: #dee8ec;
+  }
+  .gl-shell.ig-theme[data-ig-page="launcher"]::before { background: #17449b; box-shadow: 8px 0 #ffcf3e, 16px 0 #be293b; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero {
+    background: #17449b url('nyc-brooklyn.webp') center bottom / cover no-repeat;
+    min-height: 312px;
+    border-top: 7px solid #ffcf3e;
+    border-bottom: 7px solid #ffcf3e;
+    padding: 30px 34px 48px;
+    align-items: start;
+    gap: 18px;
+  }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .ig-masthead-copy { flex: 0 1 440px; max-width: 52%; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero-icon { background: #ffcf3e; color: #173c84; border-color: #ffcf3e; box-shadow: none; width: 46px; height: 46px; font-size: 32px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero h1 {
+    font: 62px/.98 Impact, "Arial Black", sans-serif;
+    text-transform: uppercase;
+    color: #ffcf3e;
+    text-shadow: 2px 3px #10357a;
+    margin-top: 16px;
+    max-width: 11ch;
+  }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero :is(p, p span) { color: #fff !important; font-size: 13px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] :is(.reader-return, .reader-rail) { background: #dee8ec; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .reader-rail-heading { background: #17449b; border-top-color: #ffcf3e; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .guide-downloads { background: #ffeb9c; border-left-color: #17449b; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] :is(.download-action, .article-body a.inline-download-action) { background: #17449b; border-color: #17449b; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] :is(.download-action, .article-body a.inline-download-action):hover { background: #10357a; border-color: #10357a; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-release-header { background: transparent; border: 0; padding: 0; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-release-header > span { color: #17449b; font-size: 14px; font-weight: 700; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-release-header h3 { color: #17392f; font-size: 27px; margin-top: 12px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] :is(.e4mplus-compatibility-note, .e4mplus-important) { background: #ffeb9c; color: #17392f; border: 0; border-left: 5px solid #17449b; padding: 20px; margin-block: 24px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-compatibility-note :is(strong, span) { display: block; color: #17392f; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-compatibility-note strong { margin-bottom: 8px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 26px 0; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid > div { background: transparent; border: 0; border-top: 5px solid #17449b; border-radius: 0; padding: 17px 0; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid > div:nth-child(2) { border-color: #b78a08; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid > div:nth-child(3) { border-color: #be293b; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid strong { display: block; color: #17449b; font: 700 20px/1.2 Arial, sans-serif; margin-bottom: 10px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid span { display: block; color: #263d32; font-size: 14px; line-height: 1.65; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-info-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-info-layout > section { padding: 0; background: transparent; border: 0; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-info-layout h3 { font-size: 22px; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-important h3 { margin-top: 0; }
+  .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-final-note { background: #dce6ed; border-left: 4px solid #17449b; padding: 17px 20px; }
+
+  @media (max-width: 1100px) {
+    .gl-shell.ig-theme { padding-inline: 36px 24px; }
+    .gl-shell.ig-theme .gl-reader { grid-template-columns: 205px minmax(0, 1fr); gap: 22px; }
+    .gl-shell.ig-theme .gl-layout { grid-template-columns: 200px minmax(0, 1fr); gap: 22px; }
+    .gl-shell.ig-theme .gl-article { padding-inline: 24px; }
+    .gl-shell.ig-theme .ig-masthead h1 { font-size: 34px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero h1 { font-size: 52px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid { grid-template-columns: 1fr; gap: 5px; }
+  }
+  @media (max-width: 900px) {
+    .gl-shell.ig-theme :is(.gl-reader, .gl-layout) { display: block; }
+    .gl-shell.ig-theme .gl-sidebar { background: #d3e5d8; border-color: #91ad9b; }
+    .gl-shell.ig-theme .gl-sidebar > summary { color: #17392f; min-height: 44px; }
+    .gl-shell.ig-theme .reader-rail { display: none; }
+    .gl-shell.ig-theme .gl-mobile-toc:not([hidden]) { display: block; }
+    .gl-shell.ig-theme .gl-toc-mobile { gap: 0; }
+    .gl-shell.ig-theme .gl-mobile-toc[hidden] { display: none; }
+    .gl-shell.ig-theme .gl-article { padding: 24px 26px 0; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-spec-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero { gap: 20px; padding-inline: 14px; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero h1 { font-size: 43px; }
+  }
+  @media (max-width: 650px) {
+    .gl-shell.ig-theme { padding: 0 14px 32px 24px; border: 0; }
+    .gl-shell.ig-theme::before { left: 3px; width: 3px; box-shadow: 6px 0 #be293b, 12px 0 #17449b; }
+    .gl-shell.ig-theme .breadcrumb { padding-block: 14px; }
+    .gl-shell.ig-theme .ig-masthead { padding: 22px 18px 44px; margin-bottom: 22px; }
+    .gl-shell.ig-theme .ig-masthead h1 { font-size: 28px; line-height: 1.13; }
+    .gl-shell.ig-theme .ig-masthead > p { font-size: 15px; }
+    .gl-shell.ig-theme .reader-hero { gap: 14px; align-items: start; }
+    .gl-shell.ig-theme .reader-hero-icon { width: 42px; height: 42px; font-size: 26px; }
+    .gl-shell.ig-theme.gl-home .gl-hero h1 { font-size: 42px; }
+    .gl-shell.ig-theme.gl-home .gl-hero { padding-bottom: 29px; }
+    .gl-shell.ig-theme .subway-route-key { margin-inline: -18px; padding-inline: 18px; gap: 12px 14px; }
+    .gl-shell.ig-theme .subway-route-key a { font-size: 11px; min-width: 0; }
+    .gl-shell.ig-theme .subway-route-key a > span { width: 26px; height: 26px; font-size: 16px; }
+    .gl-shell.ig-theme .gl-search { gap: 8px; padding-left: 9px; }
+    .gl-shell.ig-theme .gl-search button { padding-inline: 10px; }
+    .gl-shell.ig-theme .gl-search input { font-size: 16px; }
+    .gl-shell.ig-theme.gl-home .gl-entry-grid { grid-template-columns: 1fr; gap: 18px; }
+    .gl-shell.ig-theme.gl-home .gl-section-title h2 { font-size: 24px; }
+    .gl-shell.ig-theme.gl-home .gl-topic-grid { grid-template-columns: 1fr; }
+    .gl-shell.ig-theme.gl-home .gl-reference-grid { grid-template-columns: 1fr; }
+    .gl-shell.ig-theme .gl-list-main { padding: 0 16px 22px; }
+    .gl-shell.ig-theme .gl-list-header { margin-inline: -16px; }
+    .gl-shell.ig-theme .gl-results { padding-left: 19px; }
+    .gl-shell.ig-theme .gl-results li::before { left: -29px; }
+    .gl-shell.ig-theme .gl-results li > a { gap: 9px; }
+    .gl-shell.ig-theme .gl-results h3 { font-size: 18px; }
+    .gl-shell.ig-theme .reader-return { position: static; gap: 8px 12px; font-size: 12px; }
+    .gl-shell.ig-theme .reader-return :is(.reader-back, button) { padding-inline: 10px; }
+    .gl-shell.ig-theme .reader-path { grid-template-columns: 1fr; }
+    .gl-shell.ig-theme .gl-article { padding: 20px 16px 0; }
+    .gl-shell.ig-theme .article-body { font-size: 16px; }
+    .gl-shell.ig-theme .article-body .reader-intro { font-size: 16px; }
+    .gl-shell.ig-theme .article-body .reader-section > :is(h2, h3):first-child { font-size: 23px; }
+    .gl-shell.ig-theme .guide-downloads { padding: 16px; }
+    .gl-shell.ig-theme .resource-grid { grid-template-columns: 1fr; gap: 0; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero { display: block; padding: 18px 0 42px; min-height: 0; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero-icon { position: absolute; top: 35px; right: 15px; width: 40px; height: 40px; font-size: 25px; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .ig-masthead-copy { padding: 15px; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero h1 { font-size: 36px; }
+    .gl-shell.ig-theme[data-ig-page="patcher"] .reader-hero p { font-size: 12px; }
+    .gl-shell.ig-theme .ig-first-stop { width: 136px; margin-bottom: 17px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"]::before { box-shadow: 6px 0 #ffcf3e, 12px 0 #be293b; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero {
+      min-height: 365px;
+      padding: 22px 18px 160px;
+      background-size: auto 205px;
+      background-position: 67% bottom;
+      gap: 12px;
+    }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .ig-masthead-copy { flex: 1; max-width: none; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero-icon { width: 34px; height: 34px; font-size: 24px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero h1 { font-size: 43px; max-width: 11ch; margin-bottom: 0; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .reader-hero :is(p, p span) { font-size: 12px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] :is(.e4mplus-spec-grid, .e4mplus-info-layout) { grid-template-columns: 1fr; gap: 8px; }
+    .gl-shell.ig-theme[data-ig-page="launcher"] .e4mplus-release-header h3 { font-size: 24px; }
+  }
+}
+
+@media print {
+  .gl-shell.ig-theme :is(.ig-route-map, .ig-first-stop) { display: none; }
+  .gl-shell.ig-theme :is(.reader-section, .gl-article) { border: 0; background: transparent; }
+}
+</style><style id="park-downloads-design">/* Load after city-pages.css. Every rule is limited to the download renderers. */
+main:has(>.park-downloads){background:#eceee9;color:#202823}
+.downloads-depot.park-downloads{--park-green:#14513f;--park-deep:#103e31;--park-yellow:#ffdf70;--park-paper:#eceee9;--park-ink:#202823;--park-muted:#526058;--park-line:#bac3bc;width:100%;max-width:none;margin:0;padding:0 0 64px;color:var(--park-ink);font-family:Arial,Helvetica,sans-serif}
+.park-downloads *{box-sizing:border-box;letter-spacing:0}
+.park-downloads :is(h1,h2,h3,p,figure,ul){margin-top:0}
+.park-downloads :is(h1,h2,h3){font-family:Arial,Helvetica,sans-serif;overflow-wrap:anywhere}
+.park-downloads :is(a,button,input,select,summary):focus-visible{outline:3px solid #a64b16;outline-offset:4px}
+.park-downloads a{color:var(--park-green);text-underline-offset:4px}
+.park-downloads a:hover{color:#071e17;text-decoration:underline}
+.park-downloads [hidden]{display:none!important}
+.park-downloads .park-width{width:calc(100% - 64px);max-width:1240px;margin-inline:auto;min-width:0}
+.park-downloads .park-masthead{background:var(--park-green) url('nyc-central-park.webp') right bottom/auto 100% no-repeat;border-top:1px solid #8aa99a;border-bottom:5px solid var(--park-yellow);min-height:310px}
+.park-downloads .park-masthead .breadcrumb{color:#e2e9e4;font-size:12px;padding:20px 0 24px;line-height:1.5;gap:8px}
+.park-downloads .park-masthead .breadcrumb :is(a,span){color:inherit}
+.park-downloads .park-masthead-copy{max-width:44%;padding:0 0 30px}
+.park-downloads .park-eyebrow{display:block;color:var(--park-yellow);font-size:11px;line-height:1.6;font-weight:700;text-transform:uppercase}
+.park-downloads .park-masthead h1{font-size:54px;line-height:1.08;color:var(--park-yellow);margin:12px 0 16px;font-weight:800}
+.park-downloads .park-masthead p{font-size:17px;line-height:1.5;color:#fff;margin:0 0 22px}
+.park-downloads .park-guide-link{display:inline-flex;gap:24px;align-items:center;min-height:32px;color:#fff;font-size:13px;font-weight:700;text-decoration:underline}
+.park-downloads .park-guide-link:hover{color:var(--park-yellow)}
+.park-downloads .park-masthead :is(a,button):focus-visible,.park-downloads .park-current a:focus-visible{outline-color:#fff}
+.park-downloads .park-catalog{display:grid;grid-template-columns:204px minmax(0,1fr);align-items:start;gap:40px;padding-top:32px}
+.park-downloads .park-sidebar{display:block;border:0;padding:0;min-width:0}
+.park-downloads .park-sidebar h2{color:var(--park-ink);font-size:13px;font-weight:700;line-height:1.5;margin:0 0 12px}
+.park-downloads .park-category-nav{background:var(--park-deep);border-top:3px solid var(--park-yellow);padding:6px 12px}
+.park-downloads .park-category-nav a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:12px 3px;border-bottom:1px solid #4b6e60;color:#fff;text-decoration:none;font-size:14px;line-height:1.4}
+.park-downloads .park-category-nav a:last-child{border-bottom:0}
+.park-downloads .park-category-nav a:hover{color:var(--park-yellow);text-decoration:underline}
+.park-downloads .park-category-nav a[aria-current]{color:var(--park-yellow);font-weight:700}
+.park-downloads .park-category-nav a[aria-current]>span:first-child{border-left:3px solid var(--park-yellow);padding-left:9px}
+.park-downloads .park-category-nav a:focus-visible{outline-color:var(--park-yellow);outline-offset:1px}
+.park-downloads .park-category-nav .depot-count{color:inherit;font-size:12px;font-variant-numeric:tabular-nums;flex:none}
+.park-downloads .depot-essentials{margin-top:28px;border-top:1px solid var(--park-line);padding-top:18px}
+.park-downloads .depot-essentials>a{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;padding:13px 0;min-height:44px;font-size:13px;font-weight:700;border-color:var(--park-line);color:var(--park-green)}
+.park-downloads .depot-essentials>a>span{font-size:16px;color:inherit}
+.park-downloads .depot-browser{min-width:0}
+.park-downloads .park-current{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--park-green);padding:18px 22px;border-left:4px solid var(--park-yellow);margin-bottom:26px}
+.park-downloads .park-current>div{min-width:0}
+.park-downloads .park-current h2{font-size:20px;line-height:1.4;margin:3px 0 0}
+.park-downloads .park-current h2 a{color:#fff;text-decoration:none}
+.park-downloads .park-current h2 a:hover{text-decoration:underline}
+.park-downloads .depot-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:20px;align-items:end;padding:0 0 22px;border-bottom:1px solid var(--park-line)}
+.park-downloads .depot-toolbar label{color:var(--park-ink);font-size:12px;font-weight:700;line-height:1.5;margin-bottom:7px}
+.park-downloads .depot-search>div{display:flex;min-width:0}
+.park-downloads .depot-toolbar :is(input,select){border:1px solid #82948a;background:#fff;color:var(--park-ink);border-radius:0;min-height:44px;height:44px;padding:10px 12px;font:14px/1.4 Arial,Helvetica,sans-serif;width:100%;min-width:0}
+.park-downloads .depot-toolbar input{border-right:0}
+.park-downloads .depot-toolbar input::placeholder{color:#626b65;opacity:1}
+.park-downloads .depot-toolbar button{min-height:44px;background:var(--park-deep);color:#fff;border:1px solid var(--park-deep);border-radius:0;font:700 13px/1.4 Arial,Helvetica,sans-serif;padding:10px 18px;cursor:pointer}
+.park-downloads .depot-toolbar button:hover{background:#246349}
+.park-downloads .depot-toolbar .depot-sort{display:grid;gap:7px;max-width:none;width:100%;margin:0}
+.park-downloads .depot-results-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 14px;margin:0;padding:24px 0 15px;border-bottom:2px solid var(--park-ink)}
+.park-downloads .depot-results-heading h2{font-size:19px;line-height:1.4;color:var(--park-ink);margin:0}
+.park-downloads .depot-results-heading>span{color:var(--park-muted);font-size:12px;font-variant-numeric:tabular-nums}
+.park-downloads .depot-results-heading a{font-size:12px;line-height:1.5;color:var(--park-green);margin-left:auto}
+.park-downloads .park-file-list{display:block}
+.park-downloads .park-file-row{display:grid;grid-template-columns:minmax(0,1fr) 142px;gap:24px;background:transparent;border:0;border-bottom:1px solid var(--park-line);border-radius:0;box-shadow:none;padding:23px 0;overflow:visible;min-width:0}
+.park-downloads .park-file-row .depot-file-content{min-width:0;padding:0}
+.park-downloads .depot-file-meta{display:flex;gap:9px 14px;flex-wrap:wrap;color:var(--park-muted);font-size:10px;line-height:1.5;font-weight:700;text-transform:uppercase}
+.park-downloads .depot-release{color:var(--park-green);border-left:1px solid #718b7b;padding-left:14px}
+.park-downloads .depot-file h3{font-size:20px;line-height:1.3;margin:6px 0 9px}
+.park-downloads .depot-file h3 a{color:var(--park-ink);text-decoration:none}
+.park-downloads .depot-file h3 a:hover{color:var(--park-green);text-decoration:underline}
+.park-downloads .depot-file p{font-size:14px;line-height:1.65;color:#45524a;margin:0 0 12px;max-width:660px;overflow-wrap:anywhere}
+.park-downloads .park-file-facts{display:flex;gap:6px 12px;flex-wrap:wrap;margin:0;padding:0;list-style:none;color:#526058;font-size:11px;line-height:1.6}
+.park-downloads .park-file-facts li+li{border-left:1px solid #8d9f93;padding-left:12px}
+.park-downloads .depot-file-actions{display:flex;flex-direction:column;align-items:stretch;justify-content:start;gap:12px;padding:0;margin:0;min-width:0}
+.park-downloads a.depot-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 15px;background:var(--park-yellow);border:1px solid #b69e45;border-radius:0;color:#173b2c;box-shadow:none;font-size:13px;line-height:1.4;font-weight:700;text-decoration:none;white-space:normal;text-align:center}
+.park-downloads a.depot-download:hover{background:#ffe994;border-color:#173b2c;color:#102c20;text-decoration:none}
+.park-downloads .depot-download svg{width:17px;height:17px;flex:none}
+.park-downloads .depot-details{display:inline-flex;align-items:center;justify-content:space-between;gap:6px;min-height:30px;font-size:12px;line-height:1.4;color:var(--park-green);text-decoration:underline}
+.park-downloads .park-file-preview{display:grid;grid-template-columns:120px minmax(0,180px);align-items:end;gap:12px;margin:16px 0 0}
+.park-downloads .park-file-preview a{display:block;min-width:0}
+.park-downloads .park-file-preview img{display:block;width:100%;height:auto;border:1px solid #7d8e83}
+.park-downloads .park-file-preview figcaption{font-size:10px;line-height:1.5;color:var(--park-muted);overflow-wrap:anywhere}
+.park-downloads .depot-empty{padding:40px 0;border-bottom:1px solid var(--park-line)}
+.park-downloads .depot-empty :is(h3,p){color:var(--park-ink)}
+.park-downloads .depot-empty h3{font-size:21px}
+.park-downloads .depot-empty p,.park-downloads .depot-empty a{font-size:14px}
+/* Detail titles sit above the silhouette, so long file names cannot cross it. */
+.park-downloads .park-detail-masthead{background-image:none;min-height:0}
+.park-downloads .park-detail-masthead:after{content:"";display:block;height:98px;background:url('nyc-central-park.webp') right bottom/auto 170px no-repeat;pointer-events:none}
+.park-downloads .park-detail-heading{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:32px;align-items:start;padding:8px 0 0}
+.park-downloads .park-detail-heading>div{min-width:0}
+.park-downloads .park-detail-heading h1{font-size:38px;line-height:1.17;color:#fff;margin:10px 0 14px;max-width:850px}
+.park-downloads .park-detail-heading .park-file-facts{font-size:13px;color:#e3eae5;line-height:1.6}
+.park-downloads .park-detail-heading .park-file-facts li+li{border-color:#8aa99a}
+.park-downloads .park-detail-actions{display:flex;flex-direction:column;align-items:stretch;gap:9px;padding-top:24px}
+.park-downloads .park-detail-actions>span{color:#e3eae5;font-size:11px;text-align:center;line-height:1.5}
+.park-downloads .park-backline{padding:20px 0;border-bottom:1px solid var(--park-line)}
+.park-downloads .depot-back{display:inline-flex;gap:12px;align-items:center;min-height:28px;margin:0;font-size:13px;line-height:1.5;color:var(--park-green)}
+.park-downloads .depot-detail-body{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:60px;padding-top:32px}
+.park-downloads .depot-detail-body article{min-width:0}
+.park-downloads .depot-detail-body h2{font-size:21px;line-height:1.4;color:var(--park-ink);margin:0 0 14px}
+.park-downloads .depot-detail-body p{color:#45524a;font-size:16px;line-height:1.75;margin:0 0 22px;overflow-wrap:anywhere}
+.park-downloads .depot-detail-body a{color:var(--park-green);overflow-wrap:anywhere}
+.park-downloads .park-detail-preview{margin:26px 0}
+.park-downloads .park-detail-preview img{display:block;width:100%;height:auto;max-width:100%;border:1px solid #7d8e83}
+.park-downloads .park-detail-preview figcaption{color:var(--park-muted);font-size:12px;line-height:1.5;padding-top:10px}
+.park-downloads .depot-detail-body details{background:transparent;border:0;border-top:1px solid var(--park-line);border-bottom:1px solid var(--park-line);border-radius:0;margin:24px 0;padding:0}
+.park-downloads .depot-detail-body details.download-details{border-top:1px solid var(--park-line)!important;border-bottom:1px solid var(--park-line)!important;margin:24px 0!important}
+.park-downloads .depot-detail-body summary{color:var(--park-green);font-size:16px;line-height:1.5;font-weight:700;cursor:pointer;padding:18px 0}
+.park-downloads .depot-detail-body details p{padding:0 0 8px;font-size:14px}
+.park-downloads .depot-detail-body code{color:var(--park-ink);background:#dce2db;border-radius:0;padding:2px 4px;font-size:.9em;overflow-wrap:anywhere}
+.park-downloads .depot-detail-body aside{display:block;padding:0;border:0;min-width:0}
+.park-downloads .park-file-register{margin:0 0 28px;border-top:3px solid var(--park-green)}
+.park-downloads .park-file-register>div{padding:14px 0;border-bottom:1px solid var(--park-line)}
+.park-downloads .park-file-register dt{font-size:11px;line-height:1.4;color:var(--park-muted);margin-bottom:6px}
+.park-downloads .park-file-register dd{font-size:14px;line-height:1.5;color:var(--park-ink);font-weight:700;margin:0;overflow-wrap:anywhere}
+.park-downloads .depot-detail-body aside h2{font-size:15px;margin:0}
+.park-downloads .depot-detail-body aside>a{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;line-height:1.5;min-height:44px;margin:0;padding:12px 0;border-bottom:1px solid var(--park-line)}
+.park-downloads .depot-detail-body aside p{font-size:12px;line-height:1.65;margin:18px 0 0;color:var(--park-muted)}
+@media(min-width:1700px){
+ .park-downloads .park-masthead{background-size:auto 125%}
+ .park-downloads .park-detail-masthead{background-image:none}
+}
+@media(max-width:1000px){
+ .park-downloads .park-width{width:calc(100% - 48px)}
+ .park-downloads .park-catalog{grid-template-columns:176px minmax(0,1fr);gap:28px}
+ .park-downloads .park-masthead-copy{max-width:46%}
+ .park-downloads .park-masthead h1{font-size:46px}
+ .park-downloads .depot-toolbar{grid-template-columns:minmax(0,1fr) 180px;gap:14px}
+ .park-downloads .park-file-row{grid-template-columns:minmax(0,1fr) 130px;gap:18px}
+ .park-downloads .depot-detail-body{grid-template-columns:minmax(0,1fr) 220px;gap:32px}
+ .park-downloads .park-detail-heading h1{font-size:34px}
+}
+@media(max-width:760px){
+ .park-downloads .park-width{width:calc(100% - 36px)}
+ .park-downloads .park-masthead{min-height:0;background-size:auto 230px;background-position:right bottom}
+ .park-downloads .park-masthead-copy{max-width:100%;padding-bottom:140px}
+ .park-downloads .park-masthead h1{font-size:40px}
+ .park-downloads .park-masthead p{font-size:16px;margin-bottom:12px}
+ .park-downloads .park-masthead .breadcrumb{padding:16px 0 20px}
+ .park-downloads .park-catalog{display:block;padding-top:22px}
+ .park-downloads .park-sidebar{margin-bottom:22px}
+ .park-downloads .park-category-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:4px 12px;gap:0 18px}
+ .park-downloads .park-category-nav a{font-size:12px;gap:6px}
+ .park-downloads .park-category-nav a:nth-last-child(-n+3){border-bottom:0}
+ .park-downloads .park-sidebar .depot-essentials{display:flex;flex-wrap:wrap;gap:0 18px;border-top:0;margin:0;padding:0}
+ .park-downloads .park-sidebar .depot-essentials h2{display:none}
+ .park-downloads .park-sidebar .depot-essentials>a{min-height:40px;padding:8px 0;border-bottom:0;font-size:12px}
+ .park-downloads .park-current{padding:16px 18px;margin-bottom:22px}
+ .park-downloads .park-current h2{font-size:18px}
+ .park-downloads .depot-detail-body{grid-template-columns:1fr;gap:32px;padding-top:26px}
+ .park-downloads .depot-detail-body aside{border-top:1px solid var(--park-line);padding-top:24px}
+ .park-downloads .park-detail-heading{grid-template-columns:1fr;gap:18px;padding-top:0}
+ .park-downloads .park-detail-heading h1{font-size:32px}
+ .park-downloads .park-detail-actions{max-width:300px;padding-top:0}
+ .park-downloads .park-detail-masthead:after{height:98px}
+}
+@media(max-width:480px){
+ .park-downloads .park-masthead-copy{padding-bottom:124px}
+ .park-downloads .park-masthead{background-size:auto 210px}
+ .park-downloads .park-masthead h1{font-size:36px}
+ .park-downloads .park-eyebrow{font-size:10px}
+ .park-downloads .park-category-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
+ .park-downloads .park-category-nav a:nth-last-child(3){border-bottom:1px solid #4b6e60}
+ .park-downloads .park-current{align-items:center;gap:12px}
+ .park-downloads .park-current h2{font-size:16px}
+ .park-downloads .park-current a.depot-download{flex:none;min-width:116px;padding:10px}
+ .park-downloads .depot-toolbar{grid-template-columns:1fr;gap:14px}
+ .park-downloads .depot-toolbar .depot-sort{grid-template-columns:60px minmax(0,1fr);align-items:center;gap:12px}
+ .park-downloads .park-file-row{grid-template-columns:1fr;gap:16px}
+ .park-downloads .depot-file h3{font-size:20px}
+ .park-downloads .depot-file-actions{display:grid;grid-template-columns:130px minmax(0,1fr);align-items:center;gap:16px}
+ .park-downloads .depot-details{justify-content:start;flex-wrap:wrap}
+ .park-downloads .depot-results-heading{gap:8px 12px}
+ .park-downloads .park-detail-heading h1{font-size:29px}
+ .park-downloads .park-detail-actions{max-width:none}
+ .park-downloads .park-detail-masthead:after{height:92px;background-size:auto 160px}
+}
+@media(prefers-reduced-motion:reduce){
+ .park-downloads *{scroll-behavior:auto;transition:none;animation:none}
+}
+@media print{
+ .downloads-depot.park-downloads{background:#fff;color:#000;padding:0}
+ .park-downloads .park-width{width:100%}
+ .park-downloads .park-masthead{background:none;min-height:0;border:0}
+ .park-downloads .park-masthead-copy{max-width:none;padding:0}
+ .park-downloads .park-masthead :is(h1,p,.park-eyebrow,.park-file-facts){color:#000}
+ .park-downloads .park-catalog,.park-downloads .depot-detail-body{display:block}
+ .park-downloads .park-sidebar,.park-downloads .park-current,.park-downloads .depot-toolbar,.park-downloads .park-guide-link,.park-downloads .park-detail-masthead:after{display:none}
+ .park-downloads .park-file-row{break-inside:avoid}
+}
+</style></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="portal-masthead wrap"><a class="wordmark" href="#home" aria-label="EM4Resource home"><img src="em4resource-banner.png" alt="EM4Resource" width="942" height="174"></a><div class="masthead-community"><a class="masthead-discord" href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer"><img src="discord-logo.svg" alt="Discord" width="219" height="32"></a><a class="masthead-patreon" href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer"><img src="patreon-wordmark.svg" alt="Patreon" width="1826" height="620"></a></div></div>
-    <div class="portal-nav"><div class="wrap portal-nav-inner"><button class="menu-toggle" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button><nav class="primary-nav" id="primaryNav" aria-label="Main navigation"><a href="#home" data-nav="home">Home</a><a href="#downloads" data-nav="downloads">Downloads</a><a href="#library" data-nav="library">Guides &amp; tutorials</a><a href="#article/e4m-plus-launcher-3-5" data-nav="launcher">E4M+ Launcher</a><a href="#article/em4-memory-patcher" data-nav="patcher">Memory Patcher</a></nav><form class="header-search" id="headerSearch" role="search"><label class="sr-only" for="headerSearchInput">Search EM4Resource</label><input id="headerSearchInput" type="search" placeholder="Search EM4Resource…" autocomplete="off"><button class="search-trigger" type="submit" aria-label="Search EM4Resource"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form></div></div>
+    <div class="portal-nav"><div class="wrap portal-nav-inner"><button class="menu-toggle" id="menuToggle" type="button" aria-controls="primaryNav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button><nav class="primary-nav" id="primaryNav" aria-label="Main navigation"><a href="#home" data-nav="home">Home</a><a href="#downloads" data-nav="downloads">Downloads</a><a href="#library" data-nav="library">Guides &amp; tutorials</a><a href="#article/e4m-plus-launcher-3-7" data-nav="launcher"><span class="launcher-update">Updated</span><span>E4M+ Launcher</span></a><a href="#article/em4-memory-patcher" data-nav="patcher">Memory Patcher</a></nav><form class="header-search" id="headerSearch" role="search"><label class="sr-only" for="headerSearchInput">Search EM4Resource</label><input id="headerSearchInput" type="search" placeholder="Search EM4Resource…" autocomplete="off"><button class="search-trigger" type="submit" aria-label="Search EM4Resource"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form></div></div>
   </header>
   <main id="main" tabindex="-1"></main>
   <footer class="site-footer"><div class="footer-inner"><div><a href="#home" class="footer-brand">EM4RESOURCE<span class="orange-dot">.</span></a><p>A community resource for Emergency 4 / 911: First Responders.</p></div><nav aria-label="Footer"><a href="#article/about-em4resource">About &amp; credits</a><a href="#article/em4resource-rules">Community rules</a><a href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Discord ↗</a><a href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer">Support the project ↗</a></nav></div></footer>
@@ -2965,14 +4059,14 @@ const articles = [
             <article class="featured-download featured-download-blue">
               <div class="featured-download-mark" aria-hidden="true">
                 <strong>E4M+</strong>
-                <span>Launcher 3.5</span>
+                <span>Launcher 3.7</span>
               </div>
               <div class="featured-download-content">
-                <div class="download-facts"><span>Official tool</span><span>24 Jul 2026</span></div>
-                <h3>E4M+ Launcher 3.5</h3>
+                <div class="download-facts"><span>Official tool</span><span>11 Nov 2026</span></div>
+                <h3>E4M+ Launcher 3.7</h3>
                 <p>Launch E4M+ editor and game sessions, convert standard maps, and use supported US or EU road layouts for expanded map projects.</p>
               </div>
-              <a class="featured-download-action" href="https://mega.nz/file/LjoE2QzZ#dP1heAXbI1Tj4oH0yTEsBuiGi3mn2mgBQW0ZAYW-3dY" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
+              <a class="featured-download-action" href="https://mega.nz/file/K3w0jQRJ#Ao6vQE6PtWyPDPySMgJYjzMVBYwsMAgJzXRNEmIFU9Q" target="_blank" rel="noreferrer">Download <span aria-hidden="true">&rarr;</span></a>
             </article>
 
             <article class="featured-download featured-download-red">
@@ -3185,14 +4279,14 @@ const articles = [
   },
   {
     category: "E4M+ Launcher",
-    title: "E4M+ Launcher 3.5",
+    title: "E4M+ Launcher 3.7",
     tags: ["E4M+", "launcher", "map converter", "expanded maps", "EM4Resource", "download"],
     body: `
       <div class="e4mplus-release-header">
-        <span>E4M+ Launcher 3.5</span>
+        <span>E4M+ Launcher 3.7</span>
         <h3>Expanded map workflow for Emergency 4 creators</h3>
         <p>E4M+ is an EM4Resource launcher and map-project tool for supported Emergency 4 / 911: First Responders installations. It is built for creators who want larger map projects, higher-resolution terrain workflows, and a cleaner way to prepare E4M+ editor and game sessions.</p>
-        <a href="https://mega.nz/file/LjoE2QzZ#dP1heAXbI1Tj4oH0yTEsBuiGi3mn2mgBQW0ZAYW-3dY" target="_blank" rel="noreferrer">Download E4M+ Launcher 3.5</a>
+        <a href="https://mega.nz/file/K3w0jQRJ#Ao6vQE6PtWyPDPySMgJYjzMVBYwsMAgJzXRNEmIFU9Q" target="_blank" rel="noreferrer">Download E4M+ Launcher 3.7</a>
       </div>
 
       <div class="e4mplus-compatibility-note">
@@ -3210,8 +4304,7 @@ const articles = [
           <span>Designed for larger ground texture projects, increased from the standard 8192 x 8192 workflow.</span>
         </div>
         <div>
-          <strong>32,767 object limit</strong>
-          <span>Increased from the standard 16,384 scene-node ceiling for larger, more detailed map builds.</span>
+          <strong>Large-map stability fixes</strong><span>Version 3.7 corrects entity-ID handling that could cause disappearing models and crashes in heavily populated projects. Available memory and other engine limits still apply.</span>
         </div>
       </div>
 
@@ -7332,13 +8425,61 @@ function fileArt(f){return f.title==='999 OTF Mod'?`<img src="community-999-otf-
 function fileCard(f,compact=false){return `<article class="portal-file${compact?' compact-file':''}"><a class="file-art file-art-${esc(f.category)}" href="#file/${f.id}" aria-label="View ${esc(f.title)}">${fileArt(f)}</a><div class="file-info"><div class="file-labels"><span>${esc(fileCategoryLabel(f.category))}</span>${f.featured?'<span class="featured-label">Featured</span>':''}</div><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><p>${esc(f.description)}</p><div class="file-metadata">${f.metadata.map(esc).join(' · ')}</div>${f.title==='999 OTF Mod'?'<small class="file-photo-credit">Photo: Steve_S — 999 OTF Modification</small>':''}</div><a class="file-view" href="#file/${f.id}">View file <span aria-hidden="true">→</span></a></article>`;}
 function communitySidebar(){return `<section class="portal-social social-discord"><img src="discord-logo.svg" alt="Discord" width="219" height="32"><h2>Join the conversation.</h2><p>Get help, share your work, and meet other EM4 modders.</p><a href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Join our Discord ↗</a></section><section class="portal-social social-patreon"><img src="patreon-wordmark.svg" alt="Patreon" width="1826" height="620"><h2>Support EM4Resource.</h2><p>Help keep the mods, tools, and guides coming.</p><a href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer">Become a supporter ↗</a></section>`;}
 function fileCategoryNav(active='all'){const files=getDownloadFiles();return `<nav class="file-category-nav" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a href="#downloads${key==='all'?'':'?category='+key}" data-file-category="${key}" ${key===active?'aria-current="page"':''}><strong>${label}</strong><span>${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></a>`).join('')}</nav>`;}
-function downloadResultCard(f){return `<article class="download-card" data-download-category="${f.category}"><a class="download-art" href="#file/${f.id}" aria-label="View ${esc(f.title)}">${fileArt(f)}</a><div class="download-card-content"><div class="download-tags"><span>${esc(fileCategoryLabel(f.category))}</span>${f.featured?'<span>Featured</span>':''}</div><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><p>${esc(f.description)}</p><div class="download-meta">${f.metadata.map(esc).join(' · ')}</div>${f.title==='999 OTF Mod'?'<small>Photo: Steve_S — 999 OTF Modification</small>':''}<a class="download-view" href="#file/${f.id}">Details & download <span aria-hidden="true">→</span></a></div></article>`;}
-const downloadCategoryDescriptions={all:'Browse the full collection',tools:'Launchers and utilities',mods:'Full Emergency 4 mods',maps:'Map files and layouts',audio:'Sounds and audio packs',archive:'Previous release versions'};
-const downloadCategoryIcons={all:'grid',tools:'tool',mods:'truck',maps:'map',audio:'sound',archive:'folder'};
+function parkFilePreview(f,detail=false){
+ const pictures={
+  '999 OTF Mod':['community-999-otf-steve-s.png','Steve_S / 999 OTF Modification',1920,1024],
+  'Beaverhead County Modification Version 1.5':['community-beaverhead-mayjah.png','mayjah / Beaverhead County V1.5',1920,1200]
+ };
+ const picture=pictures[f.title];
+ if(!picture)return '';
+ const [src,credit,width,height]=picture;
+ const img=`<img src="${src}" alt="${esc(f.title)} gameplay" width="${width}" height="${height}" loading="lazy">`;
+ return `<figure class="${detail?'park-detail-preview':'park-file-preview'}">${detail?img:`<a href="#file/${f.id}" aria-label="View ${esc(f.title)}">${img}</a>`}<figcaption>${esc(credit)}</figcaption></figure>`;
+}
+
+function downloadResultCard(f){
+ return `<article class="depot-file park-file-row" data-download-category="${f.category}">
+  <div class="depot-file-content">
+   <div class="depot-file-meta"><span>${esc(fileCategoryLabel(f.category))}</span>${f.category==='tools'?'<span class="depot-release">Current release</span>':''}</div>
+   <h3><a href="#file/${f.id}">${esc(f.title)}</a></h3>
+   <p>${esc(f.description)}</p>
+   <ul class="park-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul>
+   ${parkFilePreview(f)}
+  </div>
+  <div class="depot-file-actions">
+   <a class="depot-download" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download</span></a>
+   <a href="#file/${f.id}" class="depot-details" aria-label="Details and credits for ${esc(f.title)}">Details &amp; credits <span aria-hidden="true">&rarr;</span></a>
+  </div>
+ </article>`;
+}
+
 function renderFileLibrary(){
- const files=getDownloadFiles();
- main.innerHTML=`<div class="wrap portal-downloads downloads-v2">${crumb(['Downloads'])}<header class="downloads-hero"><span>Emergency 4 community resources</span><h1>Find your next download.</h1><p>Browse modifications, maps, tools, and audio. Open a file for its details, credits, and download link.</p><div class="downloads-quick-help"><a href="${articleHref('How to Install a Mod')}">New to mods? Read the installation guide →</a><a href="${articleHref('EM4 Memory Patcher')}">Memory patcher setup →</a></div></header><div class="downloads-section-title"><h2>Browse by category</h2><p>${files.length} files in the collection</p></div><nav class="download-category-grid" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a data-file-category="${key}" data-download-category="${key}" href="#downloads${key==='all'?'':'?category='+key}"><span class="download-category-top">${guideIcon(downloadCategoryIcons[key])}<span>${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></span><strong>${esc(label)}</strong><small>${downloadCategoryDescriptions[key]}</small></a>`).join('')}</nav><div class="downloads-browser"><form id="fileSearchForm" class="file-toolbar" role="search"><div class="file-search-field"><label for="fileQuery">Find a file</label><div class="download-search-control"><input id="fileQuery" type="search" placeholder="Search by name or keyword…"><button type="submit">Search</button></div></div><label class="file-sort">Sort by<select id="fileSort"><option value="featured">Featured first</option><option value="az">Name: A–Z</option><option value="newest">Newest dated releases</option></select></label></form><div class="downloads-results-title"><h2 id="fileResultsHeading">All downloads</h2><span id="fileResultCount" role="status"></span><a href="#downloads" id="downloadReset">Reset filters</a></div><div id="fileResults" class="download-results-grid"></div></div><section class="download-guidance"><div><h2>Before you install</h2><p>Read the file’s instructions and credits. Check compatibility and keep a backup of your working mod.</p></div><a href="${articleHref('How to Install a Mod')}">Installation guide →</a></section></div>`;
- const update=()=>{const p=new URLSearchParams(location.hash.split('?')[1]||'');const q=document.getElementById('fileQuery').value.trim();q?p.set('q',q):p.delete('q');const sort=document.getElementById('fileSort').value;sort==='featured'?p.delete('sort'):p.set('sort',sort);const hash='#downloads'+(p.size?'?'+p:'');if(location.hash===hash)applyFileRoute(p.toString());else location.hash=hash;};
+ const files=getDownloadFiles(),current=files.find(f=>f.category==='tools'&&f.featured);
+ main.innerHTML=`<div class="wrap portal-downloads downloads-depot park-downloads">
+  <header class="park-masthead">
+   <div class="park-width">
+    ${crumb(['Downloads'])}
+    <div class="park-masthead-copy"><span class="park-eyebrow">EMERGENCY 4 / 911: FIRST RESPONDERS</span><h1>Downloads</h1><p>Modifications, maps and tools.</p><a class="park-guide-link" href="${articleHref('How to Install a Mod')}">Installation guide <span aria-hidden="true">&rarr;</span></a></div>
+   </div>
+  </header>
+  <div class="park-width park-catalog">
+   <aside class="depot-sidebar park-sidebar">
+    <h2>File directory</h2>
+    <nav class="park-category-nav" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a data-file-category="${key}" href="#downloads${key==='all'?'':'?category='+key}"><span>${esc(label)}</span><span class="depot-count">${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></a>`).join('')}</nav>
+    <div class="depot-essentials"><h2>Game setup</h2><a href="${articleHref('E4M+ Launcher 3.7')}">Launcher guide <span aria-hidden="true">&rarr;</span></a><a href="${articleHref('EM4 Memory Patcher')}">Memory Patcher <span aria-hidden="true">&rarr;</span></a></div>
+   </aside>
+   <section class="depot-browser" aria-label="Download files">
+    <section class="park-current" id="downloadFeatured" aria-label="Current tool release"${current?'':' hidden'}>${current?`<div><span class="park-eyebrow">Current release</span><h2><a href="#file/${current.id}">${esc(current.title)}</a></h2></div><a class="depot-download" href="${esc(current.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(current.title)} from MEGA">${downloadIcon}<span>Download</span></a>`:''}</section>
+    <form id="fileSearchForm" class="depot-toolbar" role="search">
+     <div class="depot-search"><label for="fileQuery">Search files</label><div><input id="fileQuery" type="search" placeholder="Name, mod or keyword"><button type="submit">Search</button></div></div>
+     <label class="depot-sort" for="fileSort">Sort by<select id="fileSort"><option value="featured">Featured first</option><option value="az">Name: A-Z</option><option value="newest">Newest dated releases</option></select></label>
+    </form>
+    <div class="depot-results-heading"><h2 id="fileResultsHeading">All downloads</h2><span id="fileResultCount" role="status" aria-live="polite" aria-atomic="true"></span><a href="#downloads" id="downloadReset">Reset filters</a></div>
+    <div id="fileResults" class="park-file-list"></div>
+   </section>
+  </div>
+ </div>`;
+ const update=()=>{const p=new URLSearchParams(location.hash.split('?')[1]||''),q=document.getElementById('fileQuery').value.trim(),sort=document.getElementById('fileSort').value;q?p.set('q',q):p.delete('q');sort==='featured'?p.delete('sort'):p.set('sort',sort);const hash='#downloads'+(p.size?'?'+p:'');if(location.hash===hash)applyFileRoute(p.toString());else location.hash=hash;};
  document.getElementById('fileSearchForm').addEventListener('submit',e=>{e.preventDefault();update();});document.getElementById('fileSort').addEventListener('change',update);
 }
 function applyFileRoute(section){
@@ -7346,14 +8487,26 @@ function applyFileRoute(section){
  const p=new URLSearchParams(section||''),category=fileCategories.some(c=>c[0]===p.get('category'))?p.get('category'):'all',q=p.get('q')||'',sort=['az','newest'].includes(p.get('sort'))?p.get('sort'):'featured';
  let files=getDownloadFiles().filter(f=>(category==='all'||f.category===category)&&matchesFile(f,q));
  if(sort==='az')files.sort((a,b)=>a.title.localeCompare(b.title));else if(sort==='newest')files.sort((a,b)=>b.date-a.date||a.order-b.order);else files.sort((a,b)=>Number(b.featured)-Number(a.featured)||a.order-b.order);
- document.getElementById('fileQuery').value=q;document.getElementById('fileSort').value=sort;document.getElementById('fileResultsHeading').textContent=category==='all'?'All downloads':fileCategoryLabel(category);document.getElementById('fileResultCount').textContent=`${files.length} ${files.length===1?'file':'files'}${q?' matching “'+q+'”':''}`;
- document.getElementById('fileResults').innerHTML=files.length?files.map(downloadResultCard).join(''):`<div class="download-empty"><h3>No matching downloads</h3><p>Try a shorter search or choose another category.</p><a href="#downloads">Show all downloads →</a></div>`;
+ document.getElementById('fileQuery').value=q;document.getElementById('fileSort').value=sort;document.getElementById('fileResultsHeading').textContent=category==='all'?'All downloads':fileCategoryLabel(category);document.getElementById('fileResultCount').textContent=`${files.length} ${files.length===1?'file':'files'}`;
+ document.getElementById('fileResults').innerHTML=files.length?files.map(downloadResultCard).join(''):`<div class="depot-empty"><h3>No matching downloads</h3><p>Try another name or category.</p><a href="#downloads">Show all downloads</a></div>`;
+ document.getElementById('downloadFeatured').hidden=category!=='all'||!!q;
  document.getElementById('downloadReset').hidden=category==='all'&&!q&&sort==='featured';
  document.querySelectorAll('[data-file-category]').forEach(a=>{if(a.dataset.fileCategory===category)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');const next=new URLSearchParams(p);a.dataset.fileCategory==='all'?next.delete('category'):next.set('category',a.dataset.fileCategory);a.href='#downloads'+(next.size?'?'+next:'');});
 }
 function renderFileDetail(id){
  const f=getDownloadFiles().find(f=>f.id===id);if(!f){renderMissing();return;}
- main.innerHTML=`<div class="wrap portal-downloads downloads-v2 download-detail-v2" data-download-category="${f.category}"><nav class="reader-return" aria-label="Download navigation"><a class="reader-back" href="#downloads">← All downloads</a><a href="#downloads?category=${f.category}">Browse ${esc(fileCategoryLabel(f.category).toLowerCase())}</a><a href="${articleHref('How to Install a Mod')}">Installation help</a></nav>${crumb(['Downloads','#downloads'],[fileCategoryLabel(f.category),'#downloads?category='+f.category],[f.title])}<header class="download-detail-hero"><span>${esc(fileCategoryLabel(f.category))}</span><h1>${esc(f.title)}</h1><p>${esc(f.metadata.join(' · '))}</p><a class="download-primary" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer">Download from MEGA <span aria-hidden="true">↓</span></a><small>Opens the file’s existing MEGA download page.</small></header><div class="download-detail-layout"><article class="download-description"><h2>About this download</h2><p>${esc(f.description)}</p>${f.title==='999 OTF Mod'?'<figure><img src="community-999-otf-steve-s.png" alt="999 OTF Modification emergency response scene" width="1920" height="1024"><figcaption>Steve_S — 999 OTF Modification</figcaption></figure>':''}${f.credits}${f.category==='tools'?`<section class="download-compatibility"><h2>Compatibility</h2><p>Supports verified Steam / digital installations. Disc versions are not currently compatible.</p><a href="${articleHref('E4M+ Launcher 3.5')}">Read the setup guide and compatibility notes →</a></section>`:''}</article><aside class="download-detail-help"><h2>Need help installing?</h2><a href="${articleHref('How to Install a Mod')}">How to install a mod →</a><a href="${articleHref('EM4 Memory Patcher')}">Memory patcher setup →</a><p>Read the included instructions and credits before installing.</p><a href="#downloads">Back to all downloads →</a></aside></div></div>`;document.title=f.title+' — EM4Resource Downloads';
+ main.innerHTML=`<div class="wrap downloads-depot depot-detail park-downloads">
+  <header class="park-masthead park-detail-masthead"><div class="park-width">
+   ${crumb(['Downloads','#downloads'],[f.title])}
+   <div class="park-detail-heading"><div><span class="park-eyebrow">${esc(fileCategoryLabel(f.category))}</span><h1>${esc(f.title)}</h1><ul class="park-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul></div><div class="park-detail-actions"><a class="depot-download download-primary" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download from MEGA</span></a><span>External download / MEGA</span></div></div>
+  </div></header>
+  <div class="park-width">
+   <nav class="park-backline" aria-label="File navigation"><a class="depot-back" href="#downloads?category=${f.category}"><span aria-hidden="true">&larr;</span> Back to ${esc(fileCategoryLabel(f.category).toLowerCase())}</a></nav>
+   <div class="depot-detail-body"><article><h2>About this download</h2><p>${esc(f.description)}</p>${parkFilePreview(f,true)}${f.credits}${f.category==='tools'?`<h2>Setup &amp; compatibility</h2><p>Use the included instructions for your supported Emergency 4 installation.</p><a href="${articleHref('E4M+ Launcher 3.7')}">E4M+ Launcher 3.7 setup guide &rarr;</a>`:''}</article>
+    <aside><dl class="park-file-register"><div><dt>Category</dt><dd>${esc(fileCategoryLabel(f.category))}</dd></div><div><dt>File host</dt><dd>MEGA</dd></div>${f.metadata.map(value=>`<div><dt>${/^\d{1,2} [A-Za-z]{3} \d{4}$/.test(value)?'Release date':'Release information'}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><h2>Installation help</h2><a href="${articleHref('How to Install a Mod')}">How to install a mod <span aria-hidden="true">&rarr;</span></a><a href="${articleHref('EM4 Memory Patcher')}">Memory Patcher <span aria-hidden="true">&rarr;</span></a><p>Check the included instructions and credits before installing.</p></aside>
+   </div>
+  </div>
+ </div>`;document.title=f.title+' - EM4Resource Downloads';
 }
 
 </script><script>/* highlight.js license
@@ -8741,6 +9894,86 @@ function guideDownloadActions(article){
  const links=articleDownloads(article);if(!links.length)return '';
  return `<section class="guide-downloads" aria-label="Downloads for this guide"><div class="guide-downloads-heading"><h2>Downloads</h2><p>Files and tools referenced in this guide.</p></div><div class="guide-download-list">${links.map(link=>`<div class="guide-download-item"><a class="download-action" href="${esc(link.href)}" target="_blank" rel="noopener noreferrer">${downloadIcon}<span>${esc(link.label)}</span></a><small>${esc(link.host||'EM4Resource')} · opens in a new tab</small></div>`).join('')}</div></section>`;
 }
+const nycPhotos = [{"src":"nyc-realism-07.webp","caption":"Ladder 4"},{"src":"nyc-realism-08.webp","caption":"Engine 54"},{"src":"nyc-realism-02.webp","caption":"Engine 10 / Ladder 10 firehouse"},{"src":"nyc-realism-11.webp","caption":"Ten Truck"},{"src":"nyc-realism-20.webp","caption":"Ladder 343"},{"src":"nyc-realism-05.webp","caption":"Engine 54 / Ladder 4 / Battalion 9 firehouse"},{"src":"nyc-realism-16.webp","caption":"Field Communications Unit"},{"src":"nyc-realism-18.webp","caption":"Rescue 1"},{"src":"nyc-realism-14.webp","caption":"Squad 18"},{"src":"nyc-realism-17.webp","caption":"Engine 4"},{"src":"nyc-realism-10.webp","caption":"Battalion 9"},{"src":"nyc-realism-09.webp","caption":"Battalion 9 - rear view"},{"src":"nyc-realism-06.webp","caption":"Ladder 4 - rear view"},{"src":"nyc-realism-19.webp","caption":"Ladder 343 - rear view"},{"src":"nyc-realism-13.webp","caption":"Special Operations apparatus"},{"src":"nyc-realism-15.webp","caption":"Rescue 1 - rear detail"},{"src":"nyc-realism-04.webp","caption":"FDNY engine"},{"src":"nyc-realism-03.webp","caption":"Aerial ladder extended"},{"src":"nyc-realism-12.webp","caption":"9/11 Memorial"},{"src":"nyc-realism-01.webp","caption":"Memorial detail"}];
+let disposeNYCGallery=()=>{};
+function nycProjectSection(){
+ return `<section id="section-nyc" class="nyc-project" aria-labelledby="nycProjectTitle"><div class="nyc-heading"><div class="gpm-container"><div class="nyc-rule" aria-hidden="true"></div><h2 id="nycProjectTitle"><span class="nyc-name">NYC</span><span class="nyc-title-rest">REALISM<br>PROJECT</span></h2><div class="nyc-rule" aria-hidden="true"></div></div></div><div class="nyc-gallery-shell"><div class="gpm-container"><div id="nycGallery" class="nyc-gallery" role="region" aria-roledescription="carousel" aria-label="NYC Realism Project photos" tabindex="0"><div class="nyc-stage"><a class="nyc-full-image" target="_blank" rel="noopener noreferrer" aria-label="Open current photo at full size"><img class="nyc-photo" width="1920" height="1200" alt=""></a><button class="nyc-arrow nyc-prev" type="button" aria-label="Previous NYC photo" title="Previous photo">&#8249;</button><button class="nyc-arrow nyc-next" type="button" aria-label="Next NYC photo" title="Next photo">&#8250;</button></div><div class="nyc-caption-bar"><div><span class="nyc-photo-type">PROJECT GALLERY</span><h3 class="nyc-caption"></h3></div><div class="nyc-playback"><span class="nyc-count"></span><button class="nyc-pause" type="button" aria-label="Pause NYC slideshow" title="Pause slideshow"><span aria-hidden="true">&#10074;&#10074;</span></button></div></div><div class="nyc-thumbnails" aria-label="Choose a project photo">${nycPhotos.map((p,i)=>`<button type="button" data-nyc-slide="${i}" aria-label="Photo ${i+1}: ${esc(p.caption)}" title="${esc(p.caption)}"><img src="${p.src}" alt="" width="120" height="80" loading="lazy"><span>${String(i+1).padStart(2,'0')}</span></button>`).join('')}</div><p class="nyc-screen-reader" aria-live="polite" aria-atomic="true"></p></div></div></div></section>`;
+}
+function mountNYCGallery(host){
+ disposeNYCGallery();if(!host)return;
+ const controller=new AbortController(),signal=controller.signal,reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const img=host.querySelector('.nyc-photo'),caption=host.querySelector('.nyc-caption'),count=host.querySelector('.nyc-count'),pause=host.querySelector('.nyc-pause'),full=host.querySelector('.nyc-full-image'),thumbs=[...host.querySelectorAll('[data-nyc-slide]')];
+ let index=0,timer,disposed=false,visible=false,hovered=false,focused=false,paused=reduced.matches,request=0;
+ function stop(){clearTimeout(timer);}
+ function schedule(){stop();if(!disposed&&visible&&!document.hidden&&!paused&&!hovered&&!focused)timer=setTimeout(()=>show(index+1),3000);}
+ function playback(){pause.setAttribute('aria-label',paused?'Play NYC slideshow':'Pause NYC slideshow');pause.title=paused?'Play slideshow':'Pause slideshow';pause.innerHTML=paused?'<span aria-hidden="true">&#9654;</span>':'<span aria-hidden="true">&#10074;&#10074;</span>';}
+ async function show(next,manual=false){
+  stop();const ticket=++request,target=(next+nycPhotos.length)%nycPhotos.length,p=nycPhotos[target];
+  const preload=new Image();preload.src=p.src;try{await preload.decode();}catch{if(!disposed&&ticket===request){host.querySelector('.nyc-screen-reader').textContent='Photo unavailable. Please choose another photo.';schedule();}return;}
+  if(disposed||ticket!==request)return;index=target;img.src=p.src;img.alt=p.caption+' - NYC Realism Project';full.href=p.src;caption.textContent=p.caption;count.textContent=String(index+1).padStart(2,'0')+' / '+String(nycPhotos.length).padStart(2,'0');host.dataset.slide=String(index);
+  thumbs.forEach((b,i)=>{b.setAttribute('aria-pressed',String(i===index));});
+  const rail=host.querySelector('.nyc-thumbnails'),selected=thumbs[index];if(selected.offsetLeft<rail.scrollLeft||selected.offsetLeft+selected.offsetWidth>rail.scrollLeft+rail.clientWidth)rail.scrollTo({left:Math.max(0,selected.offsetLeft-rail.clientWidth/2+selected.offsetWidth/2),behavior:reduced.matches?'instant':'smooth'});
+  if(manual)host.querySelector('.nyc-screen-reader').textContent=p.caption+', photo '+(index+1)+' of '+nycPhotos.length;
+  const ahead=new Image();ahead.src=nycPhotos[(index+1)%nycPhotos.length].src;schedule();
+ }
+ host.querySelector('.nyc-prev').addEventListener('click',()=>show(index-1,true),{signal});host.querySelector('.nyc-next').addEventListener('click',()=>show(index+1,true),{signal});
+ thumbs.forEach((b,i)=>b.addEventListener('click',()=>show(i,true),{signal}));
+ pause.addEventListener('click',()=>{paused=!paused;if(!paused){focused=false;hovered=false;}playback();schedule();},{signal});
+ host.addEventListener('mouseenter',()=>{hovered=true;stop();},{signal});host.addEventListener('mouseleave',()=>{hovered=false;schedule();},{signal});
+ host.addEventListener('focusin',()=>{focused=true;stop();},{signal});host.addEventListener('focusout',e=>{if(!host.contains(e.relatedTarget)){focused=false;schedule();}},{signal});
+ host.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();show(index+(e.key==='ArrowRight'?1:-1),true);}},{signal});
+ let touchX=0,touchY=0;host.querySelector('.nyc-stage').addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;touchY=e.changedTouches[0].clientY;stop();},{passive:true,signal});host.querySelector('.nyc-stage').addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX,dy=e.changedTouches[0].clientY-touchY;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy))show(index+(dx<0?1:-1),true);else schedule();},{passive:true,signal});
+ document.addEventListener('visibilitychange',schedule,{signal});reduced.addEventListener('change',e=>{paused=e.matches;playback();schedule();},{signal});
+ const observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule();},{threshold:0.15});observer.observe(host);
+ disposeNYCGallery=()=>{disposed=true;request++;stop();controller.abort();observer.disconnect();};playback();show(0);
+}
+
+function nycLowerHome(){
+ const files=getDownloadFiles();
+ const featured=[files.find(f=>f.category==='tools'),files.find(f=>f.title==='999 OTF Mod'),files.find(f=>f.title==='Beaverhead County Modification Version 1.5')].filter(Boolean);
+ const posters=[['E4M+','LAUNCHER','3.7'],['999','ON THE FRONTLINE','MODIFICATION'],['BEAVERHEAD','COUNTY','VERSION 1.5']];
+ const guides=[['How to Install a Mod','Install your first mod','Get from download to your first call.'],['Adding a Vehicle','Build your fleet','Bring a new vehicle into Emergency 4.'],['Emergency 4 Editor Basics','Learn the editor','Start shaping your own map.']];
+ return `<section class="city-launcher" aria-labelledby="cityLauncherTitle"><div class="city-inner"><div class="city-launcher-copy"><span class="city-eyebrow">BROOKLYN / BUILT TO CONNECT</span><h2 id="cityLauncherTitle">E4M+<br><span>LAUNCHER</span></h2><p class="city-lead">More room for your city.</p><p>Four times the playable map area, expanded terrain textures, and the tools to take your next Emergency 4 project further.</p><div class="city-actions"><a class="city-button" href="${esc(featured[0].url)}" target="_blank" rel="noopener noreferrer">${downloadIcon}<span>Download 3.7</span></a><a href="${articleHref('E4M+ Launcher 3.7')}">Setup & release details <span aria-hidden="true">&rarr;</span></a></div><small>For E4M+ compatible mods and supported Steam / digital installations.</small></div><div class="city-launcher-stat"><strong>4&times;</strong><span>PLAYABLE MAP AREA</span></div></div></section>
+ <section class="city-downloads" aria-labelledby="cityDownloadsTitle"><div class="city-marquee"><span>TIMES SQUARE / NOW PLAYING</span><h2 id="cityDownloadsTitle">THE DOWNLOAD DISTRICT</h2></div><div class="city-inner"><div class="city-file-grid">${featured.map((f,i)=>`<article class="city-file city-file-${i}"><a class="city-poster" href="#file/${f.id}" aria-label="Details for ${esc(f.title)}"><span class="city-poster-top">EM4RESOURCE PRESENTS</span><strong>${posters[i][0]}<span>${posters[i][1]}</span></strong><span class="city-poster-bottom">${posters[i][2]}</span></a><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><div class="city-file-links"><a href="${esc(f.url)}" target="_blank" rel="noopener noreferrer">${downloadIcon}<span>Download</span></a><a href="#file/${f.id}">Details & credits &rarr;</a></div></article>`).join('')}</div><a class="city-all-files" href="#downloads">Browse all ${files.length} downloads <span aria-hidden="true">&rarr;</span></a></div></section>
+ <section class="city-guides" aria-labelledby="cityGuidesTitle"><div class="city-inner"><div class="city-station-sign"><span>EXPRESS TO YOUR FIRST MOD</span><h2 id="cityGuidesTitle">Modding guides</h2><span class="city-station-label">DOWNTOWN / ALL SKILL LEVELS</span></div><div class="city-guide-list">${guides.map(([title,label,description],i)=>`<a class="city-guide" href="${articleHref(title)}"><span class="city-route city-route-${i}" aria-hidden="true">${i+1}</span><span><strong>${label}</strong><span>${description}</span></span><span aria-hidden="true">&rarr;</span></a>`).join('')}</div><a class="city-guide-all" href="#library">Explore all ${articles.length} guides & references <span aria-hidden="true">&rarr;</span></a></div></section>
+ <section class="city-community" aria-labelledby="cityCommunityTitle"><div class="city-inner"><span class="city-eyebrow">CONEY ISLAND / EVERYONE'S WELCOME</span><h2 id="cityCommunityTitle">GOOD MODS.<br>GREAT COMPANY.</h2><p>Meet the people bringing Emergency 4 to life.<br>Share your work, trade ideas, and build something together.</p><div class="city-actions"><a class="city-button" href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">&rarr;</span></a><a href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer">Support EM4Resource &rarr;</a></div><a class="city-about" href="#article/about-em4resource">About EM4Resource</a></div></section>`;
+}
+let disposeCityHome=()=>{};
+function applyCityHome(){
+ disposeCityHome();
+ const home=main.querySelector('.gpm-home');
+ const lower=home.querySelector('.gpm-tool');
+ lower.insertAdjacentHTML('beforebegin',nycLowerHome());
+ home.querySelectorAll('.gpm-tool,.gpm-files,.gpm-guides,.gpm-about').forEach(e=>e.remove());
+ home.querySelector('.memory-patcher-kicker').remove();
+ home.querySelector('.memory-patcher-inner p').textContent='Get your game ready for modern modifications. Expand memory access to help prevent memory-related crashes.';
+ const button=home.querySelector('.memory-patcher-actions .download-action');
+ button.innerHTML='<span class="subway-bullet" aria-hidden="true">1</span><span class="subway-destination"><small>Download</small>Memory Patcher</span><span class="subway-direction" aria-hidden="true">&rarr;</span>';
+ button.setAttribute('aria-label','Download Memory Patcher');
+ const patcher=home.querySelector('.memory-patcher-inner'),copy=patcher.firstElementChild;
+ copy.classList.add('patcher-copy');
+ copy.append(home.querySelector('.patcher-guide-link'));
+ copy.insertAdjacentHTML('afterbegin','<img class="patcher-first-stop" src="nyc-first-stop-sign.webp" width="828" height="120" alt="FIRST STOP">');
+ const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+ svg.classList.add('patcher-route-lines');svg.setAttribute('aria-hidden','true');patcher.append(svg);
+ function drawRoutes(){
+  const r=patcher.getBoundingClientRect(),b=button.getBoundingClientRect();if(!r.width)return;
+  svg.setAttribute('viewBox',`0 0 ${r.width} ${r.height}`);
+  const start=22,end=b.left-r.left+b.width*.65,lane=r.height-35,tip=b.bottom-r.top+2;
+  svg.innerHTML=['#ee352e','#2850ad','#00933c'].map((color,i)=>{
+   const offset=i*9,y=lane+offset,x=end+offset;
+   return `<path d="M ${start} ${y} H ${x-24} L ${x} ${y-24} V ${tip}" stroke="${color}" stroke-width="5" fill="none" stroke-linejoin="round"/><circle cx="${start+38+i*36}" cy="${y}" r="5" fill="#f5f6f1" stroke="${color}" stroke-width="2"/><circle cx="${start+(x-start)*.55}" cy="${y}" r="5" fill="#f5f6f1" stroke="${color}" stroke-width="2"/>`;
+  }).join('');
+ }
+ const observer=new ResizeObserver(drawRoutes);observer.observe(patcher);observer.observe(button);drawRoutes();
+ disposeCityHome=()=>observer.disconnect();
+ home.querySelector('.nyc-gallery-shell').insertAdjacentHTML('afterbegin','<div class="city-skyline city-skyline-left" aria-hidden="true"></div><div class="city-skyline city-skyline-right" aria-hidden="true"></div>');
+ home.querySelector('.city-station-sign>span:first-child').remove();
+ home.querySelector('.city-station-label').textContent='KNOW-HOW FOR EVERYONE';
+ home.querySelectorAll('.city-launcher .city-eyebrow,.city-community .city-eyebrow').forEach(e=>e.remove());
+ home.querySelector('.city-marquee').outerHTML='<h2 id="cityDownloadsTitle" class="nyc-screen-reader">Featured downloads</h2>';
+}
+
 function memoryPatcherHome(){
  const article=articles.find(a=>a.title==='EM4 Memory Patcher');
  const download=article?articleDownloads(article)[0]:null;
@@ -8751,12 +9984,15 @@ function renderHome(){
  const featured=[files.find(f=>f.title==='999 OTF Mod'),files.find(f=>f.title.startsWith('Beaverhead County Modification Version')),files.find(f=>f.category==='tools')];
  const guides=[['How to Install a Mod','Your first Emergency 4 mod','Install a modification, find its files, and get it running.'],['Adding a Vehicle','Bring your vehicles into the game','Follow the workflow for adding a vehicle to your modification.'],['Emergency 4 Editor Basics','Get to know the editor','Learn the tools and controls you need to start building.']];
  main.innerHTML=`<div class="gpm-home"><a class="gpm-community-bar" href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Our Discord is open to the Emergency 4 community. Join us! <b aria-hidden="true">›</b></a>
- <section class="gpm-hero"><div id="communityGallery"></div><div class="gpm-hero-inner"><h1>The latest and greatest<br>of EM4 modding.</h1><div class="gpm-hero-links"><a href="${articleHref('E4M+ Launcher 3.5')}">Explore E4M+ <span aria-hidden="true">❯</span></a><a href="#downloads">EM4Resource downloads <span aria-hidden="true">❯</span></a><a href="#library">Modding guides <span aria-hidden="true">❯</span></a></div></div></section>
- <section class="gpm-band gpm-tool"><div class="gpm-container gpm-tool-grid"><div><a class="gpm-section-link" href="${articleHref('E4M+ Launcher 3.5')}">E4M+ Launcher</a><h2>EM4Resource is the home of E4M+</h2><p>Build beyond the standard Emergency 4 map.</p><p>E4M+ gives your projects <strong>four times the playable map area</strong>, supports 16,384 × 16,384 terrain textures, and includes tools to convert existing maps and launch the editor.</p><a class="gpm-button" href="${articleHref('E4M+ Launcher 3.5')}">See how to get started <span aria-hidden="true">❯</span></a><small class="gpm-compatibility">For supported Steam / digital installations.</small></div><figure class="gpm-map-comparison"><div class="comparison-heading"><strong>E4M<span>+</span></strong><span>More room to build.</span></div><div class="area-comparison" role="img" aria-label="E4M+ has four times the playable map area of a standard map. The standard map fills one quarter of the expanded area."><div class="expanded-map"><div class="standard-map">Standard<br>map</div><span class="expanded-map-label">E4M+ map</span></div><div class="comparison-number"><strong>4×</strong><span>playable area</span></div></div><figcaption>Standard map area compared with an expanded E4M+ map.</figcaption></figure></div></section>
- <section class="gpm-band gpm-files"><div class="gpm-container"><a class="gpm-section-link" href="#downloads">EM4Resource Downloads</a><h2>Featured from the file library</h2><p>Community modifications and tools for your next session.</p><div class="gpm-file-grid">${featured.map(f=>`<article class="gpm-featured-file"><a href="#file/${f.id}" class="gpm-file-cover ${f.category==='tools'?'cover-tool':f.title==='999 OTF Mod'?'cover-photo':'cover-beaverhead'}">${f.title==='999 OTF Mod'?'<img src="community-999-otf-steve-s.png" alt="999 OTF Modification screenshot by Steve_S" width="1920" height="1024" loading="lazy">':f.category==='tools'?'<span>E4M<span class="cover-plus">+</span><small>Launcher 3.5</small></span>':'<span>BEAVERHEAD<br>COUNTY<small>Modification · Version 1.5</small></span>'}</a><div class="gpm-file-caption"><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><p>${esc(f.metadata.join(' · '))}</p>${f.title==='999 OTF Mod'?'<small>Photo: Steve_S — 999 OTF Modification</small>':''}</div></article>`).join('')}</div></div></section>
+ <section class="gpm-hero"><div id="communityGallery"></div><div class="gpm-hero-inner"><h1>The latest and greatest<br>of EM4 modding.</h1><div class="gpm-hero-links"><a href="${articleHref('E4M+ Launcher 3.7')}">Explore E4M+ <span aria-hidden="true">❯</span></a><a href="#downloads">EM4Resource downloads <span aria-hidden="true">❯</span></a><a href="#library">Modding guides <span aria-hidden="true">❯</span></a></div></div></section>
+ <section class="gpm-band gpm-tool"><div class="gpm-container gpm-tool-grid"><div><a class="gpm-section-link" href="${articleHref('E4M+ Launcher 3.7')}">E4M+ Launcher</a><h2>EM4Resource is the home of E4M+</h2><p>Build beyond the standard Emergency 4 map.</p><p>E4M+ gives your projects <strong>four times the playable map area</strong>, supports 16,384 × 16,384 terrain textures, and includes tools to convert existing maps and launch the editor.</p><a class="gpm-button" href="${articleHref('E4M+ Launcher 3.7')}">See how to get started <span aria-hidden="true">❯</span></a><small class="gpm-compatibility">For supported Steam / digital installations.</small></div><figure class="gpm-map-comparison"><div class="comparison-heading"><strong>E4M<span>+</span></strong><span>More room to build.</span></div><div class="area-comparison" role="img" aria-label="E4M+ has four times the playable map area of a standard map. The standard map fills one quarter of the expanded area."><div class="expanded-map"><div class="standard-map">Standard<br>map</div><span class="expanded-map-label">E4M+ map</span></div><div class="comparison-number"><strong>4×</strong><span>playable area</span></div></div><figcaption>Standard map area compared with an expanded E4M+ map.</figcaption></figure></div></section>
+ <section class="gpm-band gpm-files"><div class="gpm-container"><a class="gpm-section-link" href="#downloads">EM4Resource Downloads</a><h2>Featured from the file library</h2><p>Community modifications and tools for your next session.</p><div class="gpm-file-grid">${featured.map(f=>`<article class="gpm-featured-file"><a href="#file/${f.id}" class="gpm-file-cover ${f.category==='tools'?'cover-tool':f.title==='999 OTF Mod'?'cover-photo':'cover-beaverhead'}">${f.title==='999 OTF Mod'?'<img src="community-999-otf-steve-s.png" alt="999 OTF Modification screenshot by Steve_S" width="1920" height="1024" loading="lazy">':f.category==='tools'?'<span>E4M<span class="cover-plus">+</span><small>Launcher 3.7</small></span>':'<span>BEAVERHEAD<br>COUNTY<small>Modification · Version 1.5</small></span>'}</a><div class="gpm-file-caption"><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><p>${esc(f.metadata.join(' · '))}</p>${f.title==='999 OTF Mod'?'<small>Photo: Steve_S — 999 OTF Modification</small>':''}</div></article>`).join('')}</div></div></section>
  <section class="gpm-band gpm-guides"><div class="gpm-container"><a class="gpm-section-link" href="#library">EM4Resource Guides</a><h2>From the modding library</h2><p>Practical help for getting started and building something of your own.</p><div class="gpm-guide-grid">${guides.map(([title,label,description])=>`<article><h3><a href="${articleHref(title)}">${label}</a></h3><p>${description}</p><a class="gpm-button" href="${articleHref(title)}">Read the guide <span aria-hidden="true">❯</span></a></article>`).join('')}</div></div></section>
  <section class="gpm-band gpm-about"><div class="gpm-container"><a class="gpm-section-link" href="#article/about-em4resource">About EM4Resource</a><h2>A community built around Emergency 4</h2><p>Find a mod. Learn the tools. Share what you create.</p><div class="gpm-stats"><div><strong>${files.length}</strong><p>files in the download library.</p><a class="gpm-button" href="#downloads">Browse downloads ❯</a></div><div><strong>${articles.length}</strong><p>guides and reference articles.</p><a class="gpm-button" href="#library">Explore the library ❯</a></div><div><strong>${categories.length}</strong><p>topics covering EM4 modding.</p><a class="gpm-button" href="#library">Find your topic ❯</a></div></div><div class="gpm-community-links"><a class="gpm-discord" href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer"><img src="discord-logo.svg" alt="Discord" width="219" height="32"><span>Join the conversation ❯</span></a><a class="gpm-patreon" href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer"><img src="patreon-wordmark.svg" alt="Patreon" width="1826" height="620"><span>Support EM4Resource ❯</span></a></div></div></section></div>`;
  main.querySelector('.gpm-hero').insertAdjacentHTML('afterend',memoryPatcherHome());
+ main.querySelector('.gpm-tool').insertAdjacentHTML('beforebegin',nycProjectSection());
+ mountNYCGallery(document.getElementById('nycGallery'));
+ applyCityHome();
  mountCommunityGallery(document.getElementById('communityGallery'));
  document.title='EM4Resource — Emergency 4 modding community';
 }
@@ -8783,15 +10019,91 @@ function searchArticles(query){
 function renderSearch(query){renderGuideLibrary('',{q:query,all:true});}
 function renderMissing(){main.innerHTML=`<div class="wrap" style="padding-top:60px;padding-bottom:90px">${heading('Page not found','Let’s get you back on track.','This article or topic could not be found.')}<a class="button" href="#library">Browse the guide library →</a></div>`;document.title='Page not found — EM4Resource';}
 let lastRoute='';
+function applyCityPages(){
+ const shell=main.querySelector('.gl-shell');
+ if(!shell)return;
+ const routes={start:['1','#00864a'],vehicles:['V','#2454a4'],models:['M','#e45b16'],maps:['G','#00864a'],scripting:['S','#b52a35'],missions:['C','#923c96'],'audio-ui':['A','#efc70a'],fixes:['F','#b52a35'],editor:['E','#2454a4'],files:['D','#00864a'],sdk:['R','#923c96'],examples:['X','#e45b16'],resources:['T','#595b5e'],all:['G','#2454a4']};
+ const theme=(el,id)=>{const [letter,color]=routes[id]||routes.all;el.style.setProperty('--route-color',color);el.dataset.route=letter;return letter;};
+ theme(shell,shell.dataset.topic||'all');
+ shell.querySelectorAll('[data-topic]').forEach(el=>theme(el,el.dataset.topic));
+ shell.querySelectorAll('.gl-topic-card .gl-icon,.gl-reference-grid .gl-icon').forEach(el=>{el.textContent=el.closest('[data-topic]').dataset.route;el.setAttribute('aria-hidden','true');});
+ const icon=shell.querySelector('.reader-hero-icon');
+ if(icon){icon.textContent=shell.dataset.route;icon.setAttribute('aria-hidden','true');}
+ shell.querySelectorAll('.gl-sidebar nav>a').forEach(a=>{const id=new URLSearchParams(a.hash.split('?')[1]).get('topic');if(id)theme(a,id);});
+ const hero=shell.querySelector('.gl-hero');
+ if(hero){
+  const key=document.createElement('nav');key.className='subway-route-key';key.setAttribute('aria-label','Tutorial topics');
+  key.innerHTML=guideTopics.filter(t=>!t.reference&&!['start','fixes'].includes(t.id)).map(t=>`<a href="${guideTopicHref(t.id)}" style="--route-color:${routes[t.id][1]}"><span aria-hidden="true">${routes[t.id][0]}</span>${esc(t.name)}</a>`).join('');
+  hero.append(key);
+ }
+}
+
+/* Classic-script entry point: call immediately after applyCityPages() on render. */
+function applyInteriorGuideTheme(root = document.getElementById('main')) {
+  if (!root || root.classList.contains('is-home') || root.querySelector('.gpm-home')) return;
+  const shell = root.querySelector('.gl-shell');
+  if (!shell) return;
+
+  shell.classList.add('ig-theme');
+  const articleLink = shell.querySelector('[data-guide-top]');
+  const articleId = articleLink ? articleLink.getAttribute('href').split('?')[0].replace(/^#article\//, '') : '';
+  const page = articleId === 'em4-memory-patcher' ? 'patcher'
+    : /^e4m-plus-launcher(?:-|$)/.test(articleId) ? 'launcher'
+    : shell.classList.contains('reader-v2') ? 'guide'
+    : shell.classList.contains('gl-home') ? 'library' : 'topic';
+  shell.dataset.igPage = page;
+
+  const hero = shell.querySelector('.reader-hero, .gl-hero, .gl-list-header');
+  if (!hero) return;
+  hero.classList.add('ig-masthead');
+  const copy = hero.querySelector('.reader-hero-icon + div');
+  if (copy) copy.classList.add('ig-masthead-copy');
+
+  // Decorations are inert. Existing links, section IDs and bound controls stay put.
+  if (page !== 'launcher' && !hero.querySelector('.ig-route-map')) {
+    const map = document.createElement('div');
+    map.className = 'ig-route-map';
+    map.setAttribute('aria-hidden', 'true');
+    for (let line = 0; line < 3; line++) {
+      const track = document.createElement('span');
+      track.className = 'ig-map-track';
+      for (let station = 0; station < 3; station++) track.append(document.createElement('i'));
+      map.append(track);
+    }
+    hero.append(map);
+  }
+
+  if (page === 'patcher' && copy && !copy.querySelector('.ig-first-stop')) {
+    const sign = document.createElement('img');
+    sign.className = 'ig-first-stop';
+    sign.src = 'nyc-first-stop-sign.webp';
+    sign.alt = 'First stop';
+    sign.width = 828;
+    sign.height = 120;
+    copy.prepend(sign);
+  }
+
+  const icon = hero.querySelector('.reader-hero-icon');
+  if (icon && (page === 'patcher' || page === 'launcher')) {
+    icon.textContent = page === 'patcher' ? '1' : '+';
+    icon.setAttribute('aria-hidden', 'true');
+  }
+}
+
 function renderRoute(){
+ if (['#article/e4m-plus-launcher-3-5','#file/e4m-plus-launcher-3-5'].includes(location.hash.split('?')[0])) { location.replace(location.hash.replace('e4m-plus-launcher-3-5','e4m-plus-launcher-3-7')); return; }
  const raw=location.hash.slice(1)||'home';let path,section;
  try{[path,section]=raw.split('?');path=decodeURIComponent(path);}catch{renderMissing();return;}
  const [type,...rest]=path.split('/');const value=rest.join('/');
  if(path!==lastRoute || ['library','reference','category','topic','search'].includes(type)){
   disposeCommunityGallery();
+  disposeNYCGallery();
+  disposeCityHome();
   main.classList.toggle('is-home',type==='home');
   if(type==='home')renderHome();else if(type==='file')renderFileDetail(value);else if(type==='library')renderGuideLibrary(section);else if(type==='reference')renderGuideLibrary(section,{all:true});else if(type==='category')renderCategory(value);else if(type==='topic')renderTopic(value);else if(type==='article')renderArticle(value);else if(type==='downloads')renderDownloads();else if(type==='search')renderSearch(value);else if(type==='main'){if(!lastRoute)renderHome();main.focus();return;}else renderMissing();
-  const active=type==='home'?'home':type==='article'&&value==='em4-memory-patcher'?'patcher':type==='downloads'||type==='file'||(type==='article'&&value==='modification-downloads')?'downloads':type==='article'&&value==='e4m-plus-launcher-3-5'?'launcher':type==='category'&&groups.find(g=>g.name==='Troubleshooting').categories.includes(value)?'help':'library';
+  applyCityPages();
+  applyInteriorGuideTheme();
+  const active=type==='home'?'home':type==='article'&&value==='em4-memory-patcher'?'patcher':type==='downloads'||type==='file'||(type==='article'&&value==='modification-downloads')?'downloads':type==='article'&&value==='e4m-plus-launcher-3-7'?'launcher':type==='category'&&groups.find(g=>g.name==='Troubleshooting').categories.includes(value)?'help':'library';
   document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
   document.getElementById('primaryNav').classList.remove('is-open');document.getElementById('menuToggle').setAttribute('aria-expanded','false');
   if(lastRoute){const h=main.querySelector('h1');if(h){h.tabIndex=-1;h.focus({preventScroll:true});}}
@@ -8840,7 +10152,7 @@ const guideTopics = [
  {id:'files',name:'Files & folders',description:'Find the game files you need and learn what they control.',icon:'folder',reference:true,categories:['Folder Structure'],featured:['Important Emergency 4 Folders']},
  {id:'sdk',name:'SDK reference',description:'Look up the classes and functions used in Emergency 4 scripts.',icon:'book',reference:true,categories:['SDK Reference','SDK Glossary'],featured:['SDK Reading Strategy','Core SDK Classes']},
  {id:'examples',name:'Script examples',description:'Read working scripts with explanations of how they work.',icon:'code',reference:true,categories:['Case Studies'],featured:['How to Read a Script Case Study']},
- {id:'resources',name:'Tools & community',description:'Find the launcher, memory patcher, server rules, and community information.',icon:'link',reference:true,categories:['EM4 Memory Patcher','E4M+ Launcher','EM4 History','Discord Rules'],featured:['EM4 Memory Patcher','E4M+ Launcher 3.5']}
+ {id:'resources',name:'Tools & community',description:'Find the launcher, memory patcher, server rules, and community information.',icon:'link',reference:true,categories:['EM4 Memory Patcher','E4M+ Launcher','EM4 History','Discord Rules'],featured:['EM4 Memory Patcher','E4M+ Launcher 3.7']}
 ];
 const guideOverrides = {
  'About EM4Resource':'resources','Encyclopedia Sections':'resources',
