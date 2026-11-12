@@ -1994,189 +1994,115 @@ main:has(>.downloads-depot){background:#f0f3ed;color:#22372b}
   .gl-shell.ig-theme :is(.ig-route-map, .ig-first-stop) { display: none; }
   .gl-shell.ig-theme :is(.reader-section, .gl-article) { border: 0; background: transparent; }
 }
-</style><style id="park-downloads-design">/* Load after city-pages.css. Every rule is limited to the download renderers. */
-main:has(>.park-downloads){background:#eceee9;color:#202823}
-.downloads-depot.park-downloads{--park-green:#14513f;--park-deep:#103e31;--park-yellow:#ffdf70;--park-paper:#eceee9;--park-ink:#202823;--park-muted:#526058;--park-line:#bac3bc;width:100%;max-width:none;margin:0;padding:0 0 64px;color:var(--park-ink);font-family:Arial,Helvetica,sans-serif}
-.park-downloads *{box-sizing:border-box;letter-spacing:0}
-.park-downloads :is(h1,h2,h3,p,figure,ul){margin-top:0}
-.park-downloads :is(h1,h2,h3){font-family:Arial,Helvetica,sans-serif;overflow-wrap:anywhere}
-.park-downloads :is(a,button,input,select,summary):focus-visible{outline:3px solid #a64b16;outline-offset:4px}
-.park-downloads a{color:var(--park-green);text-underline-offset:4px}
-.park-downloads a:hover{color:#071e17;text-decoration:underline}
-.park-downloads [hidden]{display:none!important}
-.park-downloads .park-width{width:calc(100% - 64px);max-width:1240px;margin-inline:auto;min-width:0}
-.park-downloads .park-masthead{background:var(--park-green) url('nyc-central-park.webp') right bottom/auto 100% no-repeat;border-top:1px solid #8aa99a;border-bottom:5px solid var(--park-yellow);min-height:310px}
-.park-downloads .park-masthead .breadcrumb{color:#e2e9e4;font-size:12px;padding:20px 0 24px;line-height:1.5;gap:8px}
-.park-downloads .park-masthead .breadcrumb :is(a,span){color:inherit}
-.park-downloads .park-masthead-copy{max-width:44%;padding:0 0 30px}
-.park-downloads .park-eyebrow{display:block;color:var(--park-yellow);font-size:11px;line-height:1.6;font-weight:700;text-transform:uppercase}
-.park-downloads .park-masthead h1{font-size:54px;line-height:1.08;color:var(--park-yellow);margin:12px 0 16px;font-weight:800}
-.park-downloads .park-masthead p{font-size:17px;line-height:1.5;color:#fff;margin:0 0 22px}
-.park-downloads .park-guide-link{display:inline-flex;gap:24px;align-items:center;min-height:32px;color:#fff;font-size:13px;font-weight:700;text-decoration:underline}
-.park-downloads .park-guide-link:hover{color:var(--park-yellow)}
-.park-downloads .park-masthead :is(a,button):focus-visible,.park-downloads .park-current a:focus-visible{outline-color:#fff}
-.park-downloads .park-catalog{display:grid;grid-template-columns:204px minmax(0,1fr);align-items:start;gap:40px;padding-top:32px}
-.park-downloads .park-sidebar{display:block;border:0;padding:0;min-width:0}
-.park-downloads .park-sidebar h2{color:var(--park-ink);font-size:13px;font-weight:700;line-height:1.5;margin:0 0 12px}
-.park-downloads .park-category-nav{background:var(--park-deep);border-top:3px solid var(--park-yellow);padding:6px 12px}
-.park-downloads .park-category-nav a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:12px 3px;border-bottom:1px solid #4b6e60;color:#fff;text-decoration:none;font-size:14px;line-height:1.4}
-.park-downloads .park-category-nav a:last-child{border-bottom:0}
-.park-downloads .park-category-nav a:hover{color:var(--park-yellow);text-decoration:underline}
-.park-downloads .park-category-nav a[aria-current]{color:var(--park-yellow);font-weight:700}
-.park-downloads .park-category-nav a[aria-current]>span:first-child{border-left:3px solid var(--park-yellow);padding-left:9px}
-.park-downloads .park-category-nav a:focus-visible{outline-color:var(--park-yellow);outline-offset:1px}
-.park-downloads .park-category-nav .depot-count{color:inherit;font-size:12px;font-variant-numeric:tabular-nums;flex:none}
-.park-downloads .depot-essentials{margin-top:28px;border-top:1px solid var(--park-line);padding-top:18px}
-.park-downloads .depot-essentials>a{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;padding:13px 0;min-height:44px;font-size:13px;font-weight:700;border-color:var(--park-line);color:var(--park-green)}
-.park-downloads .depot-essentials>a>span{font-size:16px;color:inherit}
-.park-downloads .depot-browser{min-width:0}
-.park-downloads .park-current{display:flex;align-items:center;justify-content:space-between;gap:20px;background:var(--park-green);padding:18px 22px;border-left:4px solid var(--park-yellow);margin-bottom:26px}
-.park-downloads .park-current>div{min-width:0}
-.park-downloads .park-current h2{font-size:20px;line-height:1.4;margin:3px 0 0}
-.park-downloads .park-current h2 a{color:#fff;text-decoration:none}
-.park-downloads .park-current h2 a:hover{text-decoration:underline}
-.park-downloads .depot-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:20px;align-items:end;padding:0 0 22px;border-bottom:1px solid var(--park-line)}
-.park-downloads .depot-toolbar label{color:var(--park-ink);font-size:12px;font-weight:700;line-height:1.5;margin-bottom:7px}
-.park-downloads .depot-search>div{display:flex;min-width:0}
-.park-downloads .depot-toolbar :is(input,select){border:1px solid #82948a;background:#fff;color:var(--park-ink);border-radius:0;min-height:44px;height:44px;padding:10px 12px;font:14px/1.4 Arial,Helvetica,sans-serif;width:100%;min-width:0}
-.park-downloads .depot-toolbar input{border-right:0}
-.park-downloads .depot-toolbar input::placeholder{color:#626b65;opacity:1}
-.park-downloads .depot-toolbar button{min-height:44px;background:var(--park-deep);color:#fff;border:1px solid var(--park-deep);border-radius:0;font:700 13px/1.4 Arial,Helvetica,sans-serif;padding:10px 18px;cursor:pointer}
-.park-downloads .depot-toolbar button:hover{background:#246349}
-.park-downloads .depot-toolbar .depot-sort{display:grid;gap:7px;max-width:none;width:100%;margin:0}
-.park-downloads .depot-results-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:10px 14px;margin:0;padding:24px 0 15px;border-bottom:2px solid var(--park-ink)}
-.park-downloads .depot-results-heading h2{font-size:19px;line-height:1.4;color:var(--park-ink);margin:0}
-.park-downloads .depot-results-heading>span{color:var(--park-muted);font-size:12px;font-variant-numeric:tabular-nums}
-.park-downloads .depot-results-heading a{font-size:12px;line-height:1.5;color:var(--park-green);margin-left:auto}
-.park-downloads .park-file-list{display:block}
-.park-downloads .park-file-row{display:grid;grid-template-columns:minmax(0,1fr) 142px;gap:24px;background:transparent;border:0;border-bottom:1px solid var(--park-line);border-radius:0;box-shadow:none;padding:23px 0;overflow:visible;min-width:0}
-.park-downloads .park-file-row .depot-file-content{min-width:0;padding:0}
-.park-downloads .depot-file-meta{display:flex;gap:9px 14px;flex-wrap:wrap;color:var(--park-muted);font-size:10px;line-height:1.5;font-weight:700;text-transform:uppercase}
-.park-downloads .depot-release{color:var(--park-green);border-left:1px solid #718b7b;padding-left:14px}
-.park-downloads .depot-file h3{font-size:20px;line-height:1.3;margin:6px 0 9px}
-.park-downloads .depot-file h3 a{color:var(--park-ink);text-decoration:none}
-.park-downloads .depot-file h3 a:hover{color:var(--park-green);text-decoration:underline}
-.park-downloads .depot-file p{font-size:14px;line-height:1.65;color:#45524a;margin:0 0 12px;max-width:660px;overflow-wrap:anywhere}
-.park-downloads .park-file-facts{display:flex;gap:6px 12px;flex-wrap:wrap;margin:0;padding:0;list-style:none;color:#526058;font-size:11px;line-height:1.6}
-.park-downloads .park-file-facts li+li{border-left:1px solid #8d9f93;padding-left:12px}
-.park-downloads .depot-file-actions{display:flex;flex-direction:column;align-items:stretch;justify-content:start;gap:12px;padding:0;margin:0;min-width:0}
-.park-downloads a.depot-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:11px 15px;background:var(--park-yellow);border:1px solid #b69e45;border-radius:0;color:#173b2c;box-shadow:none;font-size:13px;line-height:1.4;font-weight:700;text-decoration:none;white-space:normal;text-align:center}
-.park-downloads a.depot-download:hover{background:#ffe994;border-color:#173b2c;color:#102c20;text-decoration:none}
-.park-downloads .depot-download svg{width:17px;height:17px;flex:none}
-.park-downloads .depot-details{display:inline-flex;align-items:center;justify-content:space-between;gap:6px;min-height:30px;font-size:12px;line-height:1.4;color:var(--park-green);text-decoration:underline}
-.park-downloads .park-file-preview{display:grid;grid-template-columns:120px minmax(0,180px);align-items:end;gap:12px;margin:16px 0 0}
-.park-downloads .park-file-preview a{display:block;min-width:0}
-.park-downloads .park-file-preview img{display:block;width:100%;height:auto;border:1px solid #7d8e83}
-.park-downloads .park-file-preview figcaption{font-size:10px;line-height:1.5;color:var(--park-muted);overflow-wrap:anywhere}
-.park-downloads .depot-empty{padding:40px 0;border-bottom:1px solid var(--park-line)}
-.park-downloads .depot-empty :is(h3,p){color:var(--park-ink)}
-.park-downloads .depot-empty h3{font-size:21px}
-.park-downloads .depot-empty p,.park-downloads .depot-empty a{font-size:14px}
-/* Detail titles sit above the silhouette, so long file names cannot cross it. */
-.park-downloads .park-detail-masthead{background-image:none;min-height:0}
-.park-downloads .park-detail-masthead:after{content:"";display:block;height:98px;background:url('nyc-central-park.webp') right bottom/auto 170px no-repeat;pointer-events:none}
-.park-downloads .park-detail-heading{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:32px;align-items:start;padding:8px 0 0}
-.park-downloads .park-detail-heading>div{min-width:0}
-.park-downloads .park-detail-heading h1{font-size:38px;line-height:1.17;color:#fff;margin:10px 0 14px;max-width:850px}
-.park-downloads .park-detail-heading .park-file-facts{font-size:13px;color:#e3eae5;line-height:1.6}
-.park-downloads .park-detail-heading .park-file-facts li+li{border-color:#8aa99a}
-.park-downloads .park-detail-actions{display:flex;flex-direction:column;align-items:stretch;gap:9px;padding-top:24px}
-.park-downloads .park-detail-actions>span{color:#e3eae5;font-size:11px;text-align:center;line-height:1.5}
-.park-downloads .park-backline{padding:20px 0;border-bottom:1px solid var(--park-line)}
-.park-downloads .depot-back{display:inline-flex;gap:12px;align-items:center;min-height:28px;margin:0;font-size:13px;line-height:1.5;color:var(--park-green)}
-.park-downloads .depot-detail-body{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:60px;padding-top:32px}
-.park-downloads .depot-detail-body article{min-width:0}
-.park-downloads .depot-detail-body h2{font-size:21px;line-height:1.4;color:var(--park-ink);margin:0 0 14px}
-.park-downloads .depot-detail-body p{color:#45524a;font-size:16px;line-height:1.75;margin:0 0 22px;overflow-wrap:anywhere}
-.park-downloads .depot-detail-body a{color:var(--park-green);overflow-wrap:anywhere}
-.park-downloads .park-detail-preview{margin:26px 0}
-.park-downloads .park-detail-preview img{display:block;width:100%;height:auto;max-width:100%;border:1px solid #7d8e83}
-.park-downloads .park-detail-preview figcaption{color:var(--park-muted);font-size:12px;line-height:1.5;padding-top:10px}
-.park-downloads .depot-detail-body details{background:transparent;border:0;border-top:1px solid var(--park-line);border-bottom:1px solid var(--park-line);border-radius:0;margin:24px 0;padding:0}
-.park-downloads .depot-detail-body details.download-details{border-top:1px solid var(--park-line)!important;border-bottom:1px solid var(--park-line)!important;margin:24px 0!important}
-.park-downloads .depot-detail-body summary{color:var(--park-green);font-size:16px;line-height:1.5;font-weight:700;cursor:pointer;padding:18px 0}
-.park-downloads .depot-detail-body details p{padding:0 0 8px;font-size:14px}
-.park-downloads .depot-detail-body code{color:var(--park-ink);background:#dce2db;border-radius:0;padding:2px 4px;font-size:.9em;overflow-wrap:anywhere}
-.park-downloads .depot-detail-body aside{display:block;padding:0;border:0;min-width:0}
-.park-downloads .park-file-register{margin:0 0 28px;border-top:3px solid var(--park-green)}
-.park-downloads .park-file-register>div{padding:14px 0;border-bottom:1px solid var(--park-line)}
-.park-downloads .park-file-register dt{font-size:11px;line-height:1.4;color:var(--park-muted);margin-bottom:6px}
-.park-downloads .park-file-register dd{font-size:14px;line-height:1.5;color:var(--park-ink);font-weight:700;margin:0;overflow-wrap:anywhere}
-.park-downloads .depot-detail-body aside h2{font-size:15px;margin:0}
-.park-downloads .depot-detail-body aside>a{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;line-height:1.5;min-height:44px;margin:0;padding:12px 0;border-bottom:1px solid var(--park-line)}
-.park-downloads .depot-detail-body aside p{font-size:12px;line-height:1.65;margin:18px 0 0;color:var(--park-muted)}
-@media(min-width:1700px){
- .park-downloads .park-masthead{background-size:auto 125%}
- .park-downloads .park-detail-masthead{background-image:none}
-}
-@media(max-width:1000px){
- .park-downloads .park-width{width:calc(100% - 48px)}
- .park-downloads .park-catalog{grid-template-columns:176px minmax(0,1fr);gap:28px}
- .park-downloads .park-masthead-copy{max-width:46%}
- .park-downloads .park-masthead h1{font-size:46px}
- .park-downloads .depot-toolbar{grid-template-columns:minmax(0,1fr) 180px;gap:14px}
- .park-downloads .park-file-row{grid-template-columns:minmax(0,1fr) 130px;gap:18px}
- .park-downloads .depot-detail-body{grid-template-columns:minmax(0,1fr) 220px;gap:32px}
- .park-downloads .park-detail-heading h1{font-size:34px}
-}
-@media(max-width:760px){
- .park-downloads .park-width{width:calc(100% - 36px)}
- .park-downloads .park-masthead{min-height:0;background-size:auto 230px;background-position:right bottom}
- .park-downloads .park-masthead-copy{max-width:100%;padding-bottom:140px}
- .park-downloads .park-masthead h1{font-size:40px}
- .park-downloads .park-masthead p{font-size:16px;margin-bottom:12px}
- .park-downloads .park-masthead .breadcrumb{padding:16px 0 20px}
- .park-downloads .park-catalog{display:block;padding-top:22px}
- .park-downloads .park-sidebar{margin-bottom:22px}
- .park-downloads .park-category-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:4px 12px;gap:0 18px}
- .park-downloads .park-category-nav a{font-size:12px;gap:6px}
- .park-downloads .park-category-nav a:nth-last-child(-n+3){border-bottom:0}
- .park-downloads .park-sidebar .depot-essentials{display:flex;flex-wrap:wrap;gap:0 18px;border-top:0;margin:0;padding:0}
- .park-downloads .park-sidebar .depot-essentials h2{display:none}
- .park-downloads .park-sidebar .depot-essentials>a{min-height:40px;padding:8px 0;border-bottom:0;font-size:12px}
- .park-downloads .park-current{padding:16px 18px;margin-bottom:22px}
- .park-downloads .park-current h2{font-size:18px}
- .park-downloads .depot-detail-body{grid-template-columns:1fr;gap:32px;padding-top:26px}
- .park-downloads .depot-detail-body aside{border-top:1px solid var(--park-line);padding-top:24px}
- .park-downloads .park-detail-heading{grid-template-columns:1fr;gap:18px;padding-top:0}
- .park-downloads .park-detail-heading h1{font-size:32px}
- .park-downloads .park-detail-actions{max-width:300px;padding-top:0}
- .park-downloads .park-detail-masthead:after{height:98px}
-}
-@media(max-width:480px){
- .park-downloads .park-masthead-copy{padding-bottom:124px}
- .park-downloads .park-masthead{background-size:auto 210px}
- .park-downloads .park-masthead h1{font-size:36px}
- .park-downloads .park-eyebrow{font-size:10px}
- .park-downloads .park-category-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
- .park-downloads .park-category-nav a:nth-last-child(3){border-bottom:1px solid #4b6e60}
- .park-downloads .park-current{align-items:center;gap:12px}
- .park-downloads .park-current h2{font-size:16px}
- .park-downloads .park-current a.depot-download{flex:none;min-width:116px;padding:10px}
- .park-downloads .depot-toolbar{grid-template-columns:1fr;gap:14px}
- .park-downloads .depot-toolbar .depot-sort{grid-template-columns:60px minmax(0,1fr);align-items:center;gap:12px}
- .park-downloads .park-file-row{grid-template-columns:1fr;gap:16px}
- .park-downloads .depot-file h3{font-size:20px}
- .park-downloads .depot-file-actions{display:grid;grid-template-columns:130px minmax(0,1fr);align-items:center;gap:16px}
- .park-downloads .depot-details{justify-content:start;flex-wrap:wrap}
- .park-downloads .depot-results-heading{gap:8px 12px}
- .park-downloads .park-detail-heading h1{font-size:29px}
- .park-downloads .park-detail-actions{max-width:none}
- .park-downloads .park-detail-masthead:after{height:92px;background-size:auto 160px}
-}
-@media(prefers-reduced-motion:reduce){
- .park-downloads *{scroll-behavior:auto;transition:none;animation:none}
-}
-@media print{
- .downloads-depot.park-downloads{background:#fff;color:#000;padding:0}
- .park-downloads .park-width{width:100%}
- .park-downloads .park-masthead{background:none;min-height:0;border:0}
- .park-downloads .park-masthead-copy{max-width:none;padding:0}
- .park-downloads .park-masthead :is(h1,p,.park-eyebrow,.park-file-facts){color:#000}
- .park-downloads .park-catalog,.park-downloads .depot-detail-body{display:block}
- .park-downloads .park-sidebar,.park-downloads .park-current,.park-downloads .depot-toolbar,.park-downloads .park-guide-link,.park-downloads .park-detail-masthead:after{display:none}
- .park-downloads .park-file-row{break-inside:avoid}
-}
+</style><style id="liberty-downloads-design">/* New York harbor print identity. Scoped to the file library and file details. */
+main:has(>.liberty-downloads){background:#edf3ec;color:#143f3e}
+.liberty-downloads{--harbor:#143f3e;--mint:#a4d6be;--gold:#ffcf3e;--paper:#edf3ec;width:100%;max-width:none;margin:0;padding:0 0 64px;font-family:"Segoe UI",Arial,sans-serif;color:var(--harbor)}
+.liberty-downloads *{box-sizing:border-box;letter-spacing:0}
+.liberty-downloads [hidden]{display:none!important}
+.liberty-downloads a{color:inherit}
+.liberty-downloads :is(a,button,input,select,summary):focus-visible{outline:3px solid #b92933;outline-offset:4px}
+.liberty-downloads .liberty-width{width:calc(100% - 64px);max-width:1240px;margin-inline:auto;min-width:0}
+.liberty-masthead,.liberty-file-header{position:relative;isolation:isolate;background:var(--mint);color:var(--harbor);border:0;border-bottom:8px solid var(--gold);padding:22px 0 35px;overflow:hidden}
+.liberty-masthead:before,.liberty-file-header:before{content:"";position:absolute;inset:8px 0 0;z-index:-1;background:url('nyc-liberty.png') right max(35px,calc((100vw - 1240px)/2 + 25px)) bottom/auto 100% no-repeat;pointer-events:none}
+.liberty-masthead:after,.liberty-file-header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--harbor);box-shadow:0 -6px 0 var(--mint),0 -8px 0 var(--harbor);pointer-events:none}
+.liberty-downloads .breadcrumb{color:#28534d;margin:0 0 18px;font-size:12px;line-height:1.4}
+.liberty-downloads .breadcrumb :is(a,span){color:#173f3e}
+.liberty-downloads .breadcrumb a{text-decoration:underline;text-underline-offset:3px}
+.liberty-title-row{padding:13px 0 17px;max-width:900px}
+.liberty-eyebrow{display:block;font-size:11px;font-weight:800;line-height:1.5;text-transform:uppercase}
+.liberty-title-row h1{font:100px/.98 Impact,"Arial Black",sans-serif;text-transform:uppercase;transform:skew(-4deg);transform-origin:left;margin:12px 0 14px;color:var(--harbor);text-shadow:3px 3px 0 var(--gold)}
+.liberty-downloads .liberty-title-row p{font-size:20px;line-height:1.35;font-weight:750;margin:0 0 20px;color:var(--harbor)}
+.liberty-install{display:inline-flex;align-items:center;gap:22px;border-bottom:2px solid var(--harbor);padding:7px 0;font-size:13px;font-weight:800;text-decoration:none}
+.liberty-install:hover{color:#84302f;border-color:#84302f}
+.liberty-install span{font-size:22px;line-height:1}
+.liberty-category-band{background:var(--harbor);border-bottom:3px solid #92baa9}
+.liberty-downloads .liberty-category-nav{display:flex;flex-wrap:wrap;gap:0 32px}
+.liberty-category-nav>a{display:flex;align-items:center;gap:9px;min-height:58px;padding:15px 0 12px;border-bottom:4px solid transparent;text-decoration:none;font-size:14px;font-weight:750;color:#eef7ed}
+.liberty-category-nav>a[aria-current]{border-bottom-color:var(--gold);color:var(--gold)}
+.liberty-category-nav>a:hover{color:var(--gold)}
+.liberty-category-nav .depot-count{display:inline;min-width:0;background:none;border:0;color:inherit;opacity:.85;font:12px Arial,sans-serif;padding:0}
+.liberty-catalog{padding-top:25px}
+.liberty-downloads .depot-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:24px;background:none;border:0;padding:0;margin:0;align-items:end}
+.liberty-downloads .depot-search>label,.liberty-downloads .depot-sort{display:block;color:#254a40;font-size:12px;font-weight:750;line-height:1.5}
+.liberty-downloads .depot-search>label{margin-bottom:7px}
+.liberty-downloads .depot-search>div{display:flex;gap:0}
+.liberty-downloads input,.liberty-downloads select{min-width:0;border:1px solid #729080;background:#fff;color:#1c3931;border-radius:0;font:14px "Segoe UI",Arial,sans-serif;min-height:44px;padding:10px 12px;box-shadow:none}
+.liberty-downloads .depot-search input{width:100%}
+.liberty-downloads .depot-search input::placeholder{color:#51695c;opacity:1}
+.liberty-downloads .depot-search button{flex:0 0 auto;min-width:88px;min-height:44px;border:1px solid var(--harbor);background:var(--harbor);color:#fff;font:750 13px "Segoe UI",Arial,sans-serif;padding:10px 16px;border-radius:0;cursor:pointer}
+.liberty-downloads .depot-search button:hover{background:#286052}
+.liberty-downloads .depot-sort select{display:block;width:100%;margin-top:7px}
+.liberty-downloads .depot-results-heading{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:24px 0 17px;margin:0;border:0}
+.liberty-downloads .depot-results-heading h2{font:27px/1.1 Impact,"Arial Black",sans-serif;text-transform:uppercase;margin:0;color:var(--harbor)}
+.liberty-downloads #fileResultCount{color:#496255;font-size:12px;font-weight:600}
+.liberty-downloads #downloadReset{margin-left:auto;color:#932b34;font-size:12px;text-decoration:underline;font-weight:700}
+.liberty-file-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.liberty-downloads .liberty-file{display:flex;flex-direction:column;min-width:0;background:#fffef6;border:1px solid #9bae9e;border-top:5px solid var(--harbor);border-radius:0;box-shadow:none;padding:0;margin:0;overflow:visible}
+.liberty-file[data-download-category=tools]{border-top-color:#c54839}
+.liberty-file[data-download-category=maps]{border-top-color:#c48e17}
+.liberty-file[data-download-category=audio]{border-top-color:#3a64a2}
+.liberty-file[data-download-category=archive]{border-top-color:#6d7b70}
+.liberty-file .depot-file-content{padding:23px 25px 20px;min-width:0;flex:1}
+.liberty-file-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:14px;color:#3d6354}
+.liberty-file .liberty-eyebrow{font-size:10px}
+.liberty-release{font-size:10px;color:#973429;font-weight:800;text-transform:uppercase}
+.liberty-file h3{margin:0 0 12px;font-size:24px;line-height:1.2;font-weight:800;overflow-wrap:anywhere}
+.liberty-file h3 a{text-decoration:none;color:var(--harbor)}
+.liberty-file h3 a:hover{color:#a53a31;text-decoration:underline;text-underline-offset:4px}
+.liberty-file p{color:#425d4e;font-size:14px;line-height:1.65;margin:0 0 18px}
+.liberty-downloads .liberty-file-facts{display:flex;flex-wrap:wrap;gap:6px 14px;list-style:none;margin:0;padding:0;font-size:11px;line-height:1.5;color:#526c5d}
+.liberty-file-facts li+li{border-left:1px solid #b1c0b2;padding-left:14px}
+.liberty-file .depot-file-actions{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 25px;border-top:1px solid #c0d0bf;background:#e4eddd;margin:0;width:auto}
+.liberty-downloads .depot-details{font-size:12px;font-weight:750;text-decoration:none;color:#294e40}
+.liberty-downloads .depot-details:hover{text-decoration:underline;text-underline-offset:4px}
+.liberty-downloads .depot-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:43px;padding:10px 18px;background:var(--gold);color:var(--harbor);border:2px solid var(--harbor);border-radius:0;text-decoration:none;font-size:13px;font-weight:800;line-height:1.35;box-shadow:2px 2px 0 var(--harbor);text-shadow:none;white-space:normal}
+.liberty-downloads .depot-download:hover{background:#fff1a4;color:var(--harbor)}
+.liberty-downloads .depot-download svg{width:17px;height:17px;flex:0 0 17px}
+.liberty-downloads .depot-empty{grid-column:1/-1;padding:42px 20px;text-align:center;background:#fffef6;border:1px solid #9bae9e;color:var(--harbor)}
+.liberty-downloads .depot-empty h3{font-size:23px;margin:0 0 12px}
+.liberty-downloads .depot-empty p{color:#425d4e}
+.liberty-downloads .depot-empty a{color:#932b34;font-weight:700;text-decoration:underline}
+/* Detail pages retain the same landmark and strong download treatment. */
+.liberty-file-header{padding-bottom:32px}
+.liberty-file-header:before{background-size:auto 96%;opacity:.65}
+.liberty-detail-heading{display:flex;flex-direction:column;align-items:flex-start;gap:22px;padding:10px 0 5px;max-width:calc(100% - 285px)}
+.liberty-detail-heading h1{font:48px/1.05 Impact,"Arial Black",sans-serif;text-transform:uppercase;color:var(--harbor);margin:10px 0 18px;overflow-wrap:anywhere;text-shadow:2px 2px 0 var(--gold)}
+.liberty-detail-heading .liberty-file-facts{color:#264f43;font-size:12px}
+.liberty-detail-actions{display:flex;flex-direction:column;align-items:stretch;gap:10px;max-width:300px}
+.liberty-downloads .liberty-detail-actions .depot-download{min-height:49px;font-size:14px}
+.liberty-detail-actions>span{color:#35574b;font-size:11px}
+.liberty-backline{padding:23px 0;border-bottom:1px solid #a3baa8;font-size:12px;font-weight:700}
+.liberty-backline a{text-decoration:none}
+.liberty-backline a:hover{color:#96352c;text-decoration:underline}
+.liberty-detail-body{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:55px;padding-top:32px}
+.liberty-detail-body>article,.liberty-detail-body>aside{min-width:0;color:#294e40}
+.liberty-detail-body h2{font-size:22px;margin:0 0 16px;line-height:1.25;color:var(--harbor)}
+.liberty-detail-body p{font-size:15px;line-height:1.75;margin:0 0 22px;color:#425d4e}
+.liberty-detail-body a{color:#96352c;text-underline-offset:3px;overflow-wrap:anywhere}
+.liberty-detail-preview{margin:25px 0 30px;background:#143f3e}
+.liberty-detail-preview img{display:block;width:100%;height:auto;object-fit:contain}
+.liberty-detail-preview figcaption{color:#fff;padding:10px 12px;font-size:11px}
+.liberty-detail-body details{padding:18px 0;margin:20px 0;border-top:1px solid #a3baa8;border-bottom:1px solid #a3baa8;background:transparent}
+.liberty-detail-body summary{font-size:15px;font-weight:700;color:#294e40;cursor:pointer}
+.liberty-detail-body pre{white-space:pre-wrap;overflow-wrap:anywhere;color:#294e40;background:#e0eadd;border:1px solid #a3baa8;padding:15px;font-size:12px;line-height:1.6}
+.liberty-detail-body details>*:not(summary){margin-top:18px}
+.liberty-detail-body>aside{border-left:1px solid #a3baa8;padding-left:26px;font-size:13px}
+.liberty-register{margin:0 0 28px}
+.liberty-register>div{padding:0 0 14px;margin-bottom:14px;border-bottom:1px solid #bbcebd}
+.liberty-register dt{font-size:10px;text-transform:uppercase;color:#526c5d;margin:0 0 5px;font-weight:700}
+.liberty-register dd{font-size:13px;margin:0;line-height:1.5}
+.liberty-detail-body>aside h2{font-size:17px}
+.liberty-detail-body>aside>a{display:block;margin:0 0 14px;font-size:13px;font-weight:700}
+.liberty-detail-body>aside p{font-size:12px;margin-top:22px}
+@media(min-width:1700px){.liberty-downloads .liberty-width{max-width:1390px}.liberty-masthead:before,.liberty-file-header:before{background-position:right calc((100vw - 1390px)/2 + 100px) bottom}.liberty-file-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1100px){.liberty-title-row h1{font-size:82px}.liberty-masthead:before{background-position:right 35px bottom}.liberty-detail-heading h1{font-size:40px}.liberty-detail-body{gap:30px;grid-template-columns:minmax(0,1fr) 230px}.liberty-file .depot-file-content{padding:20px}.liberty-file .depot-file-actions{padding:15px 20px}.liberty-file h3{font-size:22px}.liberty-file-top{gap:10px;flex-wrap:wrap}.liberty-downloads .liberty-category-nav{gap:0 23px}}
+@media(max-width:800px){.liberty-title-row h1{font-size:68px}.liberty-masthead:before{opacity:.65;background-size:auto 92%}.liberty-title-row p{font-size:18px}.liberty-downloads .depot-toolbar{grid-template-columns:minmax(0,1fr) 210px;gap:18px}.liberty-detail-heading{max-width:calc(100% - 200px)}.liberty-file-header:before{background-position:right 15px bottom;background-size:auto 85%;opacity:.45}}
+@media(max-width:700px){.liberty-downloads .liberty-width{width:calc(100% - 36px)}.liberty-title-row{padding-top:12px}.liberty-title-row h1{font-size:60px}.liberty-title-row .liberty-eyebrow{font-size:9px}.liberty-install{font-size:12px;gap:15px}.liberty-downloads .depot-toolbar{grid-template-columns:1fr;gap:15px}.liberty-downloads .depot-sort{display:grid;grid-template-columns:65px minmax(0,1fr);align-items:center}.liberty-downloads .depot-sort select{margin-top:0}.liberty-downloads .liberty-category-nav{gap:0 23px}.liberty-category-nav>a{font-size:12px;min-height:45px;padding:10px 0 8px}.liberty-detail-heading{max-width:100%;padding-right:45px}.liberty-detail-heading h1{font-size:36px}.liberty-file-header:before{opacity:.13}.liberty-detail-body{grid-template-columns:1fr;gap:30px}.liberty-detail-body>aside{border-left:0;border-top:1px solid #a3baa8;padding:25px 0 0}.liberty-file-header{padding-bottom:25px}}
+@media(max-width:600px){.liberty-file-grid{grid-template-columns:1fr}.liberty-title-row h1{font-size:52px;text-shadow:2px 2px 0 var(--gold);margin-bottom:20px}.liberty-masthead{padding-top:18px;padding-bottom:20px;min-height:315px}.liberty-masthead:before{inset:80px 0 0;background-position:right 0 bottom;background-size:auto 100%;opacity:.9}.liberty-title-row p{max-width:155px;font-size:16px;margin-bottom:12px}.liberty-title-row .liberty-install{max-width:150px}.liberty-masthead .crumb{margin-bottom:18px}.liberty-catalog{padding-top:23px}.liberty-file .depot-file-content{padding:22px}.liberty-file .depot-file-actions{padding:15px 22px}.liberty-file h3{font-size:23px}.liberty-downloads .depot-download{padding:10px 13px}.liberty-detail-body h2{font-size:21px}}
+@media(max-width:370px){.liberty-title-row h1{font-size:43px}.liberty-title-row p{max-width:130px}.liberty-masthead:before{background-position:right -16px bottom;background-size:auto 94%;opacity:.8}.liberty-downloads .liberty-category-nav{gap:0 17px}.liberty-file .depot-file-actions{padding:15px 18px;gap:12px}.liberty-downloads .depot-details{font-size:11px}.liberty-downloads .depot-download{font-size:12px}}
+@media(max-width:600px){.liberty-masthead:before{inset:190px 0 0;background-position:right 3px bottom}.liberty-downloads .liberty-title-row p{font-size:16px;max-width:155px}}
+@media(max-width:370px){.liberty-masthead:before{inset:175px 0 0;background-position:right -4px bottom}.liberty-downloads .liberty-title-row p{max-width:130px}}
+@media(prefers-reduced-motion:reduce){.liberty-downloads *{transition:none!important}}
 </style></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -8425,7 +8351,7 @@ function fileArt(f){return f.title==='999 OTF Mod'?`<img src="community-999-otf-
 function fileCard(f,compact=false){return `<article class="portal-file${compact?' compact-file':''}"><a class="file-art file-art-${esc(f.category)}" href="#file/${f.id}" aria-label="View ${esc(f.title)}">${fileArt(f)}</a><div class="file-info"><div class="file-labels"><span>${esc(fileCategoryLabel(f.category))}</span>${f.featured?'<span class="featured-label">Featured</span>':''}</div><h3><a href="#file/${f.id}">${esc(f.title)}</a></h3><p>${esc(f.description)}</p><div class="file-metadata">${f.metadata.map(esc).join(' · ')}</div>${f.title==='999 OTF Mod'?'<small class="file-photo-credit">Photo: Steve_S — 999 OTF Modification</small>':''}</div><a class="file-view" href="#file/${f.id}">View file <span aria-hidden="true">→</span></a></article>`;}
 function communitySidebar(){return `<section class="portal-social social-discord"><img src="discord-logo.svg" alt="Discord" width="219" height="32"><h2>Join the conversation.</h2><p>Get help, share your work, and meet other EM4 modders.</p><a href="https://discord.gg/A8jRzGqrPK" target="_blank" rel="noopener noreferrer">Join our Discord ↗</a></section><section class="portal-social social-patreon"><img src="patreon-wordmark.svg" alt="Patreon" width="1826" height="620"><h2>Support EM4Resource.</h2><p>Help keep the mods, tools, and guides coming.</p><a href="https://www.patreon.com/em4resource" target="_blank" rel="noopener noreferrer">Become a supporter ↗</a></section>`;}
 function fileCategoryNav(active='all'){const files=getDownloadFiles();return `<nav class="file-category-nav" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a href="#downloads${key==='all'?'':'?category='+key}" data-file-category="${key}" ${key===active?'aria-current="page"':''}><strong>${label}</strong><span>${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></a>`).join('')}</nav>`;}
-function parkFilePreview(f,detail=false){
+function libertyFilePreview(f,detail=false){
  const pictures={
   '999 OTF Mod':['community-999-otf-steve-s.png','Steve_S / 999 OTF Modification',1920,1024],
   'Beaverhead County Modification Version 1.5':['community-beaverhead-mayjah.png','mayjah / Beaverhead County V1.5',1920,1200]
@@ -8433,49 +8359,40 @@ function parkFilePreview(f,detail=false){
  const picture=pictures[f.title];
  if(!picture)return '';
  const [src,credit,width,height]=picture;
- const img=`<img src="${src}" alt="${esc(f.title)} gameplay" width="${width}" height="${height}" loading="lazy">`;
- return `<figure class="${detail?'park-detail-preview':'park-file-preview'}">${detail?img:`<a href="#file/${f.id}" aria-label="View ${esc(f.title)}">${img}</a>`}<figcaption>${esc(credit)}</figcaption></figure>`;
+ return `<figure class="liberty-detail-preview"><img src="${src}" alt="${esc(f.title)} gameplay" width="${width}" height="${height}" loading="lazy"><figcaption>${esc(credit)}</figcaption></figure>`;
 }
 
 function downloadResultCard(f){
- return `<article class="depot-file park-file-row" data-download-category="${f.category}">
+ return `<article class="liberty-file depot-file" data-download-category="${f.category}">
   <div class="depot-file-content">
-   <div class="depot-file-meta"><span>${esc(fileCategoryLabel(f.category))}</span>${f.category==='tools'?'<span class="depot-release">Current release</span>':''}</div>
+   <div class="liberty-file-top"><span class="liberty-eyebrow">${esc(fileCategoryLabel(f.category))}</span>${f.category==='tools'?'<span class="liberty-release">Current release</span>':''}</div>
    <h3><a href="#file/${f.id}">${esc(f.title)}</a></h3>
    <p>${esc(f.description)}</p>
-   <ul class="park-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul>
-   ${parkFilePreview(f)}
+   <ul class="liberty-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul>
   </div>
   <div class="depot-file-actions">
-   <a class="depot-download" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download</span></a>
    <a href="#file/${f.id}" class="depot-details" aria-label="Details and credits for ${esc(f.title)}">Details &amp; credits <span aria-hidden="true">&rarr;</span></a>
+   <a class="depot-download" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download</span></a>
   </div>
  </article>`;
 }
 
 function renderFileLibrary(){
- const files=getDownloadFiles(),current=files.find(f=>f.category==='tools'&&f.featured);
- main.innerHTML=`<div class="wrap portal-downloads downloads-depot park-downloads">
-  <header class="park-masthead">
-   <div class="park-width">
-    ${crumb(['Downloads'])}
-    <div class="park-masthead-copy"><span class="park-eyebrow">EMERGENCY 4 / 911: FIRST RESPONDERS</span><h1>Downloads</h1><p>Modifications, maps and tools.</p><a class="park-guide-link" href="${articleHref('How to Install a Mod')}">Installation guide <span aria-hidden="true">&rarr;</span></a></div>
-   </div>
-  </header>
-  <div class="park-width park-catalog">
-   <aside class="depot-sidebar park-sidebar">
-    <h2>File directory</h2>
-    <nav class="park-category-nav" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a data-file-category="${key}" href="#downloads${key==='all'?'':'?category='+key}"><span>${esc(label)}</span><span class="depot-count">${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></a>`).join('')}</nav>
-    <div class="depot-essentials"><h2>Game setup</h2><a href="${articleHref('E4M+ Launcher 3.7')}">Launcher guide <span aria-hidden="true">&rarr;</span></a><a href="${articleHref('EM4 Memory Patcher')}">Memory Patcher <span aria-hidden="true">&rarr;</span></a></div>
-   </aside>
-   <section class="depot-browser" aria-label="Download files">
-    <section class="park-current" id="downloadFeatured" aria-label="Current tool release"${current?'':' hidden'}>${current?`<div><span class="park-eyebrow">Current release</span><h2><a href="#file/${current.id}">${esc(current.title)}</a></h2></div><a class="depot-download" href="${esc(current.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(current.title)} from MEGA">${downloadIcon}<span>Download</span></a>`:''}</section>
+ const files=getDownloadFiles();
+ main.innerHTML=`<div class="wrap portal-downloads liberty-downloads">
+  <header class="liberty-masthead"><div class="liberty-width">
+   ${crumb(['Downloads'])}
+   <div class="liberty-title-row"><span class="liberty-eyebrow">EMERGENCY 4 / 911: FIRST RESPONDERS</span><h1>Downloads</h1><p>Modifications, maps &amp; tools.</p><a class="liberty-install" href="${articleHref('How to Install a Mod')}">Installation guide <span aria-hidden="true">&nearr;</span></a></div>
+  </div></header>
+  <div class="liberty-category-band"><nav class="liberty-width liberty-category-nav" aria-label="Download categories">${fileCategories.map(([key,label])=>`<a data-file-category="${key}" href="#downloads${key==='all'?'':'?category='+key}"><span>${esc(label)}</span><span class="depot-count">${key==='all'?files.length:files.filter(f=>f.category===key).length}</span></a>`).join('')}</nav></div>
+  <div class="liberty-width">
+   <section class="liberty-catalog" aria-label="Download files">
     <form id="fileSearchForm" class="depot-toolbar" role="search">
-     <div class="depot-search"><label for="fileQuery">Search files</label><div><input id="fileQuery" type="search" placeholder="Name, mod or keyword"><button type="submit">Search</button></div></div>
+     <div class="depot-search"><label for="fileQuery">Search files</label><div><input id="fileQuery" type="search" placeholder="Find a modification, map or tool"><button type="submit">Search</button></div></div>
      <label class="depot-sort" for="fileSort">Sort by<select id="fileSort"><option value="featured">Featured first</option><option value="az">Name: A-Z</option><option value="newest">Newest dated releases</option></select></label>
     </form>
-    <div class="depot-results-heading"><h2 id="fileResultsHeading">All downloads</h2><span id="fileResultCount" role="status" aria-live="polite" aria-atomic="true"></span><a href="#downloads" id="downloadReset">Reset filters</a></div>
-    <div id="fileResults" class="park-file-list"></div>
+    <div class="depot-results-heading"><h2 id="fileResultsHeading">All downloads</h2><span id="fileResultCount" role="status" aria-live="polite" aria-atomic="true"></span><a href="#downloads" id="downloadReset">Clear filters</a></div>
+    <div id="fileResults" class="liberty-file-grid"></div>
    </section>
   </div>
  </div>`;
@@ -8489,21 +8406,20 @@ function applyFileRoute(section){
  if(sort==='az')files.sort((a,b)=>a.title.localeCompare(b.title));else if(sort==='newest')files.sort((a,b)=>b.date-a.date||a.order-b.order);else files.sort((a,b)=>Number(b.featured)-Number(a.featured)||a.order-b.order);
  document.getElementById('fileQuery').value=q;document.getElementById('fileSort').value=sort;document.getElementById('fileResultsHeading').textContent=category==='all'?'All downloads':fileCategoryLabel(category);document.getElementById('fileResultCount').textContent=`${files.length} ${files.length===1?'file':'files'}`;
  document.getElementById('fileResults').innerHTML=files.length?files.map(downloadResultCard).join(''):`<div class="depot-empty"><h3>No matching downloads</h3><p>Try another name or category.</p><a href="#downloads">Show all downloads</a></div>`;
- document.getElementById('downloadFeatured').hidden=category!=='all'||!!q;
  document.getElementById('downloadReset').hidden=category==='all'&&!q&&sort==='featured';
  document.querySelectorAll('[data-file-category]').forEach(a=>{if(a.dataset.fileCategory===category)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');const next=new URLSearchParams(p);a.dataset.fileCategory==='all'?next.delete('category'):next.set('category',a.dataset.fileCategory);a.href='#downloads'+(next.size?'?'+next:'');});
 }
 function renderFileDetail(id){
  const f=getDownloadFiles().find(f=>f.id===id);if(!f){renderMissing();return;}
- main.innerHTML=`<div class="wrap downloads-depot depot-detail park-downloads">
-  <header class="park-masthead park-detail-masthead"><div class="park-width">
+ main.innerHTML=`<div class="liberty-downloads depot-detail">
+  <header class="liberty-file-header"><div class="liberty-width">
    ${crumb(['Downloads','#downloads'],[f.title])}
-   <div class="park-detail-heading"><div><span class="park-eyebrow">${esc(fileCategoryLabel(f.category))}</span><h1>${esc(f.title)}</h1><ul class="park-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul></div><div class="park-detail-actions"><a class="depot-download download-primary" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download from MEGA</span></a><span>External download / MEGA</span></div></div>
+   <div class="liberty-detail-heading"><div><span class="liberty-eyebrow">${esc(fileCategoryLabel(f.category))}</span><h1>${esc(f.title)}</h1><ul class="liberty-file-facts" aria-label="File information">${f.metadata.map(value=>`<li>${esc(value)}</li>`).join('')}</ul></div><div class="liberty-detail-actions"><a class="depot-download download-primary" href="${esc(f.url)}" target="_blank" rel="noopener noreferrer" aria-label="Download ${esc(f.title)} from MEGA">${downloadIcon}<span>Download from MEGA</span></a><span>External download / MEGA</span></div></div>
   </div></header>
-  <div class="park-width">
-   <nav class="park-backline" aria-label="File navigation"><a class="depot-back" href="#downloads?category=${f.category}"><span aria-hidden="true">&larr;</span> Back to ${esc(fileCategoryLabel(f.category).toLowerCase())}</a></nav>
-   <div class="depot-detail-body"><article><h2>About this download</h2><p>${esc(f.description)}</p>${parkFilePreview(f,true)}${f.credits}${f.category==='tools'?`<h2>Setup &amp; compatibility</h2><p>Use the included instructions for your supported Emergency 4 installation.</p><a href="${articleHref('E4M+ Launcher 3.7')}">E4M+ Launcher 3.7 setup guide &rarr;</a>`:''}</article>
-    <aside><dl class="park-file-register"><div><dt>Category</dt><dd>${esc(fileCategoryLabel(f.category))}</dd></div><div><dt>File host</dt><dd>MEGA</dd></div>${f.metadata.map(value=>`<div><dt>${/^\d{1,2} [A-Za-z]{3} \d{4}$/.test(value)?'Release date':'Release information'}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><h2>Installation help</h2><a href="${articleHref('How to Install a Mod')}">How to install a mod <span aria-hidden="true">&rarr;</span></a><a href="${articleHref('EM4 Memory Patcher')}">Memory Patcher <span aria-hidden="true">&rarr;</span></a><p>Check the included instructions and credits before installing.</p></aside>
+  <div class="liberty-width">
+   <nav class="liberty-backline" aria-label="File navigation"><a class="depot-back" href="#downloads?category=${f.category}"><span aria-hidden="true">&larr;</span> Back to ${esc(fileCategoryLabel(f.category).toLowerCase())}</a></nav>
+   <div class="liberty-detail-body"><article><h2>About this download</h2><p>${esc(f.description)}</p>${libertyFilePreview(f,true)}${f.credits}${f.category==='tools'?`<h2>Setup &amp; compatibility</h2><p>Use the included instructions for your supported Emergency 4 installation.</p><a href="${articleHref('E4M+ Launcher 3.7')}">E4M+ Launcher 3.7 setup guide &rarr;</a>`:''}</article>
+    <aside><dl class="liberty-register"><div><dt>Category</dt><dd>${esc(fileCategoryLabel(f.category))}</dd></div><div><dt>File host</dt><dd>MEGA</dd></div>${f.metadata.map(value=>`<div><dt>${/^\d{1,2} [A-Za-z]{3} \d{4}$/.test(value)?'Release date':'Release information'}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><h2>Installation help</h2><a href="${articleHref('How to Install a Mod')}">How to install a mod <span aria-hidden="true">&rarr;</span></a><a href="${articleHref('EM4 Memory Patcher')}">Memory Patcher <span aria-hidden="true">&rarr;</span></a><p>Check the included instructions and credits before installing.</p></aside>
    </div>
   </div>
  </div>`;document.title=f.title+' - EM4Resource Downloads';
